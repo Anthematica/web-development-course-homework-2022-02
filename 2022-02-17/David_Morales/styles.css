@@ -360,7 +360,7 @@ input::placeholder {
     .navigation {
         position: relative;
         display: block;
-        top: 288px;
+        inset-block-start: 120px;
         margin-inline-start: 10%;
     }
     .navigation>li {
@@ -385,7 +385,7 @@ input::placeholder {
     .menu__footer {
         display: block;
         position: absolute;
-        inset-block-end: 34%;
+        inset-block-end: 50px;
         inset-inline-start: 10%;
     }
     .menu__footer>nav>li>a {
