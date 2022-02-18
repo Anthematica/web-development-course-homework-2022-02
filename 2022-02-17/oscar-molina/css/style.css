@@ -52,10 +52,9 @@ body {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 1.3rem;
-  margin-block-start: 8.1rem;  
+  margin-block-start: 8.1rem;
   margin-block-end: 8.1rem;
 }
-
 
 .side-menu a {
   text-decoration: none;
@@ -73,7 +72,7 @@ body {
   display: block;
 }
 
-.close{
+.close {
   /* float: right; */
   position: absolute;
   inset-inline-end: 1rem;
@@ -85,7 +84,6 @@ body {
 /*-------------------------------- hamburger menu end ---------------------------------*/
 
 /* -----------------nav bar header------------------------ */
-
 
 nav {
   margin-inline-start: 2rem;
@@ -265,8 +263,6 @@ main {
   padding: 7px 9px 9px 11px;
   border-radius: 3px;
 }
-
-
 
 /* ---------------------Media queries para Tablet size----------------------- */
 @media screen and (min-width: 768px) {
