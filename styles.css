@@ -17,7 +17,8 @@ body {
     overflow-x: hidden;
 }
 
-.menu_check {
+.menu_check,
+.menu__footer {
     display: none;
 }
 
@@ -348,10 +349,13 @@ input::placeholder {
         inset-block-start: 0;
         inset-inline-end: 0px;
         background: white;
-        height: 111vh;
+        height: 101vh;
         transform: translateX(100%);
         top: -5px;
         width: 60%;
+    }
+    .menu__mobile>img {
+        margin-inline: 10px;
     }
     .navigation {
         position: relative;
@@ -377,6 +381,16 @@ input::placeholder {
     #menu_check:checked~.menu {
         transition: 5s;
         transform: translateX(0%);
+    }
+    .menu__footer {
+        display: block;
+        position: absolute;
+        inset-block-end: 34%;
+        inset-inline-start: 10%;
+    }
+    .menu__footer>nav>li>a {
+        display: block;
+        margin-block-start: 14px;
     }
 }
 
