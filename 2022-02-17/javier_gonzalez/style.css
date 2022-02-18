@@ -1,0 +1,581 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+}
+
+.back{
+    height: 40px;
+    background-color: #313235;
+    width: 100%;
+}
+
+.contenedor_header1{
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    width: 1440px;
+    margin: 0 auto;
+    background-color:#313235;
+}
+
+.right{
+    display: flex;
+}
+
+input{
+    background-color: #313235;
+    border:none;
+    border-block-end: 1px solid #c9cecf;
+    color: #94949c;
+    margin-block-end: 1px;
+    margin-inline-end: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16.44px;
+    outline: none;
+}
+
+.contenedor_header1 .text_free{
+    font-size: 14px;
+    margin-block: 12px;
+    margin-inline-start: 32px;
+    color: white;
+    font-weight: 500;
+}
+
+.contenedor_header1 .help{
+    text-decoration: none;
+    margin-block: 12px;
+    margin-inline-end: 27px;
+    font-weight: 500;
+    color:#C9CECF;
+    display: flex;
+    justify-content: end;
+    font-size: 14px;
+}
+
+.icon{
+    text-decoration: none;
+    font-weight: 500;
+    color: #c9cecf;
+    margin-block: 10px;
+    margin-inline-end: 35px;
+    width: 18px;
+    height: 20px;
+}
+
+.contenedor_header2{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    height: 72px;
+}
+
+.contenedor_header2 .logo{
+    width: 138px;
+    height: 28px;
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 28.18px;
+    margin-block-start: 21px;
+    margin-block-end: 23px;
+    margin-inline-start: 32px;
+    color: #313235;
+}
+
+.contenedor_header2 .list{
+    display: flex;
+    list-style-type: none;
+    margin-block-start: 26px;
+    margin-block-end: 25px;
+    gap: 48px;
+    margin-inline-end: 370px;
+    margin-inline-start: 200px;
+}
+
+.responsive_icons{
+    display: none;
+}
+
+.contenedor_header2 .list .list_item{
+    max-width: 137px;
+    height: 21px;
+    font-size: 18px;
+    line-height: 21.13px;
+    font-weight: 600;
+    color: #313235;
+    text-transform: uppercase;
+    transition: 500ms;
+}
+
+.contenedor_header2 .list .list_item:hover{
+    color: #6868d9;
+    cursor: pointer;
+}
+
+.border{
+    border: 1px solid #c9cecf;
+    width: 100%;
+    height: 0;
+    position: absolute;
+}
+
+.contenedor_main{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.contenedor_main2{
+    display: flex;
+    width: 1440px;
+    margin: 0 auto;
+    height: 100px;
+    margin-block-start: 80px;
+}
+
+.contenedor_main2 .right_apa{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+/*
+.responsive{
+    display: none;
+} */
+
+.contenedor_main2 .home{
+    margin-block-start: 40px;
+    margin-block-end: 36px;
+    margin-inline-start: 22px;
+    width: 248px;
+    height: 16px;
+}
+
+.contenedor_main2 .home a{
+    text-decoration: none;
+    color: #60666c;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.contenedor_main2 .home a span{
+    color: #60666c81;
+}
+
+.categorias{
+    width: 248px;
+    height: 416px;
+    margin-inline-start: 22px;
+}
+
+.categorias .list_cate .list_cate_item{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    list-style-type: none;
+    color: #313235;
+    transition: 500ms;
+}
+
+.categorias .list_cate .list_cate_item:hover{
+    color: #c5295d;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.contenedor_main2 .text_running{
+    margin-inline-start: 32px;
+    margin-block-start: 33px;
+    margin-block-end: 43px;
+    margin-inline-end: 760px;
+    font-weight: 600;
+    color: #313235;
+    font-size: 24px;
+    line-height: 24px;
+    width: 95px;
+    height: 24px;
+}
+
+.contenedor_main2 .text_sort{
+    width: 31px;
+    height: 19px;
+    margin-block-start: 38px;
+    margin-inline-end: 16px;
+    margin-block-end: 43px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #60666c;
+}
+
+
+button{
+    width: 190px;
+    height: 42px;
+    border-radius: 8px;
+    background-color: #f2f3f3;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 18.78px;
+    color: #313235;
+    border: none;
+    margin-block-start: 26px;
+    margin-block-end: 43px;
+    margin-inline-end: 47px;
+}
+
+.shoes{
+    margin-inline-start: 32px;
+    width: 80%;
+    height: 812px;
+    display: flex;
+    gap: 36px;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.shoes .prueba40{
+    width: 340px;
+    height: 312px;
+    margin-block-end: 120px;
+    position: relative;
+}
+
+.shoes  .prueba40 .precio{
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 14px;
+}
+
+.shoes .prueba40 .precio .nike{
+    width: 270px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #313235;
+}
+
+.shoes  .prueba40 .precio span{
+    width: 61px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #60666c;
+}
+
+.shoes  .prueba40 .precio .pre{
+    width: 36px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #313235;
+}
+
+.shoes  .prueba40 .precio .preoffer{
+    width: 36px;
+    height: 19px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #313235;
+    text-decoration: line-through;
+}
+
+.shoes  .prueba40 .preoffer span{
+    width: 36px;
+    height: 19px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.78px;
+    color: #c5295d;
+    text-decoration: none;
+}
+
+
+.shoes .prueba40 .publicidad, .sale{
+    position: absolute;
+    height: 32px;
+    width: 118px;
+    background-color: #6868d9;
+    border-radius: 2px;
+    inset-inline-end: -4px;
+    inset-block-start: 12px;
+    display: flex;
+    align-items: center;
+    margin-inline-start: 11px;
+    font-size: 14px;
+    color: white;
+    padding-inline-start: 11px;
+    font-weight: bold;
+}
+
+
+.shoes .prueba40 .sale{
+    width: 49px;
+    background-color: #C5295D;
+    z-index: 1;
+}
+
+.shoes .prueba40 .sale span{
+    width: 30px;
+    height: 16px;
+    margin-inline-start: 11px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.44px;
+    text-align: center;
+    color: white;
+}
+
+.shoes .prueba40 .img{
+    width: 340px;
+    height: 312px;
+    position: relative;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.shoes .img:hover{
+    transform: scale(1.1);
+    box-shadow: 1px 1px 5px #c5295dc4;
+    border-start-start-radius: 16px;
+    border-start-end-radius: 16px;
+    border-end-start-radius: 4px;
+    border-end-end-radius: 4px;
+}
+
+@media (max-width: 1100px){
+
+    .contenedor_header1{
+        width: 100%;
+    }
+
+    .contenedor_header2{
+        width: 100%;
+    }
+
+    input{
+        margin-block-end: 7px;
+    }
+
+    .contenedor_header2 .list{
+        margin-inline-end: 100px;
+        margin-inline-start: 48px;
+    }
+    
+    .contenedor_main2{
+        width: 100%;
+        margin-block-start: 80px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .contenedor_main2 .home{
+        margin-block-end: 36px;
+        margin-inline-start: 22px;
+        width: 248px;
+        height: 16px;
+    }
+
+    .contenedor_main2 .text_running{
+        margin-inline-end: 344px;
+    }
+
+    .shoes{
+        width: 50%;
+        height: 812px;
+        margin-inline-end: 30px;
+    }
+
+    .shoes .prueba40{
+        margin-block-end: 100px;
+    }
+
+}
+
+@media (max-width: 1060px){
+
+    .contenedor_header1{
+        display: none;
+    }
+
+    .back{
+        width: 100%;
+        height: 4px;
+    }
+
+    .contenedor_header2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor_header2 .list{
+        display: none;
+    }
+
+    .contenedor_main .categorias{
+        display: none;
+    }
+
+    .contenedor_main2{
+        width: 100%;
+        margin-block-start: 0px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .contenedor_main2 .home{
+        margin-block-end: 8px;
+        margin-inline-start: 32px;
+        width: 800px;
+        height: 16px;
+    }
+
+    .contenedor_main2 .text_running{
+        margin-inline-end: 370px;
+        margin-block-start: 0px;  
+    }
+
+    .shoes{
+        width: 50%;
+        height: 812px;
+        margin-block-start: 30px;
+    }
+
+    .contenedor_main2 .right_apa{
+        margin-block-start: -30px;
+    }
+
+    /*.contenedor_main2 .right_apa{
+        display: none;
+    } */
+
+    /*.contenedor_main2 .prueba{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .text_sort2{
+        margin-block-start: 0px;
+    }
+    .btn_responsive{
+        margin-block-start: -10px;
+    }
+
+    .responsive, .btn_responsive{
+        display: block;
+    }
+
+    .responsive{
+        display: flex;
+    } */
+
+    .responsive_icons{
+        display: block;
+        display: flex;
+        gap: 40px;
+        margin-block: 26px;
+        margin-inline-end: 32px;
+    }
+
+    .responsive_icons .icons{
+        width: 18px;
+        height: 20px;
+        color: #313235;
+    }
+
+}
+
+@media (max-width: 800px){
+
+    .contenedor_header1{
+        display: none;
+    }
+
+    .back{
+        width: 100%;
+        height: 4px;
+    }
+
+    .contenedor_header2{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .contenedor_header2 .list{
+        display: none;
+    }
+
+    .contenedor_main .categorias{
+        display: none;
+    }
+
+    .contenedor_main2{
+        width: 100%;
+        margin-block-start: 0px;
+        display: flex;
+    }
+    
+    .contenedor_main2 .home{
+        margin-block-end: 8px;
+        margin-inline-start: 32px;
+        width: 700px;
+        height: 16px;
+    }
+
+    .shoes{
+        width: 40%;
+        height: 812px;
+        margin-block-start: 30px;
+    }
+
+    .contenedor_main2 .right_apa{
+        display: none;
+    }
+
+    .responsive_icons{
+        display: block;
+        display: flex;
+        gap: 24px;
+        margin-block: 26px;
+        margin-inline-end: 20px;
+    }
+
+    .responsive_icons .icons{
+        width: 18px;
+        height: 20px;
+    }
+
+   /* .responsive{
+        display: none;
+    } */
+  
+}
+
+/*@media only screen and (min-width: 1441px) and (max-width: 1920px){
+    .contenedor_header2 .list{
+        display: flex;
+        list-style-type: none;
+        margin-block-start: 26px;
+        margin-block-end: 25px;
+        gap: 48px;
+        margin-inline-end: 370px;
+        margin-inline-start: 400px;
+    }
+
+    .contenedor_main2 .right_apa{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-inline-start: 400px;
+    }
+}*/
