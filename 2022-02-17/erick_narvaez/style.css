@@ -1,0 +1,613 @@
+:root {
+  --colorGray-9: #313235;
+  --colorGray-7: #60666c;
+  --colorGray5: #949a9c;
+  --colorGray1: #f2f3f3;
+  --colorPrimary: #c5295d;
+  --colorSecondary: #6868d9;
+}
+html {
+  font-family: Raleway;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.navStyle {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+
+  align-items: center;
+}
+
+.navItems {
+  column-gap: 48px;
+}
+.linkitems {
+  color: var(--colorGray-9);
+}
+
+.navBar {
+  height: 72px;
+  align-items: baseline;
+  width: 100%;
+  column-gap: 200px;
+  padding: 12px 32px;
+  border: 1px solid #c9cecf;
+  background-color: white;
+}
+
+.titlelogo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 28px;
+  color: var(--colorGray-9);
+}
+
+.navBar > ul {
+  display: flex;
+  flex-direction: row;
+  height: 72px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+
+.superHeader {
+  margin: 0;
+  padding: 0;
+width: 100%;
+  background-color: var(--colorGray-9);
+}
+.promotionContainer {
+  display: flex;
+  width: 1440px;
+}
+
+.promotion {
+  flex-grow: 1;
+  padding: 12px 32px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* White */
+
+  color: #ffffff;
+}
+
+.subHeader {
+  display: flex;
+  height: 40px;
+  width: auto;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+.filters {
+  padding-inline-end: 0;
+}
+.SideBar {
+  height: 248px;
+  width: 216px;
+  padding-inline-start: 22px;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 200%;
+
+  color: var(--colorGray-9);
+}
+
+.SideBar > ul {
+  margin-block-start: 0;
+  padding-inline-start: 0px;
+}
+.subNav {
+  width: 248px;
+  padding-inline-start: 22px;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: 71px;
+  height: 802px;
+  width: auto;
+}
+
+.sectionTitle {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 100%;
+  flex-grow: 1;
+}
+
+.shoesmain {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+  margin-block-start: 36px;
+}
+img {
+  height: 310px;
+  width: 100%;
+}
+
+.ShoesGrid {
+  height: 802px;
+  width: 1098px;
+  display: flex;
+  flex-direction: row;
+  flex-flow: row wrap;
+  gap: 18px;
+}
+.shoestemplate {
+  display: flex;
+  flex-direction: column;
+  height: 370px;
+  width: 344px;
+}
+.shoestext {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.shoescolumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.shoeslabel {
+  margin-block-start: 12px;
+  margin-inline-start: auto;
+  vertical-align: middle;
+  text-align: center;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  height: 32px;
+  color: #ffffff;
+}
+.shoesLabelSale {
+  width: 49px;
+  background: var(--colorPrimary);
+  border-radius: 2px;
+  padding-top: 10px;
+}
+.shoesLabelJR {
+  width: 118px;
+  background: var(--colorSecondary);
+  border-radius: 2px;
+  padding-top: 10px;
+}
+
+.colorshoes {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--colorGray-7);
+}
+.shoesname {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--colorGray-9);
+}
+
+.price {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--colorGray-9);
+}
+
+.offer {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--colorPrimary);
+}
+
+.disableprice {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-decoration-line: line-through;
+
+  /* gray-700 */
+
+  color: var(--colorGray-7);
+}
+.hidden {
+  display: none;
+}
+
+.searchbar {
+  flex-direction: row;
+  column-gap: 20px;
+  justify-content: flex-end;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  /* gray-500 */
+
+  color: var(--colorGray5);
+}
+
+.searchInput {
+  background: var(--colorGray-9);
+  color: white;
+
+  border: 0 transparent var(--colorGray-9);
+}
+
+.icons {
+  column-gap: 15px;
+}
+
+.tagHidden {
+  color: #f6f6f6;
+}
+
+.bgImg {
+  background-color: #f6f6f6;
+  border-radius: 16px 16px 4px 4px;
+}
+.activeNav {
+  color: var(--colorSecondary);
+}
+
+.linkitems:hover {
+  color: var(--colorSecondary);
+}
+.activeLink {
+  color: var(--colorPrimary);
+}
+
+.mobile {
+  display: none;
+}
+
+.mobilebar{
+  display: none;
+
+}
+/* Mobile */
+@media only screen and (max-device-width: 376px) {
+
+
+
+  .mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 16px;
+    border: 1px solid #c9cecf;
+    border-top: 4px solid var(--colorGray-9);
+    height: 72px;
+    column-gap: 23px;
+  }
+.mobilebar{
+  display: block;
+}
+ 
+  .titlelogo {
+    flex-grow: 1;
+  }
+  .mobilebar{
+    transition: all 0.5s ease-out;
+    display: none;
+  }
+  .bgTransparent{
+    position: absolute;
+    top: 0;
+    left: -75px;
+    background: rgba(96, 100, 108, 0.8);
+    width: 75px;
+    height: 800px;
+  }
+
+
+  .navSide{
+    height: 800px;
+    width: 300px;
+    
+    background-color: white;
+    transition: all 0.3s ease-out;
+    
+    
+  }
+
+  
+  .navSideItems{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 288px 32px;
+  }
+
+
+  #navSide:target{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0; 
+  }
+
+  .closeBtn{
+    display: block;
+    position: absolute;
+    right: 16px;
+    top: 26px;
+    
+
+  }
+
+  .main {
+    width: auto;
+    padding: 0 16px;
+    margin-block-start: 0;
+  }
+  .SideBar {
+    display: none;
+  }
+  .shoesmain {
+    width: auto;
+  }
+  .ShoesGrid {
+    width: 346px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 90px;
+  }
+
+  .shoestemplate {
+    width: 347px;
+    height: 370px;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .filters {
+    display: none;
+  }
+
+  .subHeader {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: 48px;
+  }
+  .subNav {
+    padding-inline-start: 0px;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 376px) and (max-width: 769px) {
+  header {
+    width: 768px;
+  }
+  .mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0px 32px;
+    width: auto;
+    border: 1px solid #c9cecf;
+    border-top: 4px solid var(--colorGray-9);
+    height: 72px;
+    column-gap: 35px;
+  }
+  .titlelogo {
+    flex-grow: 1;
+  }
+
+  .main {
+    width: auto;
+    padding: 0 31px;
+  }
+  .SideBar {
+    display: none;
+  }
+  .shoesmain {
+    width: auto;
+  }
+  .ShoesGrid {
+    width: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 40px 32px;
+  }
+
+  .shoestemplate {
+    width: 334px;
+    height: 370px;
+  }
+
+  .desktop {
+    display: none;
+  }
+  .filters {
+    position: relative;
+    left: 514px;
+    top: -30px;
+    width: max-content;
+    padding-inline-end: 0;
+  }
+
+  .subHeader {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    width: auto;
+    height: 48px;
+  }
+  .subNav {
+    padding-inline-start: 0px;
+  }
+}
+/* Laptop */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mobile {
+    display: none;
+  }
+  .mobilebar{
+    display: none;
+  }
+  .navStyle {
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    align-items: center;
+  }
+
+  .navItems {
+    column-gap: 48px;
+  }
+
+  .navBar {
+    height: 72px;
+    align-items: baseline;
+    width: 100%;
+    column-gap: 48px;
+    padding: 12px 32px;
+  }
+
+  .superHeader {
+    margin: 0;
+    padding: 0;
+    background-color: var(--colorGray-9);
+    width: 100%;
+  }
+  .promotionContainer {
+    display: flex;
+    width: 1020px;
+  }
+
+  .promotion {
+    flex-grow: 1;
+    padding: 12px 32px;
+  }
+
+  .subHeader {
+    display: flex;
+    height: 40px;
+    width: 100%;
+    justify-content: space-between;
+    column-gap: 32px;
+  }
+  .filters {
+    width: max-content;
+    padding-inline-end: 32px;
+  }
+  .SideBar {
+    height: 416px;
+    width: 248px;
+    padding-inline-start: 22px;
+  }
+
+  .SideBar > ul {
+    margin-block-start: 0;
+    padding-inline-start: 0px;
+  }
+  .subNav {
+    width: 248px;
+    padding-inline-start: 22px;
+  }
+
+  .main {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 71px;
+    height: 802px;
+    width: auto;
+  }
+
+  .shoesmain {
+    display: flex;
+    flex-direction: row;
+    column-gap: 92px;
+    margin-block-start: 36px;
+  }
+  img {
+    height: 310px;
+    width: 100%;
+  }
+
+  .ShoesGrid {
+    height: 802px;
+    width: 1098px;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    gap: 10px;
+  }
+  .shoestemplate {
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 324px;
+  }
+  .shoestext {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .shoescolumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .searchbar {
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: flex-end;
+  }
+
+  .mobile {
+    display: none;
+  }
+}
