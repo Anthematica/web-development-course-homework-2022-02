@@ -353,3 +353,7 @@ svg.filter__ico {
 .details--promo {
   color: var(--primary);
 }
+
+.overlay {
+  display: none;
+}

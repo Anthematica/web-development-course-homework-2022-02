@@ -123,6 +123,7 @@
     height: 1024px;
     flex-direction: column;
     background-color: rgba(96, 100, 108, 0.8);
+    display: block;
     position: fixed;
     inset-block-start: 0;
     inset-inline-end: -768px;
