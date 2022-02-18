@@ -1,0 +1,263 @@
+@media screen and (max-width: 1320px) {
+  body,
+  .header,
+  .main {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navigation__navbar {
+    margin-inline-start: 48px;
+    margin-inline-end: 100px;
+  }
+
+  .header__left {
+    margin-block-start: 8px;
+  }
+
+  .header__breadcrumb {
+    margin-block-start: 8px;
+    margin-block-end: 0;
+  }
+
+  .header__title {
+    margin-block: 0;
+  }
+
+  .main__header {
+    margin-inline-end: 32px;
+  }
+
+  .content__product {
+    width: 681px;
+    margin-inline-start: 30px;
+    margin-inline-end: 28px;
+    row-gap: 32px;
+  }
+
+  .card__image,
+  .image {
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .navbar__item {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .top {
+    display: none;
+  }
+
+  .navigation {
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid var(--gray-900);
+  }
+
+  .navigation__navbar {
+    display: none;
+  }
+
+  .navigation__sidebar {
+    display: flex;
+    column-gap: 24px;
+    margin-inline-end: 28px;
+  }
+
+  .main {
+    margin-block-start: 48px;
+  }
+
+  .main__header {
+    height: 50px;
+  }
+
+  .header__left {
+    margin-block: 0;
+    flex-direction: column;
+  }
+
+  .header__breadcrumb {
+    margin-block: 0;
+  }
+
+  .header__title {
+    font-weight: 800;
+    margin-inline: 0;
+    margin-block-start: 8px;
+  }
+
+  .header__filter {
+    margin-block-start: 8px;
+  }
+
+  .main__content {
+    display: block;
+    margin-inline-start: 32px;
+    margin-inline-end: 28px;
+  }
+
+  .content__sidebar {
+    display: none;
+  }
+
+  .content__product {
+    width: 100%;
+    margin-inline: 0;
+    column-gap: 32px;
+    row-gap: 62px;
+  }
+
+  .card__image,
+  .image {
+    width: 336px;
+  }
+
+  .overlay {
+    width: 768px;
+    height: 1024px;
+    flex-direction: column;
+    background-color: rgba(96, 100, 108, 0.8);
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-end: -768px;
+  }
+
+  .overlay--show {
+    /* display: block; */
+    transform: translateX(-768px);
+    transition: ease 0.5s;
+  }
+
+  .overlay--hide {
+    transform: translateX(768px);
+    transition: ease-out 0.5s;
+    /* display: none; */
+  }
+
+  .overlay__modal {
+    width: 300px;
+    height: 1024px;
+    background-color: var(--white);
+    position: absolute;
+    inset-inline-end: 0;
+  }
+
+  .modal__ico {
+    position: absolute;
+    inset-block-start: 26px;
+    inset-inline-end: 16px;
+    cursor: pointer;
+  }
+
+  .modal__primary,
+  .modal__footer {
+    position: absolute;
+    inset-inline-start: 32px;
+  }
+
+  .modal__primary {
+    inset-block-start: 288px;
+  }
+
+  .modal__footer {
+    inset-block-end: 32px;
+  }
+
+  .primary__nav,
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .primary__nav {
+    row-gap: 22px;
+  }
+
+  .footer__nav {
+    row-gap: 14px;
+  }
+
+  .primary__link {
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: var(--gray-900);
+  }
+
+  .primary__link.active {
+    color: var(--secondary);
+  }
+
+  .footer__link {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 16px;
+    color: var(--gray-700);
+  }
+}
+
+@media screen and (max-width: 624px) {
+  .header__filter {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .navigation__logo {
+    margin-inline-start: 16px;
+  }
+
+  .navigation__sidebar {
+    display: flex;
+    column-gap: 22px;
+    margin-inline-end: 16px;
+  }
+
+  .main__header {
+    margin-inline-start: 16px;
+  }
+
+  .main__content {
+    margin-inline-start: 16px;
+    margin-inline-end: 12px;
+  }
+
+  .card__image,
+  .image {
+    width: 347px;
+  }
+
+  .overlay,
+  .overlay__modal {
+      height: 812px;
+  }
+
+  .overlay {
+    width: 375px;
+    inset-block-start: 0;
+    inset-inline-end: -375px;
+  }
+
+  .overlay__modal {
+      width: 300px;
+  }
+
+  .overlay--show {
+    /* display: block; */
+    transform: translateX(-375px);
+    transition: ease 0.5s;
+  }
+
+  .overlay--hide {
+    transform: translateX(375px);
+    transition: ease-out 0.5s;
+    /* display: none; */
+  }
+}
