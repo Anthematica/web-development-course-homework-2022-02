@@ -1,4 +1,4 @@
-* {
+ * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -18,7 +18,8 @@ body {
 }
 
 .menu_check,
-.menu__footer {
+.menu__footer,
+.close {
     display: none;
 }
 
