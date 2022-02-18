@@ -229,6 +229,10 @@
     margin-inline-end: 12px;
   }
 
+  .content__product {
+    row-gap: 32px;
+  }
+
   .card__image,
   .image {
     width: 347px;
