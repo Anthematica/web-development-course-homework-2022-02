@@ -123,22 +123,30 @@
     height: 1024px;
     flex-direction: column;
     background-color: rgba(96, 100, 108, 0.8);
+    display: block;
     position: fixed;
     inset-block-start: 0;
     inset-inline-end: -768px;
+    transform: translateX(768px);
+    transition: ease-out 0.5s;
   }
 
-  .overlay--show {
-    /* display: block; */
+  .overlay:target {
     transform: translateX(-768px);
     transition: ease 0.5s;
   }
 
-  .overlay--hide {
+  /* .overlay--show {
+    display: block;
+    transform: translateX(-768px);
+    transition: ease 0.5s;
+  } */
+
+  /* .overlay--hide {
     transform: translateX(768px);
     transition: ease-out 0.5s;
-    /* display: none; */
-  }
+    display: none;
+  } */
 
   .overlay__modal {
     width: 300px;
@@ -229,6 +237,10 @@
     margin-inline-end: 12px;
   }
 
+  .content__product {
+    row-gap: 32px;
+  }
+
   .card__image,
   .image {
     width: 347px;
@@ -236,21 +248,28 @@
 
   .overlay,
   .overlay__modal {
-      height: 812px;
+    height: 812px;
   }
 
   .overlay {
     width: 375px;
     inset-block-start: 0;
     inset-inline-end: -375px;
+    transform: translateX(375px);
+    transition: ease-out 0.5s;
+  }
+
+  .overlay:target {
+    transform: translateX(-375px);
+    transition: ease 0.5s;
   }
 
   .overlay__modal {
-      width: 300px;
+    width: 300px;
   }
 
-  .overlay--show {
-    /* display: block; */
+  /* .overlay--show {
+    display: block;
     transform: translateX(-375px);
     transition: ease 0.5s;
   }
@@ -258,6 +277,6 @@
   .overlay--hide {
     transform: translateX(375px);
     transition: ease-out 0.5s;
-    /* display: none; */
-  }
+    display: none;
+  } */
 }

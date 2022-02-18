@@ -354,9 +354,6 @@ svg.filter__ico {
   color: var(--primary);
 }
 
-
-/*------------------- Navbar for Mobile ---------------------*/
-
-/* .overlay {
+.overlay {
   display: none;
-} */
+}
