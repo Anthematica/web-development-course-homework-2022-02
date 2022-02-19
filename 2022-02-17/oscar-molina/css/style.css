@@ -32,16 +32,23 @@ body {
 
 /*---------------------------- hamburger menu start --------------------*/
 
+.side-menu-container {
+  width: 100%;
+  background-color: rgba(49, 50, 53, .7);
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+
 .side-menu {
   background-color: var(--white);
-  position: fixed;
+  position: absolute;
   width: 100%;
   max-width: 300px;
   height: 100vh;
   padding: 2rem;
-  display: none;
   inset-inline-end: 0;
-  z-index: 1;
 }
 
 .side-menu ul {
@@ -68,12 +75,11 @@ body {
   gap: 0.87rem;
 }
 
-.side-menu:target {
+.side-menu-container:target {
   display: block;
 }
 
 .close {
-  /* float: right; */
   position: absolute;
   inset-inline-end: 1rem;
 }
