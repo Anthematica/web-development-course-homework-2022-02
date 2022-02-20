@@ -30,11 +30,67 @@ body {
   margin-block-end: 3rem;
 }
 
+/*---------------------------- hamburger menu start --------------------*/
+
+.side-menu-container {
+  width: 100%;
+  background-color: rgba(49, 50, 53, .7);
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  display: none;
+}
+
+.side-menu {
+  background-color: var(--white);
+  position: absolute;
+  width: 100%;
+  max-width: 300px;
+  height: 100vh;
+  padding: 2rem;
+  inset-inline-end: 0;
+}
+
+.side-menu ul {
+  flex-basis: 70%;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  margin-block-start: 8.1rem;
+  margin-block-end: 8.1rem;
+}
+
+.side-menu a {
+  text-decoration: none;
+  font-size: 0.87rem;
+  color: var(--gray-700);
+}
+
+.side-menu-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.87rem;
+}
+
+.side-menu-container:target {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  inset-inline-end: 1rem;
+}
+.close:target {
+  display: none;
+}
+
+/*-------------------------------- hamburger menu end ---------------------------------*/
+
 /* -----------------nav bar header------------------------ */
 
-/* hamburger menu start*/
-
-/* hamburger menu end */
 nav {
   margin-inline-start: 2rem;
   margin-inline-end: 2.5rem;
@@ -52,7 +108,8 @@ nav h1 a {
   text-transform: capitalize;
 }
 
-nav a {
+nav a,
+.side-menu ul a {
   text-decoration: none;
   color: var(--gray-900);
   font-size: 1.2rem;
@@ -64,7 +121,8 @@ nav .menu {
   display: none;
 }
 
-nav ul .focus {
+nav ul .focus,
+.side-menu .focus {
   color: var(--secondary);
 }
 
@@ -212,7 +270,7 @@ main {
   border-radius: 3px;
 }
 
-/* Media queries para Tablet size */
+/* ---------------------Media queries para Tablet size----------------------- */
 @media screen and (min-width: 768px) {
   /* main title and main select */
   .main-title-container {
