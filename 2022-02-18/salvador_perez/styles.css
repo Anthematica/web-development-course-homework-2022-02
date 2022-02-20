@@ -282,7 +282,6 @@ html {
 
 .market-section__stocks {
   display: grid;
-  column-gap: 0;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -293,6 +292,7 @@ html {
 /* sports-section syles */
 .sports-section {
   padding-inline-start: 16px;
+  overflow-x: hidden;
 }
 
 .sports-section__data {
