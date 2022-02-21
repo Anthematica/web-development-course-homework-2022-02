@@ -15,7 +15,45 @@
     <link rel="stylesheet" href="styles.css">
     <title>New Grid Times</title>
 </head>
-<body>
+
+<body> 
+    <nav class="mobile-nav">
+        <div class="mobile-nav__container">
+            <div class="nav__left-icons">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                        stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M20.9999 21L16.6499 16.65" stroke="#F4F3F1" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M3 12H21" stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 6H21" stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M3 18H21" stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+    
+            <div class="nav__right-icons">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                        stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                        d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                        stroke="#F4F3F1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="mobile-header">
+        <div class="mobile-header__container">
+            <h1 class="mobile-header__title">New Grid Times</h1>
+            <div class="mobile-header__date">Saturday, June 17th, 2021</div>
+        </div>
+    </header>
+
     <header class="header">
         <div class="header__container">
             <div class="header__icons">
@@ -57,7 +95,25 @@
                 him for work in the 21st century. It turns out, games like <i>Super Mario Brothers</i> and <i>Mega Zombie
                     Bash 2099</i> have a
                 surprising correlation with in-demand skills like critical reasoning and abstract thinking.</p>
+
             <p class="main-story__paragraph">Researchers in the San Francisco think-tank <i>Bestcap Innovations</i> posit that time spent playing video games can be productive, in moderation. Active…</p>
+
+            <p class="hidden-text">SAN FRANCISCO — 24-year-old Anthony Vega enjoyed killing zombies, but didn’t realize that those skills were preparing
+            him for work in the 21st century. It turns out, games like Super Mario Brothers and Mega Zombie Bash 2099 have a
+            surprising correlation with in-demand skills like critical reason-
+            ing and abstract thinking.</p>
+
+            <p class="hidden-text">Researchers in the San Francisco think-tank Bestcap Innovations posit that time spent playing
+                video games can be
+                productive, in moderation. Active practice can boost reflexes, skills that will come in handy regardless of your
+                view of
+                the future. Even in the event of a zombie apocalypse, time spent in Mega Zombie Bash 2099 should have a powerful
+                impact.</p>
+
+            <p class="hidden-text">Not everyone views it the same way, though. David Davidson Sr., professor at LIT University, tells The Grid that any
+            benefits are overshadowed by the social isolation caused by long play sessions, alone in a dark basement. “We don’t
+            celebrate the…</p>
+
             <a href="#" class="main-story__continue">Continue Reading</a>
         </article>
     
@@ -93,44 +149,46 @@
     
         <div class="opinion-stories">
             <div class="opinion__title">Opinion</div>
-            <div class="opinion__card">
-                <div class="opinion__info">
-                    <div class="opinion__name">Stephen Abebe</div>
-                    <div class="opinion__description">Humans need water to survive, and so do your potted plants!</div>
+            <div class="opinion__cards-container">
+                <div class="opinion__card">
+                    <div class="opinion__info">
+                        <div class="opinion__name">Stephen Abebe</div>
+                        <div class="opinion__description">Humans need water to survive, and so do your potted plants!</div>
+                    </div>
+                    <div class="opinion__image">
+                        <img src="assets/images/stephen-profile-picture.png" alt="Photo of Stephen">
+                    </div>
                 </div>
-                <div class="opinion__image">
-                    <img src="assets/images/stephen-profile-picture.png" alt="Photo of Stephen">
+                
+                <div class="opinion__card">
+                    <div class="opinion__info">
+                        <div class="opinion__name">Mario DeLuciano</div>
+                        <div class="opinion__description">Sports! The secret to winning big??</div>
+                    </div>
+                    <div class="opinion__image">
+                        <img src="assets/images/mario-profile-picture.png" alt="Photo of Mario">
+                    </div>
                 </div>
-            </div>
-    
-            <div class="opinion__card">
-                <div class="opinion__info">
-                    <div class="opinion__name">Mario DeLuciano</div>
-                    <div class="opinion__description">Sports! The secret to winning big??</div>
+                
+                <div class="opinion__card">
+                    <div class="opinion__info">
+                        <div class="opinion__name">Alice Smith</div>
+                        <div class="opinion__description">Why I'll never buy groceries in-
+                            person again</div>
+                    </div>
+                    <div class="opinion__image">
+                        <img src="assets/images/alice-profile-picture.png" alt="Photo of Alice">
+                    </div>
                 </div>
-                <div class="opinion__image">
-                    <img src="assets/images/mario-profile-picture.png" alt="Photo of Mario">
-                </div>
-            </div>
-    
-            <div class="opinion__card">
-                <div class="opinion__info">
-                    <div class="opinion__name">Alice Smith</div>
-                    <div class="opinion__description">Why I'll never buy groceries in-
-                        person again</div>
-                </div>
-                <div class="opinion__image">
-                    <img src="assets/images/alice-profile-picture.png" alt="Photo of Alice">
-                </div>
-            </div>
-    
-            <div class="opinion__card">
-                <div class="opinion__info">
-                    <div class="opinion__name">Rocko Pierce Stanley</div>
-                    <div class="opinion__description">Prediction: Disco is coming back, with a vengeance</div>
-                </div>
-                <div class="opinion__image">
-                    <img src="assets/images/rocko-profile-picture.png" alt="Photo of Rocko">
+                
+                <div class="opinion__card">
+                    <div class="opinion__info">
+                        <div class="opinion__name">Rocko Pierce Stanley</div>
+                        <div class="opinion__description">Prediction: Disco is coming back, with a vengeance</div>
+                    </div>
+                    <div class="opinion__image">
+                        <img src="assets/images/rocko-profile-picture.png" alt="Photo of Rocko">
+                    </div>
                 </div>
             </div>
         </div>
