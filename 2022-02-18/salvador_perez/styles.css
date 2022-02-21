@@ -28,6 +28,10 @@ html {
   cursor: pointer;
 }
 
+.tablet-image {
+  display: none;
+}
+
 /* || mobile nav styles */
 .mobile-nav {
   background-color: var(--gray-900);
@@ -333,7 +337,7 @@ html {
 /* sports-section syles */
 .sports-section {
   padding-inline-start: 16px;
-  overflow-x: hidden;
+  overflow-x: auto;
 }
 
 .sports-section__data {
@@ -463,6 +467,16 @@ footer {
     padding-inline: 16px;
   }
 
+  .mid-stories__image {
+    display: none;
+  }
+
+  .tablet-image {
+    display: block;
+    width: 252px;
+    height: 120px;
+  }
+
   .main-grid__container {
     grid-template-columns: 2fr 1fr;
     grid-template-areas:
@@ -486,6 +500,10 @@ footer {
     font-weight: 200;
     font-size: 16px;
     padding-block-end: 30px;
+  }
+
+  .main-story__image {
+    max-width: 100%;
   }
 
   .main-story__paragraph {
@@ -540,6 +558,14 @@ footer {
     border: none;
   }
 
+  .market-section__stocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .market-section__stocks > * {
+    width: 100%;
+  }
+
   .market-section__visit {
     padding: 0;
   }
@@ -558,3 +584,114 @@ footer {
 }
 
 /* Phone styles */
+@media (max-width: 414px) {
+  .main-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main-story"
+      "mid-stories"
+      "opinion-stories"
+      "advertisement";
+  }
+
+  .tablet-image {
+    display: none;
+  }
+
+  .mid-stories__image {
+    display: block;
+  }
+
+  .mid-stories,
+  .opinion-stories,
+  .advertisement,
+  .market-section,
+  .sports-section,
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-row__container {
+    padding: 0;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .main-story {
+    border: none;
+    margin-block: -80px 60px;
+    padding-inline-end: 0;
+  }
+
+  .main-story__paragraph {
+    display: block;
+  }
+
+  .mid-stories__card {
+    flex-direction: row;
+  }
+
+  .opinion__cards-container {
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .opinion__card {
+    padding-block: 16px;
+    border-block-end: 1px solid var(--gray-300);
+    flex-direction: row;
+    width: 100%;
+    row-gap: 0;
+  }
+
+  .opinion__card:last-child {
+    border: none;
+  }
+
+  .advertisement__content {
+    height: 300px;
+  }
+
+  .market-section {
+    height: fit-content;
+  }
+
+  .market-section__stocks {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sports-section {
+    margin-block: -120px 50px;
+  }
+
+  .sports-section img {
+    width: 170px;
+  }
+  .sports-section__stories > * {
+    padding-block-end: 10px;
+    width: 100%;
+  }
+
+  .sports-section__stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    text-align: center;
+  }
+
+  .first-row__container {
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  .main-row {
+    padding-block: 32px 48px;
+  }
+}
