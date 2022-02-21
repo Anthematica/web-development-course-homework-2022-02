@@ -5,6 +5,14 @@
                                                             font-family: 'Crimson Pro';
                                                         }
                                                         
+                                                        li {
+                                                            list-style: none;
+                                                        }
+                                                        
+                                                        a {
+                                                            text-decoration: none;
+                                                        }
+                                                        
                                                         body {
                                                             position: relative;
                                                             overflow-x: hidden;
@@ -32,17 +40,19 @@
                                                             margin-inline-start: 20px;
                                                         }
                                                         
-                                                        .header__section__3 {
-                                                            position: relative;
-                                                            inset-block-start: 80px;
-                                                            text-align: center;
+                                                        .suscribirse {
+                                                            background-color: #475784;
+                                                            color: white;
+                                                            width: fit-content;
+                                                            padding-inline: 40px;
+                                                            padding-block: 5px;
                                                         }
                                                         
                                                         .main {
                                                             position: relative;
                                                             overflow-x: hidden;
                                                             margin-block-start: 161px;
-                                                            padding-block-end: 900px;
+                                                            padding-block-end: 1100px;
                                                             padding-inline-end: 20px;
                                                         }
                                                         
@@ -72,6 +82,22 @@
                                                         .main__section__1>h2 {
                                                             text-align: justify;
                                                             margin-block: 15px;
+                                                        }
+                                                        
+                                                        .header__section__3 {
+                                                            position: absolute;
+                                                            text-align: center;
+                                                            width: 100%;
+                                                            inset-block-start: 80px;
+                                                        }
+                                                        
+                                                        .header__section__3>h1 {
+                                                            font-family: 'ChomskyRegular';
+                                                        }
+                                                        
+                                                        .header__section__3__subsection {
+                                                            position: relative;
+                                                            display: none;
                                                         }
                                                         
                                                         .Continue_Reading {
@@ -282,25 +308,70 @@
                                                             background: #2B2826;
                                                             color: white;
                                                             height: auto;
-                                                            padding-block-end: 20px;
                                                             row-gap: 20px;
+                                                        }
+                                                        
+                                                        .footer__header {
+                                                            padding-block: 40px;
+                                                            padding-inline: 40px;
+                                                            display: grid;
+                                                            grid-template-columns: auto 300px auto;
+                                                            row-gap: 20px;
+                                                        }
+                                                        
+                                                        .footer__header>nav {
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            grid-column: 2;
+                                                        }
+                                                        
+                                                        .footer__header>nav>ul {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            column-gap: 0px;
+                                                        }
+                                                        
+                                                        .footer__header> :last-child {
+                                                            padding-block-end: 20px;
+                                                            text-align: center;
+                                                            grid-template-columns: repeat(2, 1fr);
                                                         }
                                                         
                                                         .footer a {
                                                             color: white;
                                                         }
                                                         
-                                                        .footer>div:not(:first-child) {
-                                                            text-align: center;
+                                                        .footer svg path {
+                                                            stroke: white;
                                                         }
                                                         
-                                                        .footer ul>:first-child {
-                                                            text-align: center;
+                                                        .footer__body {
                                                             font-size: 18px;
+                                                            display: grid;
+                                                            grid-column: auto;
+                                                            row-gap: 20px;
                                                         }
                                                         
-                                                        .footer nav>ul>li {
-                                                            margin-block-end: 10px;
+                                                        .footer__body li {
+                                                            padding: 5px;
+                                                        }
+                                                        
+                                                        .footer__body nav>ul>:first-child {
+                                                            font-size: 24px;
+                                                        }
+                                                        
+                                                        .footer__body>div {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .footer__footer {
+                                                            background: #100F0F;
+                                                            padding-block: 20px;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .footer__footer>h1 {
+                                                            font-weight: lighter;
+                                                            font-family: 'ChomskyRegular';
                                                         }
                                                         /* Diseño de tablet*/
                                                         
@@ -310,6 +381,7 @@
                                                                 grid-template-columns: repeat(3, 1fr);
                                                                 column-gap: 30px;
                                                                 grid-auto-rows: minmax(100px, auto);
+                                                                padding-block-end: 800px;
                                                             }
                                                             .main__section__1 {
                                                                 grid-column: 1/3;
@@ -412,14 +484,33 @@
                                                             .main__section__6__subsection>img {
                                                                 width: 220px;
                                                             }
+                                                            .footer__header {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                            }
+                                                            .footer__header li {
+                                                                margin-inline-end: 20px;
+                                                            }
+                                                            .footer__body {
+                                                                grid-template-columns: repeat(3, 1fr);
+                                                                text-align: justify;
+                                                            }
                                                         }
                                                         
-                                                        @media(min-width:1000px) {
+                                                        @media(min-width:1050px) {
+                                                            .header__section__3 {
+                                                                position: relative;
+                                                                inset-block-start: 80px;
+                                                                text-align: center;
+                                                                inset-block-start: -30px;
+                                                            }
                                                             .header {
                                                                 background: none;
+                                                                padding-block-start: 60px;
                                                             }
                                                             .main {
                                                                 padding-inline: 50px;
+                                                                padding-block-end: 600px;
                                                                 grid-template-columns: repeat(5, 1fr);
                                                             }
                                                             .main__section__2 {
@@ -460,5 +551,40 @@
                                                                 grid-row: 3;
                                                                 border-left: 1px solid #D0CDC8;
                                                                 padding-inline: 20px;
+                                                            }
+                                                            .footer__body {
+                                                                grid-template-columns: repeat(4, 1fr);
+                                                            }
+                                                            svg path {
+                                                                stroke: black;
+                                                            }
+                                                            .header__section__2 {
+                                                                display: none;
+                                                            }
+                                                            .header__section__3__subsection {
+                                                                position: absolute;
+                                                                inset-inline-end: 20px;
+                                                                inset-block-start: 10px;
+                                                                display: grid;
+                                                                grid-row: 2;
+                                                                row-gap: 10px;
+                                                                padding-right: 10px;
+                                                            }
+                                                            .header__section__3__subsection a {
+                                                                border-bottom: 1px solid;
+                                                                width: fit-content;
+                                                            }
+                                                            .main__Section__6 h3 {
+                                                                padding-inline-start: 20px;
+                                                            }
+                                                            .footer__footer {
+                                                                padding-inline-start: 30px;
+                                                                text-align: left;
+                                                            }
+                                                            .hidden_tex_2 {
+                                                                display: none;
+                                                            }
+                                                            .footer__header {
+                                                                justify-content: flex-end;
                                                             }
                                                         }
