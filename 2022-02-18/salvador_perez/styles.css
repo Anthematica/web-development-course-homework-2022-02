@@ -28,6 +28,43 @@ html {
   cursor: pointer;
 }
 
+/* || mobile nav styles */
+.mobile-nav {
+  background-color: var(--gray-900);
+}
+
+.mobile-nav__container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav__left-icons {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+/* || mobile header styles */
+.mobile-header__container {
+  padding-block: 32px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-header__title {
+  font-family: "ChomskyRegular";
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--offblack);
+}
+
+.mobile-header__date {
+  font-size: 18px;
+}
+
 /* || header styles */
 .header__container,
 .main-grid__container,
@@ -130,6 +167,10 @@ html {
   font-size: 24px;
   font-weight: 700;
   color: var(--gray-900);
+}
+
+.hidden-text {
+  display: none;
 }
 
 .main-story__paragraph {
@@ -408,4 +449,110 @@ footer {
   font-family: helvetica;
   color: var(--gray-500);
   font-size: 14px;
+}
+
+/* Tablet size */
+@media (max-width: 834px) {
+  .header__container,
+  .main-grid__container,
+  .secondary-grid__container,
+  .first-row__container,
+  .main-row__container,
+  .bottom-row__container {
+    width: 100%;
+    padding-inline: 16px;
+  }
+
+  .main-grid__container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "main-story         mid-stories"
+      "advertisement      advertisement"
+      "opinion-stories    opinion-stories";
+  }
+
+  .mobile-header__container,
+  .mobile-nav__container {
+    display: flex;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .hidden-text {
+    display: block;
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 16px;
+    padding-block-end: 30px;
+  }
+
+  .main-story__paragraph {
+    display: none;
+  }
+
+  .mid-stories {
+    border-inline-end: none;
+  }
+
+  .mid-stories__card {
+    flex-direction: column;
+  }
+
+  .advertisement__container {
+    border: none;
+  }
+
+  .advertisement,
+  .opinion-stories {
+    padding: 0;
+  }
+
+  .opinion-stories {
+    margin-block-start: 48px;
+  }
+
+  .opinion__cards-container {
+    padding-block: 16px;
+
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+  }
+
+  .opinion__card {
+    padding: 0;
+    border-block-end: none;
+
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+
+  .secondary-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .market-section {
+    padding: 0;
+    border: none;
+  }
+
+  .market-section__visit {
+    padding: 0;
+  }
+
+  .sports-section {
+    padding: 0;
+  }
+
+  .first-row__container {
+    justify-content: center;
+  }
+
+  .bottom-row__container {
+    text-align: center;
+  }
 }
