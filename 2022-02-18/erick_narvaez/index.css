@@ -1,0 +1,910 @@
+:root{
+    --gray100: #F4F3F1;
+    --gray300: #D0CDC8;
+    --gray500: #9D9995;
+    --gray700: #6B6661;
+    --gray900: #2B2826;
+    --offblack: #100F0F;
+    --primary:#475784;
+    --secondary:#3E7F7F;
+    --urgent:#CA4949;   
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+li{
+  list-style: none;
+}
+body{
+    background-color: var(--gray100);
+}
+.logoText {
+font-family: 'ChomskyRegular' , serif;
+font-style: normal;
+font-weight: normal;
+text-transform: capitalize;
+}
+.navDate{
+font-family: 'Crimson Pro', serif;
+font-style: normal;
+font-weight: 600;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height, or 133% */
+
+
+/* gray-900 */
+
+color: var(--gray900);
+}
+.logoH1{
+font-size: 64px;
+line-height: 84px;
+
+/* offblack -----------------------------------------*/ 
+
+color: var(--offblack);
+
+}
+
+.headertexts{
+    font-family: 'Crimson Pro', serif;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.paragraphText{
+font-family: 'Crimson Pro', serif;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+}
+
+.navText{
+font-size: 14px;
+line-height: 22px;
+font-style: italic;
+font-weight: normal;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+text-decoration-line: underline;
+
+/* gray-900 */
+
+color: var(--gray900);
+}
+
+.navBtnSuscribe{
+  background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  width: 143px;
+  height: 40px;
+  background-color: var(--primary);
+  color: white;
+font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 4px;
+}
+
+
+
+/* Main Story classes CSS -----------------------------------------*/ 
+.mainStory {
+    grid-area: mainStory;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 0px 8px;
+    align-items: center;
+  }
+
+.mainStoryBorder{
+  border-right: 1px solid var(--gray300);
+}
+
+.mainStory > h2{
+    font-size: 24px;
+line-height: 28px;
+/* or 117% */
+/* offblack */
+color: var(--offblack);
+height: 56px;
+} 
+
+.mainStoryText{
+    font-size: 16px;
+line-height: 150%;
+/* or 150% */
+color: #000000;
+text-align: justify;
+
+}
+.mainPhoto{
+    border-radius: 4px;
+    width: 100%;
+}
+
+
+
+
+/* Main Story classes CSS -----------------------------------------*/ 
+
+
+/* MidStories classes -----------------------------------------*/ 
+  .midStories {
+    grid-area: midStories;
+    padding: 0px 8px; 
+    display: grid;
+    row-gap: 16px;
+    
+  }
+.storiesTemplate{
+    display: grid;
+    height: 136px;
+    column-gap: 16px;
+    grid-template-columns: 120px 68%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "photoMid textMid"
+     ;
+}
+
+.midStoriesBorders{
+  
+  border-bottom: 1px solid var(--gray300);
+}
+
+.photoMid{
+    grid-area: photoMid;
+    border-radius: 4px;
+    width: auto;
+  overflow: hidden;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 120px;
+  width: 120px;
+}
+.textMid{
+    
+    grid-area: textMid;
+    
+    
+}
+.textMid > h3{
+    font-size: 18px;
+line-height: 25px;
+}
+
+.textMid > p {
+font-size: 16px;
+line-height: 22px;
+}
+
+
+/* MidStories classes -----------------------------------------*/ 
+
+/* opinionStories classes -----------------------------------------*/ 
+  .opinionStories {
+    grid-area: opinionStories;
+    padding: 0px 8px;
+  }
+
+  .opinionStoriesBorder{
+    border-left: 1px solid var(--gray300);
+  }
+
+  .opinionTemplate{
+    display: grid;
+    height: 107px;
+    column-gap: 16px;
+    grid-template-columns: auto 48px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "textOpinion photoOpinion"
+     ;
+  }
+
+  
+
+
+
+.textOpinion{
+    grid-area: textOpinion;
+}
+.photoOpinion{
+    grid-area: photoOpinion;
+    border-radius: 100px;
+}
+.opinionTitle{
+    height: 40px;
+    font-size: 24px;
+line-height: 24px;
+}
+
+
+
+
+/* opinionStories classes  END-----------------------------------------*/ 
+
+/* adContainer classes  START-----------------------------------------*/ 
+  .adContainer{
+    grid-area: adContainer;
+    
+    padding: 16px;
+    height: 168px;
+  }
+  .adContainerTitle{
+      height: 40px;
+      text-align:center;
+      border-top: 1px solid var(--gray300);
+      text-align: center;   
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+padding-top: 8px;
+  }
+
+  .adContainerSection{
+    height: 120px;
+    background-color: var(--gray300);
+  }
+ /* adContainer classes  END-----------------------------------------*/ 
+
+
+
+/* sportSection classes  START-----------------------------------------*/  
+  .sportSection{
+    grid-area: sportSection;
+    
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "sportHeader sportLink"
+      "sportGrid sportGrid";
+    padding: 29px 8px;
+    row-gap: 24px;
+    overflow: hidden;
+  }
+  .sportHeader{
+    grid-area: sportHeader;
+    font-size: 24px;
+line-height: 24px;
+  }
+  .sportLink{
+    grid-area: sportLink;
+    font-family: Helvetica;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  }
+  .sportLink > a{
+    color: var(--gray900);
+  }
+  .sportGrid{
+    grid-area: sportGrid;
+    display: grid;
+    grid-template-columns: 220px 220px auto;
+    grid-template-rows: auto ; 
+    column-gap: 10px;
+    row-gap: 15px;
+  }
+  
+  .sportText{
+    font-size: 18px;
+  line-height: 25px;
+  /* or 139% */
+  height: 76px;
+  }
+
+
+
+
+
+/* sportSection classes  END -----------------------------------------*/  
+
+
+/* marketSection classes  Start -----------------------------------------*/  
+
+ .marketSection{
+    grid-area: marketSection;
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "marketMainHeader marketMoreLink"
+      "marketGrid marketGrid";
+    padding: 29px 8px;
+    row-gap: 24px;
+    overflow: hidden;
+  }
+.marketMainHeader{
+  grid-area: marketMainHeader;
+  height: 24px;
+  font-size: 24px;
+  line-height: 24px;
+
+}
+.marketMoreLink{
+  grid-area: marketMoreLink;
+  font-family: Helvetica;
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--gray900);
+}
+.marketGrid{
+  grid-area: marketGrid;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 74px 74px 74px ; 
+  column-gap: 10px;
+  row-gap: 15px;
+
+}
+
+.marketTemplate{
+  display: grid;
+  grid-template-columns: 66px 73px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "marketHeader marketGraph"
+    "MarketText marketPercent";
+  column-gap: 10px;
+  background: #FFFFFF;
+box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+border-radius: 4px;
+padding: 12px 12px;
+}
+.marketHeader{
+  grid-area: marketHeader;
+  font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 24px;
+/* identical to box height, or 100% */
+
+
+/* gray-900 */
+
+color: var(--gray900);
+}
+.MarketText{
+  grid-area: MarketText;
+  font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+
+/* gray-700 */
+
+color: var(--gray700);
+
+}
+.marketGraph{
+  grid-area: marketGraph;
+}
+.marketPercent{
+  grid-area: marketPercent;
+  text-align: end;
+  font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+text-align: right;
+
+}
+
+.marketColorUrgent{
+color: var(--urgent);
+}
+.marketColorSecondary{
+color: var(--secondary);
+}
+
+/* marketSection classes  END -----------------------------------------*/  
+
+
+
+.mainGrid {
+    display: grid;
+    grid-template-columns: 42% 8% 30% 20%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "mainStory midStories midStories opinionStories"
+      "mainStory midStories midStories opinionStories"
+      "mainStory adContainer adContainer adContainer"
+      "marketSection marketSection sportSection sportSection";
+
+     padding: 0 120px; 
+  }
+
+.navLogo {
+   width: auto;
+}
+.navIcons{
+    width:72px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+.navBtn{
+ width: 144px;
+}
+
+.navBar{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+}
+.desktop{
+    height: 85px;
+    margin-block-start: 16px;
+    margin-block-end: 94px;
+}
+  
+.mobile{
+    display: none;
+}
+
+/* Footer classes  Start -----------------------------------------*/  
+
+.mainFooter{
+  display: grid;
+  background-color: var(--gray900);
+  color: white;
+  grid-template-columns: 1fr 1fr 1fr 1fr 56px ;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    ". . . footerNav footerNav"
+    "footGrid footGrid footGrid footGrid footGrid"
+    ;
+    padding: 40px 120px; 
+    
+}
+.footerNav{
+  grid-area: footerNav;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: 68px;
+  column-gap: 20px;
+}
+.footerNav > div{
+  width: max-content;
+}
+
+.footerNav > a {
+  color: var(--gray300);
+}
+
+.footLinkHeader{
+  font-family: Helvetica;
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height */
+/* gray-300 */
+color: var(--gray300);
+}
+
+.footListLinks{
+  font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 28px;
+/* or 175% */
+/* white */
+color: #FFFFFF;
+}
+
+
+
+.footGrid{
+  grid-area: footGrid;
+  display: grid;
+  height: 250px;
+  grid-template-columns: auto auto auto auto;
+  border-top: 1px solid var(--gray300); 
+  column-gap: 10px;
+  margin-top: 20px;
+
+}
+.footLinksTemplate{
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
+/* Footer classes  END -----------------------------------------*/  
+
+
+
+
+.footerBrand{
+  color: white;
+  background-color: #000000;
+  height: 89px;
+  padding: 11px 120px;
+  display: flex;
+  flex-direction: column;
+}
+.footerlogo{
+  font-size: 32px;
+line-height: 42px;
+
+/* gray-100 */
+
+color: var(--gray100);
+}
+.footertext{
+  font-family: Helvetica;
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 16px;
+/* identical to box height */
+/* gray-500 */
+color: var(--gray500);
+}
+
+
+/* MEDIA FOR TABLETS classes  END -----------------------------------------*/  
+
+@media screen and (max-width: 415px) {
+.mainStoryBorder{
+  border: none;
+}
+
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    text-align: center;
+  }
+  .mobileHeader{
+    height: 100px;
+    padding: 30px
+  }
+  .navBarMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--gray900);
+    column-gap: 32px;
+  }
+  .navIconRight{
+    flex-grow: 1;
+    text-align: end;
+  }
+  .mainPhoto{
+    width: 382px;
+    height: auto;
+  }
+
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 382px;
+    grid-template-rows: auto ;
+    grid-template-areas:
+        "mainStory"
+        "midStories"
+        "opinionStories"
+        "adContainer"
+        "marketSection"
+        "sportSection"
+        ;
+    padding: 48px 16px;
+}
+
+
+
+.opinionSpan{
+  grid-area: opinionSpan;
+}
+
+.opinionTemplate{
+  display: grid;
+  height: 56px;
+  column-gap: 16px;
+  grid-template-columns: auto 48px;
+  grid-template-rows: auto auto;
+  grid-template-areas: 
+    "textOpinion photoOpinion"
+    "opinionSpan photoOpinion"
+   ;
+}
+
+.marketGrid{
+  grid-area: marketGrid;
+  display: grid;
+  grid-template-columns: 183px 183px ;
+  grid-template-rows: 74px 74px 74px ; 
+  column-gap: 10px;
+  row-gap: 15px;
+
+}
+
+
+.adContainer{
+  height: auto;
+}
+.adContainerSection{
+  height: 300px;
+} 
+
+.sportSection {
+  grid-area: sportSection;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+  grid-template-areas:
+      "sportHeader sportLink"
+      "sportGrid sportGrid";
+  padding: 29px 8px;
+  row-gap: 24px;
+  overflow: hidden;
+}
+.sportGrid{
+  grid-area: sportGrid;
+  display: grid;
+  grid-template-columns: 182px 182px;
+  grid-template-rows: auto ; 
+  column-gap: 16px;
+  row-gap: 16px;
+}
+.sportsTemplate{
+  display: block;
+  
+  }
+.sportphoto{
+  width: 100%;
+  height: auto;
+}
+
+.mainFooter{
+  display: grid;
+  background-color: var(--gray900);
+  color: white;
+  grid-template-columns: auto ;
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+    "footerNav"
+    "footGrid "
+    ;
+    padding: 40px 16px; 
+    height: 900px;
+}
+
+.footGrid{
+  grid-area: footGrid;
+  display: grid;
+  height: 250px;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  border-top: 1px solid var(--gray300); 
+  column-gap: 10px;
+  text-align: center;
+  
+
+}
+
+.footerNav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  row-gap: 20px;
+
+}
+
+.footerNavHeader{
+  grid-area: footerNavHeader;
+}
+.footerNavHeaderBot{
+  grid-area: footerNavHeaderBot;
+}
+.footerBrand{
+  padding: 10px 50px;
+  text-align: center;
+}
+}
+
+@media screen and (min-width: 415px) and (max-width:835px){
+  
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+    text-align: center;
+  }
+  .mobileHeader{
+    height: 100px;
+    padding: 30px
+  }
+  .navBarMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: var(--gray900);
+    column-gap: 32px;
+  }
+  .navIconRight{
+    flex-grow: 1;
+    text-align: end;
+  }
+
+  
+  .mainGrid {
+    display: grid;
+    grid-template-columns: 66% 34%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "mainStory midStories"
+      "mainStory midStories"
+      "adContainer adContainer "
+      "opinionStories opinionStories"
+      "marketSection marketSection" 
+      "sportSection sportSection";
+
+     padding: 0 16px; 
+  }
+
+  .storiesTemplate{
+    display: grid;
+    height: 252px;
+    column-gap: 16px;
+    grid-template-columns: 120px;
+    grid-template-rows: auto;
+    grid-template-areas: "photoMid "
+                          "textMid";
+  }
+
+  .photoMid{
+    grid-area: photoMid;
+    border-radius: 4px;
+    width: auto;
+  overflow: hidden;
+  object-fit: none; /* Do not scale the image */
+  object-position: center; /* Center the image within the element */
+  height: 120px;
+  width: 252px;
+}
+
+.textMid{
+  width: 252px;
+}
+
+.adContainer{
+  grid-area: adContainer;
+  
+  padding: 16px;
+  height: 248px;
+}
+.adContainerTitle{
+    height: 40px;
+    text-align:center;
+    border-top: 1px solid var(--gray300);
+    text-align: center;   
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 24px;
+padding-top: 8px;
+}
+
+.adContainerSection{
+  height: 120px;
+  background-color: var(--gray300);
+}
+.opinionStories{
+  height: 230px;
+}
+.opinionGrid{
+  display: grid;
+  column-gap: 16px;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto;
+}
+.opinionStoriesBorder{
+  border: none;
+}
+.opinionTemplate{
+  display: grid;
+  height: 107px;
+  column-gap: 16px;
+  grid-template-columns: 172px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "photoOpinion"
+    "textOpinion" 
+   ;
+}
+
+.sportsTemplate{
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  }
+  
+.mainFooter{
+  display: grid;
+  background-color: var(--gray900);
+  color: white;
+  grid-template-columns: auto ;
+  grid-template-rows: 50px auto;
+  grid-template-areas: 
+    "footerNav"
+    "footGrid "
+    ;
+    padding: 40px 16px; 
+    height: 520px;
+}
+
+
+.footGrid{
+  grid-area: footGrid;
+  display: grid;
+  height: 250px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  border-top: 1px solid var(--gray300); 
+  column-gap: 10px;
+  text-align: center;
+  
+
+}
+
+.footerNav{
+  
+  align-items: center;
+  justify-content: center;
+  row-gap: 20px;
+
+}
+
+.footerNavHeader{
+  grid-area: footerNavHeader;
+}
+.footerNavHeaderBot{
+  grid-area: footerNavHeaderBot;
+}
+.footerBrand{
+  padding: 10px 50px;
+  text-align: center;
+}
+}
