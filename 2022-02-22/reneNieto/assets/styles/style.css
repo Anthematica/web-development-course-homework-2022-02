@@ -1,0 +1,238 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Raleway", sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+main {
+	background-image: url("/assets/bg-1.png");
+	padding-inline: 160px;
+}
+.header__main-container {
+	width: 100vw;
+	padding-inline: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__nav-item {
+	width: 110px;
+	padding: 6px;
+	margin-inline: 19px;
+	font-size: 17px;
+	font-weight: 800;
+	color: #000000;
+	line-height: 20px;
+	border-bottom: 4px solid #4ba87d;
+	transition: 500ms;
+}
+
+.header__nav-item:hover {
+	border-bottom: 4px solid white;
+	transform: scale(1.2);
+}
+
+.header__signup-btn {
+	width: 168px;
+	height: 40px;
+	border: none;
+	background-color: #4ba87d;
+	color: #ffffff;
+	text-transform: uppercase;
+	padding-inline: 20px;
+	padding-block: 10px;
+	font-size: 17px;
+	font-weight: 800;
+	line-height: 20px;
+	text-align: center;
+	transition: 500ms;
+}
+
+.header__signup-btn:hover {
+	color: black;
+	background-color: #ffffff;
+	border: 4px solid #4ba87d;
+	transform: scale(1.1);
+}
+
+.header__title {
+	padding-block-start: 21px;
+}
+.main__email-container {
+	background-image: url(/assets/email__img.png);
+	background-repeat: no-repeat;
+	background-position: 130%;
+	background-size: contain;
+	height: 520px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+	margin-block: 120px;
+}
+
+.email__secundary-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+	flex-wrap: nowrap;
+}
+
+.email__btn-container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+.email__trynow-btn,
+.email__demo-btn {
+	display: inline-block;
+	background-color: #4ba87d;
+	padding: 20px 48px;
+	margin-inline: 30px;
+	text-align: center;
+	font-size: 21px;
+	font-weight: 900;
+	line-height: 25px;
+	color: #ffffff;
+	text-transform: uppercase;
+}
+.email__demo-btn {
+	background-color: white;
+	color: #4ba87d;
+	border: 3px solid #4ba87d;
+}
+.email__secundary-container h1 {
+	padding-block: 12px;
+	font-weight: 900;
+	font-size: 59px;
+	line-height: 71px;
+}
+
+.email__secundary-container p {
+	padding-block-start: 12px;
+	padding-block-end: 48px;
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 26px;
+	width: 420px;
+}
+.email__img-container {
+	width: 720px;
+}
+
+.secundary__img-container {
+	display: flex;
+	margin-top: 220px;
+	background-image: url(/assets/video-img.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 640px;
+	margin-inline: auto;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	color: #ffffff;
+}
+.secundary__img-container a {
+	width: 200px;
+	height: 65px;
+	background-color: #ffffff;
+	color: #4ba87d;
+	font-weight: 900;
+	font-size: 21px;
+	line-height: 25px;
+	text-align: center;
+	padding: 18px;
+	margin-block-start: 24px;
+}
+
+.main__third-container {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.third-container-item {
+	width: 320px;
+	margin-inline: 25px;
+}
+
+.container__item-text {
+	background-color: #ffffff;
+	color: black;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 26px;
+	display: flex;
+	flex-direction: column;
+	align-content: stretch;
+	align-items: stretch;
+	padding-inline: 30px;
+	padding-block: 20px;
+}
+
+.container__item-text a {
+	font-weight: 800;
+	font-size: 16px;
+	line-height: 19px;
+	color: #4ba87d;
+	padding-top: 12px;
+}
+
+.container__item-text h1 {
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 48px;
+}
+
+.container__item-text p {
+	font-weight: 500;
+	font-size: 19px;
+	line-height: 26px;
+}
+
+.top {
+	margin-top: 60px;
+}
+
+.bottom {
+	margin-top: 120px;
+}
+
+.main__fourth-container {
+	margin-block-start: 130px;
+	display: flex;
+	justify-content: center;
+}
+
+.container4__item {
+	width: 340px;
+	height: 230px;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-inline: 16px;
+	margin-block-end: 40px;
+}
+.img1 {
+	background-image: url(/assets/CaseStudy1.png);
+}
+.img2 {
+	background-image: url(/assets/CaseStudy2.png);
+}
+
+.img3 {
+	background-image: url(/assets/CaseStudy3.png);
+}
