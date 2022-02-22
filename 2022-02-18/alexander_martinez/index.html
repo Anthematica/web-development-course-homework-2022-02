@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      media="screen"
+      href="https://fontlibrary.org//face/chomsky"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <nav class="navigation">
+          <div class="navigation__search">
+            <a href="#" class="navigation__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#F4F3F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M20.9999 21L16.6499 16.65"
+                  stroke="#F4F3F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="navigation__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12H21"
+                  stroke="#F4F3F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 6H21"
+                  stroke="#F4F3F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 18H21"
+                  stroke="#F4F3F1"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <a href="#">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                stroke="#F4F3F1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M12 11C14.2091 11 16 9.20914 16 7C16 4.79086 14.2091 3 12 3C9.79086 3 8 4.79086 8 7C8 9.20914 9.79086 11 12 11Z"
+                stroke="#F4F3F1"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+        </nav>
+
+        <header class="header">
+          <div class="header__search">
+            <a href="#" class="header__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
+                  stroke="#2B2826"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M21 21L16.65 16.65"
+                  stroke="#2B2826"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" class="header__icon">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3 12H21"
+                  stroke="#2B2826"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 6H21"
+                  stroke="#2B2826"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 18H21"
+                  stroke="#2B2826"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+          <div class="header__title">
+            <h1 class="header__h1">New Grid Times</h1>
+            <time class="header__text" datetime="2021-06-17"
+              >Saturday, June 17th, 2021</time
+            >
+          </div>
+          <div class="header__subscribe">
+            <a href="#" class="subscribe__btn">Suscribe</a>
+            <a href="#" class="subscribe__link">Already a subscriber?</a>
+          </div>
+        </header>
+
+        <div class="main__section">
+          <div class="story">
+            <div class="story__img">
+              <img src="./img/story.jpg" alt="story" class="img" />
+            </div>
+            <a href="#" class="story__title">
+              Study: Video games improve reflexes and critical thinking
+            </a>
+            <div class="story__paragraph">
+              <p class="story__text">
+                SAN FRANCISCO — 24-year-old Anthony Vega enjoyed killing
+                zombies, but didn’t realize that those skills were preparing him
+                for work in the 21st century. It turns out, games like
+                <i>Super Mario Brothers</i> and
+                <i>Mega Zombie Bash 2099</i> have a surprising correlation with
+                in-demand skills like critical reason- ing and abstract
+                thinking.
+              </p>
+              <p class="story__text">
+                Researchers in the San Francisco think-tank Bestcap Innovations
+                posit that time spent playing video games can be productive, in
+                moderation. Active practice can boost reflexes, skills that will
+                come in handy regardless of your view of the future. Even in the
+                event of a zombie apocalypse, time spent in Mega Zombie Bash
+                2099 should have a powerful impact.
+              </p>
+              <p class="story__text">
+                Not everyone views it the same way, though. David Davidson Sr.,
+                professor at LIT University, tells The Grid that any benefits
+                are overshadowed by the social isolation caused by long play
+                sessions, alone in a dark basement. “We don’t celebrate the…
+              </p>
+            </div>
+            <a href="#" class="story__continue"> Continue Reading </a>
+          </div>
+
+          <div class="article">
+            <div class="article__items">
+              <div class="article__thumbnail">
+                <img
+                  src="./img/mid-story/01-story.jpg"
+                  alt=""
+                  class="article__img"
+                />
+              </div>
+              <div class="article__content">
+                <a href="#" class="article__title">
+                  Politicians scramble as court overrules invalid legislation
+                </a>
+                <div class="article__text">
+                  In a surprising judgment that surpri-sed no one, the New
+                  Amsterdam court of appeals finds Bill 234…
+                </div>
+              </div>
+            </div>
+
+            <div class="article__items">
+              <div class="article__thumbnail">
+                <img
+                  src="./img/mid-story/02-story.jpg"
+                  alt=""
+                  class="article__img"
+                />
+              </div>
+              <div class="article__content">
+                <a href="#" class="article__title">
+                  Vintage cars fetch a premium as car industry shifts gears
+                </a>
+                <div class="article__text">
+                  In a Landsdowne auction, a vintage 1900s beetle sold “as-is”
+                  for ȿ120,000, shattering expectations and…
+                </div>
+              </div>
+            </div>
+
+            <div class="article__items">
+              <div class="article__thumbnail">
+                <img
+                  src="./img/mid-story/03-story.jpg"
+                  alt=""
+                  class="article__img"
+                />
+              </div>
+              <div class="article__content">
+                <a href="#" class="article__title">
+                  This season’s hottest fashions unveiled amidst designer
+                  controversy
+                </a>
+                <div class="article__text">
+                  Ludish Atvalatashia was in his 50s when he launched his first
+                  couture line. Famously, he worked as…
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="opinion">
+            <h2 class="news news__title">Opinion</h2>
+
+            <div class="opinion__items">
+              <div class="opinion__img">
+                <img
+                  src="./img/profile/01-profile.jpg"
+                  alt=""
+                  class="img opinion__img--radius"
+                />
+              </div>
+              <div class="opinion__content">
+                <a href="#" class="opinion__name">Stephen Abebe</a>
+                <a href="#" class="opinion__text"
+                  >Humans need water to survive, and so do your potted plants!
+                </a>
+              </div>
+            </div>
+
+            <div class="opinion__items">
+              <div class="opinion__img">
+                <img
+                  src="./img/profile/02-profile.jpg"
+                  alt=""
+                  class="img opinion__img--radius"
+                />
+              </div>
+              <div class="opinion__content">
+                <a href="#" class="opinion__name">Stephen Abebe</a>
+                <a href="#" class="opinion__text"
+                  >Humans need water to survive, and so do your potted plants!
+                </a>
+              </div>
+            </div>
+
+            <div class="opinion__items">
+              <div class="opinion__img">
+                <img
+                  src="./img/profile/03-profile.jpg"
+                  alt=""
+                  class="img opinion__img--radius"
+                />
+              </div>
+              <div class="opinion__content">
+                <a href="#" class="opinion__name">Stephen Abebe</a>
+                <a href="#" class="opinion__text"
+                  >Humans need water to survive, and so do your potted plants!
+                </a>
+              </div>
+            </div>
+
+            <div class="opinion__items">
+              <div class="opinion__img">
+                <img
+                  src="./img/profile/04-profile.jpg"
+                  alt=""
+                  class="img opinion__img--radius"
+                />
+              </div>
+              <div class="opinion__content">
+                <a href="#" class="opinion__name">Stephen Abebe</a>
+                <a href="#" class="opinion__text"
+                  >Humans need water to survive, and so do your potted plants!
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="ads">
+            <i class="ads__title"> — advertisement —</i>
+            <div class="ads__box"></div>
+          </div>
+        </div>
+
+        <div class="section">
+          <div class="market">
+            <div class="news">
+              <h2 class="news__title">Market</h2>
+              <a href="#" class="news__link">Visit Markets data »</a>
+            </div>
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> AAPL </span>
+                <div class="market__gragh">
+                  <svg
+                    width="77"
+                    height="20"
+                    viewBox="0 0 77 20"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g opacity="0.5">
+                      <path
+                        d="M1.42126 16.8333L5.51909 13.5347L8.08023 15.184L11.1536 11.5556L18.3248 13.5347L22.9349 11.5556L28.0571 16.8333L32.6672 9.90625L36.2528 11.5556L43.9362 4.29861L49.5707 11.5556L52.1319 8.91667L59.3031 9.90625L60.8397 7.26736H63.9131L65.962 5.61806L71.0843 8.91667L75.6944 1"
+                        stroke="#3E7F7F"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M1.42126 16.7241L5.51928 13.4483L8.08054 15.0862L11.1541 11.4828L18.3256 13.4483L22.9359 11.4828L28.0584 16.7241L32.6687 9.84483L36.2544 11.4828L43.9382 4.27586L49.573 11.4828L52.1342 8.86207L59.3058 9.84483L60.8425 7.22414H63.916L65.965 5.58621L71.0876 8.86207L75.6978 1H76.2066V20H75.6978H1.42126V16.7241Z"
+                        fill="url(#paint0_linear_6_380)"
+                      />
+                    </g>
+                    <defs>
+                      <linearGradient
+                        id="paint0_linear_6_380"
+                        x1="38.5596"
+                        y1="1"
+                        x2="38.5596"
+                        y2="20"
+                        gradientUnits="userSpaceOnUse"
+                      >
+                        <stop stop-color="#3E7F7F" stop-opacity="0.4" />
+                        <stop
+                          offset="1"
+                          stop-color="#3E7F7F"
+                          stop-opacity="0"
+                        />
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+              </div>
+              <div class="market__info">
+                <span class="market__name">NASDAQ</span>
+                <span class="market__value color--secundary">+4.5%</span>
+              </div>
+            </a>
+
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> AMC </span>
+
+                <svg
+                  width="76"
+                  height="19"
+                  viewBox="0 0 76 19"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M0.921143 12.4085L5.01897 9.87109H7.58011H11.6779L18.8491 6.31874L21.9225 9.87109L27.557 12.4085L33.1915 9.87109L35.2404 6.31874H44.4605L49.0706 8.34865L54.7051 16.7675L60.3396 8.34865L61.8763 5.05004L62.9008 3.30592L66.9986 5.05004L70.5842 6.31874L75.1942 1.76746"
+                      stroke="#3E7F7F"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M4.99109 9.99428L0.921143 12.4974V19H75.7065V2H74.689L70.1103 6.48986L66.5491 5.23829L62.4791 3.5177L61.4616 5.23829L59.9354 8.49239L54.3392 16.7976L48.743 8.49239L44.1644 6.48986H35.007L32.972 9.99428L27.3758 12.4974L21.7796 9.99428L18.7272 6.48986L11.6048 9.99428H7.53481H4.99109Z"
+                      fill="url(#paint0_linear_6_388)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_6_388"
+                      x1="38.0594"
+                      y1="2"
+                      x2="38.0594"
+                      y2="19"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E7F7F" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#3E7F7F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="market__info">
+                <span class="market__name">NYSE</span>
+                <span class="market__value color--secundary">+4.5%</span>
+              </div>
+            </a>
+
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> ENB </span>
+
+                <svg
+                  width="76"
+                  height="20"
+                  viewBox="0 0 76 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M5.09522 10.6244L0.421143 2.30171V20H75.2065V17.7071L71.5711 6.976L68.455 12.2973L65.339 1L63.7809 12.2973L61.1842 9.06078L59.1068 12.2973H53.3941L45.6039 10.6244L39.8912 9.06078L33.6591 10.6244L28.985 6.976L23.7916 3.88175L19.1175 6.976H13.4047L8.21128 5.67302L5.09522 10.6244Z"
+                      fill="url(#paint0_linear_6_397)"
+                    />
+                    <path
+                      d="M0.933472 2.30171L5.54353 10.6244L8.6169 5.67302L13.7392 6.976H19.3737L23.9837 3.88175L29.106 6.976L33.7161 10.6244L39.8628 9.06078L45.4973 10.6244L53.1808 12.2973H58.8153L60.8642 9.06078L63.4253 12.2973L64.962 1L68.0354 12.2973L71.1087 6.976L74.6943 17.7071"
+                      stroke="#CA4949"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_6_397"
+                      x1="37.5594"
+                      y1="1"
+                      x2="37.5594"
+                      y2="20"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#CA4949" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#CA4949" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="market__info">
+                <span class="market__name">TSE</span>
+                <span class="market__value color--urgent">+4.5%</span>
+              </div>
+            </a>
+
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> AMZN </span>
+
+                <svg
+                  width="76"
+                  height="20"
+                  viewBox="0 0 76 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M5.59522 10.6244L0.921143 2.30171V20H75.7065V17.7071L72.0711 6.976L68.955 12.2973L65.839 1L64.2809 12.2973L61.6842 9.06078L59.6068 12.2973H53.8941L46.1039 10.6244L40.3912 9.06078L34.1591 10.6244L29.485 6.976L24.2916 3.88175L19.6175 6.976H13.9047L8.71128 5.67302L5.59522 10.6244Z"
+                      fill="url(#paint0_linear_6_422)"
+                    />
+                    <path
+                      d="M1.43341 2.30171L6.04346 10.6244L9.11683 5.67302L14.2391 6.976H19.8736L24.4837 3.88175L29.606 6.976L34.216 10.6244L40.3628 9.06078L45.9973 10.6244L53.6807 12.2973H59.3152L61.3641 9.06078L63.9253 12.2973L65.4619 1L68.5353 12.2973L71.6087 6.976L75.1943 17.7071"
+                      stroke="#CA4949"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_6_422"
+                      x1="38.0594"
+                      y1="1"
+                      x2="38.0594"
+                      y2="20"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#CA4949" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#CA4949" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="market__info">
+                <span class="market__name">NASDAQ</span>
+                <span class="market__value color--urgent">+4.5%</span>
+              </div>
+            </a>
+
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> MSFT </span>
+
+                <svg
+                  width="77"
+                  height="20"
+                  viewBox="0 0 77 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g opacity="0.5">
+                    <path
+                      d="M1.42126 16.8333L5.51909 13.5347L8.08023 15.184L11.1536 11.5556L18.3248 13.5347L22.9349 11.5556L28.0571 16.8333L32.6672 9.90625L36.2528 11.5556L43.9362 4.29861L49.5707 11.5556L52.1319 8.91667L59.3031 9.90625L60.8397 7.26736H63.9131L65.962 5.61806L71.0843 8.91667L75.6944 1"
+                      stroke="#3E7F7F"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M1.42126 16.7241L5.51928 13.4483L8.08054 15.0862L11.1541 11.4828L18.3256 13.4483L22.9359 11.4828L28.0584 16.7241L32.6687 9.84483L36.2544 11.4828L43.9382 4.27586L49.573 11.4828L52.1342 8.86207L59.3058 9.84483L60.8425 7.22414H63.916L65.965 5.58621L71.0876 8.86207L75.6978 1H76.2066V20H75.6978H1.42126V16.7241Z"
+                      fill="url(#paint0_linear_6_405)"
+                    />
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_6_405"
+                      x1="38.5596"
+                      y1="1"
+                      x2="38.5596"
+                      y2="20"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E7F7F" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#3E7F7F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="market__info">
+                <span class="market__name">NASDAQ</span>
+                <span class="market__value color--secundary">+4.5%</span>
+              </div>
+            </a>
+
+            <a href="#" class="market__items">
+              <div class="market__info">
+                <span class="market__title"> GOOG </span>
+
+                <svg
+                  width="76"
+                  height="17"
+                  viewBox="0 0 76 17"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.99121 7.99428L0.921265 10.4974V17H75.7066V0H74.6891L70.1104 4.48986L66.5492 3.23829L62.4793 1.5177L61.4618 3.23829L59.9355 6.49239L54.3394 14.7976L48.7432 6.49239L44.1645 4.48986H35.0071L32.9721 7.99428L27.3759 10.4974L21.7798 7.99428L18.7273 4.48986L11.6049 7.99428H7.53493H4.99121Z"
+                    fill="url(#paint0_linear_6_415)"
+                  />
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_6_415"
+                      x1="38.0596"
+                      y1="0"
+                      x2="38.0596"
+                      y2="17"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#3E7F7F" stop-opacity="0.4" />
+                      <stop offset="1" stop-color="#3E7F7F" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                </svg>
+              </div>
+              <div class="market__info">
+                <span class="market__name">NASDAQ</span>
+                <span class="market__value color--secundary">+4.5%</span>
+              </div>
+            </a>
+          </div>
+          <div class="sport">
+            <div class="news">
+              <h2 class="news__title">Sports</h2>
+              <a href="#" class="news__link">Visit Sports page »</a>
+            </div>
+
+            <div class="sport__content">
+              <div class="sport__card">
+                <img src="./img/sport/01-sport.jpg" class="sport__img" />
+                <a href="#" class="sport__link"
+                  >Montreal Canadiens hope to settle the score in Vegas</a
+                >
+              </div>
+              <div class="sport__card">
+                <img src="./img/sport/02-sport.jpg" class="sport__img" />
+                <a href="#" class="sport__link"
+                  >In surprise move, the Tour de France moves to Belgium</a
+                >
+              </div>
+              <div class="sport__card">
+                <img src="./img/sport/03-sport.jpg" class="sport__img" />
+                <a href="#" class="sport__link"
+                  >The Texas Giants eke out a victory after a late-game
+                  touchdown</a
+                >
+              </div>
+              <div class="sport__card">
+                <img src="./img/sport/04-sport.jpg" class="sport__img" />
+                <a href="#" class="sport__link"
+                  >The surprising result for this summer decathlon</a
+                >
+              </div>
+              <div class="sport__card">
+                <img src="./img/sport/05-sport.jpg" class="sport__img" />
+                <a href="#" class="sport__link"
+                  >Behind the scenes: Coaching a little league team</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer color-gray-900">
+      <div class="footer__content">
+        <div class="container">
+          <div class="footer__header">
+            <a class="footer__header-links color-grey-300" href="#">About us</a>
+            <a class="footer__header-links color-grey-300" href="#">Press</a>
+            <a class="footer__header-links color-grey-300" href="#"
+              >Contact Us</a
+            >
+            <div class="footer__social">
+              <a class="footer__social-icon color-grey-300" href="#"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.1667 2.50008C18.3687 3.06298 17.4851 3.4935 16.55 3.77508C16.0482 3.198 15.3812 2.78899 14.6392 2.60335C13.8973 2.41771 13.1163 2.46441 12.4018 2.73712C11.6873 3.00984 11.0737 3.49541 10.6442 4.12818C10.2146 4.76094 9.98979 5.51036 10 6.27508V7.10841C8.53557 7.14639 7.08444 6.82159 5.77588 6.16295C4.46733 5.50431 3.34197 4.53228 2.50004 3.33341C2.50004 3.33341 -0.833292 10.8334 6.66671 14.1667C4.95048 15.3317 2.906 15.9159 0.833374 15.8334C8.33337 20.0001 17.5 15.8334 17.5 6.25008C17.4993 6.01796 17.477 5.78641 17.4334 5.55841C18.2839 4.71966 18.8841 3.66067 19.1667 2.50008V2.50008Z"
+                    stroke="#D0CDC8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="footer__social-icon color-grey-300"
+                ><svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15 1.66675H12.5C11.395 1.66675 10.3352 2.10573 9.55376 2.88714C8.77236 3.66854 8.33337 4.72835 8.33337 5.83341V8.33342H5.83337V11.6667H8.33337V18.3334H11.6667V11.6667H14.1667L15 8.33342H11.6667V5.83341C11.6667 5.6124 11.7545 5.40044 11.9108 5.24416C12.0671 5.08788 12.279 5.00008 12.5 5.00008H15V1.66675Z"
+                    stroke="#D0CDC8"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer__body">
+            <div class="footer__items">
+              <span class="footer__items-title">Discover Content</span>
+              <ul>
+                <li><a href="#" class="footer__items-link">Politics</a></li>
+                <li><a href="#" class="footer__items-link">World</a></li>
+                <li><a href="#" class="footer__items-link">Financial</a></li>
+                <li>
+                  <a href="#" class="footer__items-link"
+                    >Sports and Entertainment</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link"
+                    >Opinion and Editorials</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__items">
+              <span class="footer__items-title">Careers</span>
+              <ul>
+                <li><a href="#" class="footer__items-link">Open</a></li>
+                <li><a href="#" class="footer__items-link">positions</a></li>
+                <li>
+                  <a href="#" class="footer__items-link">Meet the team</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">Company culture</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="footer__items">
+              <span class="footer__items-title">Regional Websites</span>
+              <ul>
+                <li>
+                  <a href="#" class="footer__items-link"
+                    >The Grid United States</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">The Grid Europe</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">The Grid Asia</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link"
+                    >The Grid Mars and Beyond</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">The Grid Australia</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__items">
+              <span class="footer__items-title">Legal and Privacy</span>
+              <ul>
+                <li>
+                  <a href="#" class="footer__items-link">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">Use of cookies</a>
+                </li>
+                <li>
+                  <a href="#" class="footer__items-link">Manage Cookies</a>
+                </li>
+                <li><a href="#" class="footer__items-link">Legal notice</a></li>
+                <li>
+                  <a href="#" class="footer__items-link"
+                    >Terms and Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__foot">
+            <h4 class="footer__foot-title">New Grid Times</h4>
+            <span class="footer__foot-copy"
+              >© 2021 Fake Company Ltd. All Rights Reserved</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

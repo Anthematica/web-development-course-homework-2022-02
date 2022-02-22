@@ -1,0 +1,561 @@
+:root {
+  --white: #ffffff;
+  --gray-100: #f4f3f1;
+  --gray-300: #d0cdc8;
+  --gray-500: #9d9995;
+  --gray-700: #6b6661;
+  --gray-900: #2b2826;
+  --offblack: #100f0f;
+  --primary: #475784;
+  --secondary: #3e7f7f;
+  --urgent: #ca4949;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: var(--gray-100);
+  color: var(--gray-900);
+  font-family: "Crimson Pro", serif;
+}
+
+a {
+  color: var(--gray-900);
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.color-gray-900 {
+  background-color: var(--gray-900);
+}
+
+.color-grey-300 {
+  color: var(--gray-300);
+}
+
+.color--secundary {
+  color: var(--secondary);
+}
+
+.color--urgent {
+  color: var(--urgent);
+}
+.navigation {
+  align-items: center;
+  background-color: var(--gray-900);
+  display: flex;
+  height: 56px;
+  inset-block-start: 0;
+  justify-content: space-between;
+  padding-inline: 16px;
+  position: sticky;
+}
+
+.navigation__icon {
+  margin-inline: 16px;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-block: 32px;
+  text-align: center;
+}
+
+.header__search {
+  display: none;
+}
+
+.header__icon {
+  margin-inline-end: 24px;
+}
+
+.header__h1 {
+  font-family: "ChomskyRegular", Times, serif;
+}
+
+.header__subscribe {
+  display: none;
+  text-align: center;
+}
+
+.subscribe__btn {
+  background-color: var(--primary);
+  border-radius: 4px;
+  color: var(--white);
+  display: block;
+  padding-block: 12px;
+  padding-inline: 24px;
+}
+
+.story {
+  padding-inline: 16px;
+  grid-area: story;
+}
+.story__img {
+  width: fit-content;
+}
+
+.story__title {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-block: 16px;
+}
+
+.story__text {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-block-end: 1.5rem;
+}
+
+.story__continue {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.article {
+  grid-area: articles;
+  padding: 16px;
+}
+
+.article__items {
+  border-block-end: 1px solid #d0cdc8;
+  display: flex;
+  padding-block: 16px;
+}
+
+.article__img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+}
+
+.article__content {
+  flex: 1;
+  padding-inline-start: 16px;
+}
+
+.article__title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.article__text {
+  color: var(--gray-900);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* opinions */
+.opinion {
+  display: flex;
+  flex-wrap: wrap;
+  grid-area: opinion;
+  margin: 16px;
+}
+
+.opinion__title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.opinion__items {
+  border-block-end: 1px solid #d0cdc8;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-block: 16px;
+  width: 100%;
+}
+
+.opinion__content {
+  padding-inline-end: 16px;
+}
+
+.opinion__name {
+  color: var(--gray-700);
+  display: block;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.opinion__text {
+  color: var(--gray-900);
+  font-size: 1.125;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.opinion__img {
+  min-width: 48px;
+}
+
+.opinion__img--radius {
+  border-radius: 50%;
+}
+
+/* ads */
+.ads {
+  grid-area: ads;
+  margin-block: 16px;
+  margin-inline: 16px;
+}
+
+.ads__box {
+  background-color: var(--gray-300);
+  height: 300px;
+}
+
+.ads__title {
+  display: block;
+  text-align: center;
+}
+
+/* market */
+.market {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  grid-area: market;
+  justify-content: center;
+  margin: 16px;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.market__items {
+  background-color: var(--white);
+  border-radius: 4px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  width: 182px;
+}
+.market__info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-block-end: 4px;
+}
+.market__title {
+  color: var(--gray-900);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.market__name {
+  color: var(--gray-700);
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875;
+}
+.market__value {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+
+.sport {
+  grid-area: sport;
+  margin: 16px;
+}
+
+.sport__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+.sport__card {
+  width: 183px;
+}
+
+.sport__link {
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.news {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 16px;
+  width: 100%;
+}
+
+.news__title {
+  color: var(--gray-900);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.news__link {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+
+.footer__content {
+  padding: 16px;
+}
+
+.footer__header {
+  align-items: center;
+  border-block-end: 1px solid var(--gray-700);
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer__header-links {
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875rem;
+  margin-inline: 12px;
+}
+
+.footer__social {
+  margin-block: 16px;
+}
+
+.footer__social-icon {
+  margin-inline: 12px;
+}
+
+.footer__body {
+  text-align: center;
+}
+
+.footer__items {
+  margin-block: 32px;
+  line-height: 1.5;
+}
+
+.footer__items-title {
+  color: var(--gray-300);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.125rem;
+}
+
+.footer__items-link {
+  color: var(--white);
+  font-family: Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.footer__copyright {
+  background-color: var(--offblack);
+}
+.footer__foot {
+  text-align: center;
+  height: 90px;
+}
+
+.footer__foot-title {
+  color: var(--gray-100);
+  font-family: "ChomskyRegular", Times, serif;
+  font-size: 2rem;
+  padding: 12px;
+}
+
+.footer__foot-copy {
+  color: var(--gray-500);
+  font-family: Helvetica, sans-serif;
+  font-size: 0.875rem;
+}
+
+@media (min-width: 414px) {
+  .market {
+    justify-content: start;
+  }
+  .sport__content {
+    justify-content: start;
+  }
+}
+@media (min-width: 640px) {
+  .header {
+    margin-block-start: 48px;
+  }
+
+  .article__img {
+    width: 252px;
+    object-fit: fill;
+  }
+  .opinion__items {
+    display: block;
+    flex: 1;
+    width: 172px;
+  }
+
+  .opinion__img {
+    width: 48px;
+  }
+
+  .footer__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .footer__items {
+    text-align: start;
+    margin-inline-end: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    margin-block-end: 80px;
+  }
+  .header__h1 {
+    font-size: 4rem;
+  }
+
+  .header__text {
+    font-size: 0.875rem;
+  }
+
+  .main__section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "story articles"
+      "ads ads"
+      "opinion opinion";
+  }
+
+  .story {
+    border-inline-end: 1px solid var(--gray-300);
+  }
+
+  .article__items {
+    flex-direction: column;
+  }
+
+  .article__items:last-child {
+    border: none;
+  }
+
+  .section {
+    display: grid;
+
+    grid-template-columns: 100vw;
+    grid-template-rows: auto;
+
+    grid-template-areas: "market" "sport";
+  }
+
+  .opinion__title {
+    width: 100%;
+  }
+
+  .ads__box {
+    height: 120px;
+  }
+  .sport__content {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+  }
+
+  .sport__card {
+    width: min-content;
+  }
+  .sport__img {
+    display: block;
+    width: 220px;
+  }
+
+  .footer__header {
+    display: flex;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navigation {
+    display: none;
+  }
+
+  .header {
+    justify-content: space-between;
+    line-height: 1.5;
+    margin-block-start: 16px;
+    padding-inline: 16px;
+  }
+  .header__search {
+    display: block;
+  }
+
+  .header__subscribe {
+    display: block;
+  }
+
+  .container {
+    max-width: 1260px;
+    margin: auto;
+  }
+  .main__section {
+    display: grid;
+    grid-template-columns: 2fr 1.8fr 1.2fr;
+    grid-template-rows: auto;
+
+    grid-template-areas:
+      "story articles opinion"
+      "story ads ads";
+  }
+
+  .article {
+    border-inline-end: 1px solid var(--gray-300);
+  }
+
+  .article__items {
+    flex-direction: row;
+  }
+
+  .article__img {
+    width: 120px;
+    object-fit: cover;
+  }
+
+  .article__content {
+    flex: 1;
+    padding-inline-start: 16px;
+  }
+
+  .section {
+    display: grid;
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+
+    grid-template-areas: "market sport";
+  }
+
+  .opinion__items {
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    flex: none;
+  }
+
+  .footer__foot {
+    text-align: start;
+  }
+
+  .footer__header {
+    justify-content: end;
+  }
+}
