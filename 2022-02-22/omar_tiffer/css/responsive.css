@@ -1,23 +1,273 @@
-@media screen and (min-width:768px) {
-    .header__nav {
-        display: block;
-        position: absolute;
-        inset-block-start: 22px;
-        inset-inline-end: 146px;
-        display: flex;
-        column-gap: 16px;
-    }
+@media screen and (min-width: 768px) {
+  .main {
+    margin-inline: 0;
+    margin-block: 0;
+  }
 
-    .header__navlink {
-        font-size: 1.2rem;
-        line-height: 1.2rem;
-        letter-spacing: 0.8px;
-        font-family: var(--font-raleway);
-        color: var(--black);
-        text-transform: uppercase;
-        border-bottom-width: 3px;
-        border-bottom-style: solid;
-        border-bottom-color: var(--primary);
-        padding-inline: 4px;
-    }
+  /*---------- Navigation ----------*/
+
+  .navigation {
+    height: 66px;
+  }
+
+  .header__nav {
+    display: block;
+    position: absolute;
+    inset-block-start: 22px;
+    inset-inline-end: 146px;
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .header__navlink {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    letter-spacing: 0.8px;
+    font-family: var(--font-raleway);
+    color: var(--black);
+    text-transform: uppercase;
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+    border-bottom-color: var(--primary);
+    padding-inline: 4px;
+  }
+
+  /*---------- Hero section ----------*/
+
+  .hero {
+    margin-inline: 28px;
+    position: relative;
+    inset-block-start: 66px;
+  }
+
+  .hero__header {
+    font-size: 3.8rem;
+    padding-inline-end: 48%;
+    inset-block-start: 14px;
+  }
+
+  .hero__img {
+    inset-block-start: 0;
+    inset-inline-end: 0;
+  }
+
+  .hero__bottom {
+    position: relative;
+    margin-block-start: 32px;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+    padding-inline-end: 56%;
+  }
+
+  .hero__btntry,
+  .hero__btndemo {
+    margin-block-start: 26px;
+  }
+
+  /*---------- Video section ----------*/
+
+  .video {
+    width: 616px;
+    height: 348px;
+    margin-inline: auto;
+    margin-block-start: 210px;
+  }
+
+  .video__img {
+    width: 616px;
+    height: 348px;
+  }
+
+  .video__header {
+    font-size: 3.8rem;
+    line-height: 5rem;
+    margin-inline: auto;
+  }
+
+  .video__btn {
+    width: 132px;
+    height: 42px;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.6px;
+  }
+
+  /*---------- Thumbnails section ----------*/
+
+  .thumbnails {
+    margin-block-start: 64px;
+    flex-direction: row;
+    column-gap: 30px;
+    margin-inline: 28px;
+  }
+
+  .thumbnail.right {
+    margin-block-start: 58px;
+  }
+
+  .thumbnails__advert {
+    margin-inline: 0;
+    margin-block-start: 90px;
+  }
+
+  .advert__text {
+    padding-inline-end: 32px;
+  }
+
+  /*---------- Studycases section ----------*/
+
+  .studycases {
+    margin-inline: 0;
+    display: flex;
+    column-gap: 20px;
+    flex-wrap: wrap;
+    margin-inline: 28px;
+  }
+
+  .studycase__img--second,
+  .studycase__img--last {
+    position: static;
+  }
+
+  .studycase__link--second,
+  .studycase__link--last {
+    inset-block-start: -52px;
+  }
+
+  .studycase__maillist {
+    margin-block-start: 12px;
+  }
+
+  .maillist__header {
+    padding-inline: 118px;
+    font-size: 2.8rem;
+  }
+
+  .maillist__container {
+    margin-block-start: 16px;
+    display: inline-block;
+    margin-inline-start: 134px;
+  }
+
+  .maillist__email {
+    margin-block-start: 0;
+    width: 274px;
+  }
+
+  .maillist__notification {
+    margin-block-start: 12px;
+  }
+
+  .maillist__btn {
+    margin-inline: 0;
+    display: inline-block;
+    position: relative;
+    inset-block-start: -42px;
+    inset-inline-start: 16px;
+  }
+
+  /*---------- Brands section ----------*/
+
+  .brands {
+    margin-block-start: 12px;
+    margin-inline: 28px;
+  }
+
+  .brands__header {
+    font-size: 2.8rem;
+    padding-inline: 228px;
+  }
+
+  .brands__container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .brands__logo.lastknight {
+    order: 1;
+  }
+
+  .brands__logo.dragon {
+    order: 2;
+  }
+
+  .brands__logo.questai {
+    order: 3;
+  }
+
+  .brands__logo.radiotee {
+    order: 4;
+  }
+
+  .brands__logo.gamecommerce {
+    order: 5;
+  }
+
+  /*---------- Get Started section ----------*/
+
+  .getstarted {
+    height: 240px;
+    margin-block-start: 94px;
+  }
+
+  .getstarted__header {
+    margin-block-start: 46px;
+    line-height: 5.6rem;
+  }
+
+  /*---------- Footer section ----------*/
+
+  .footer__logo {
+    display: flex;
+    margin-inline-start: 62px;
+  }
+
+  .logo__img--footer {
+    position: relative;
+  }
+
+  .logo__text--footer {
+    position: relative;
+    inset-block-start: -10px;
+    inset-inline-start: -10px;
+    align-self: center;
+  }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer__navs {
+    margin-inline: 0;
+    inset-inline-start: 130px;
+    inset-block-start: 50px;
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 32px;
+  }
+
+  .footer__nav3,
+  .footer__nav4 {
+    position: static;
+  }
+
+  .footer__bottom {
+    position: static;
+    display: flex;
+  }
+
+  .bottom__copy {
+    padding-inline-end: 0;
+    margin-inline-start: 82px;
+    margin-block-start: 24px;
+  }
+
+  .bottom__links {
+    flex-direction: row;
+    column-gap: 30px;
+    margin-block-start: 28px;
+    margin-inline-start: 92px;
+  }
 }
