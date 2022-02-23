@@ -1,0 +1,23 @@
+@media screen and (min-width:768px) {
+    .header__nav {
+        display: block;
+        position: absolute;
+        inset-block-start: 22px;
+        inset-inline-end: 146px;
+        display: flex;
+        column-gap: 16px;
+    }
+
+    .header__navlink {
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        letter-spacing: 0.8px;
+        font-family: var(--font-raleway);
+        color: var(--black);
+        text-transform: uppercase;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        border-bottom-color: var(--primary);
+        padding-inline: 4px;
+    }
+}

@@ -71,6 +71,7 @@ font-family: 'Raleway', sans-serif; */
    text-transform: uppercase;
    padding-block: 6px;
    border-block-end: 5px solid var(--green);
+   padding-inline: 15px;
 }
 .sign_up {
    background-color: var(--green);
@@ -97,6 +98,7 @@ font-family: 'Raleway', sans-serif; */
    position: absolute;
    max-width: 500px;
    inset-inline-start: 0;
+   z-index: 2;
 }
 .title__hero {
    font-size: 60px;
@@ -141,19 +143,26 @@ font-family: 'Raleway', sans-serif; */
 .hero__photo {
    inset-inline-end: 0;
    max-width: 680px;
+   z-index: 1;
 }
 .hero__buttons {
    display: flex;
+}
+.hero__background {
+   max-width: 1440px;
+   position: absolute;
+   inset-inline-start: -170px;
+   inset-block-start: -110px;
 }
 
 /* VIDEO */
 .video {
    grid-area: 'video';
-   width: 1440;
+   max-width: 1440;
    background-color: var(--gray);
    margin-block-start: 170px;
    max-width: 1440px;
-   max-height: 744px;
+   height: 744px;
    display: flex;
    align-items: center;
    position: relative;
@@ -188,14 +197,21 @@ font-family: 'Raleway', sans-serif; */
    inset-block-start: -250px;
    inset-inline-start: calc(-50% + 200px + 1px);
 }
+.background__video {
+   position: absolute;
+   max-width: 1440px;
+   inset-inline-start: -26px;
+   inset-block-start: -174px;
+}
 /* SEC3 */
 .sec3 {
    grid-area: 'sec3';
    background-color: var(--green-back);
-   transform: skew(0deg, -10deg) translateY(-98px);
+   transform: skew(0deg, -10deg) translateY(-20px);
    position: static;
    z-index: 0;
    max-height: 760px;
+   overflow: hidden;
 }
 .sec3__content {
    transform: skewY(10deg);
@@ -251,13 +267,18 @@ font-family: 'Raleway', sans-serif; */
    font-size: 18px;
    width: 322px;
 }
+.sec3__background__png {
+   position: absolute;
+   inset-inline-end: 0px;
+   inset-block-end: -748px;
+}
 /* SEC4 */
 .sec4 {
    grid-area: 'sec4';
    display: flex;
    flex-direction: column;
    margin-inline: 174px;
-   transform: translateY(-62px);
+   transform: translateY(16px);
 }
 .case__study {
    display: flex;
@@ -437,4 +458,108 @@ font-family: 'Raleway', sans-serif; */
 }
 .footer__bottom__link {
    margin-inline-end: 80px;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+   .wrapper {
+      max-width: 768px;
+      display: flex;
+      flex-direction: column;
+      /*       justify-content: center;
+ */
+   }
+   .header {
+      margin-inline-end: 16px;
+      margin-inline-start: 0px;
+      max-width: 736px;
+      height: 66px;
+      width: 100%;
+   }
+   .title__hero {
+      font-size: 38px;
+      max-width: 316px;
+   }
+   .hero__text {
+      font-size: 12px;
+      max-width: 282px;
+      margin-block: 20px;
+   }
+   .header__title {
+      font-size: 22px;
+      line-height: 26px;
+   }
+   .header__logo__svg {
+      max-height: 42px;
+      max-width: 84px;
+   }
+   .nav__header__link {
+      font-size: 12px;
+      line-height: 14px;
+      padding-inline: 8px;
+   }
+
+   /* HERO */
+   .hero {
+      margin-inline: 30px;
+      max-width: 712px;
+   }
+   .hero__buttons {
+      column-gap: 30px;
+   }
+   .hero__button,
+   .sec4__button {
+      width: 132px;
+      height: 42px;
+      font-size: 14px;
+   }
+   .title__hero {
+      margin-block-start: 48px;
+   }
+   .hero__background {
+      max-width: 768px;
+      inset-inline-start: 270px;
+      inset-block-start: -68px;
+   }
+   .hero__photo {
+      max-width: 444px;
+      max-height: 250px;
+   }
+   /* VIDEO */
+   .video {
+      max-width: 768px;
+      width: 768px;
+      margin-inline-start: 20px;
+   }
+   .video__card__text {
+      font-size: 38px;
+   }
+   .card__video__img {
+      max-width: 616px;
+   }
+   .sec4,
+   .sec4__text,
+   .sec4__suscribe,
+   .sec5__logos,
+   .footer,
+   .card__video,
+   .footer__buttom__text {
+      margin-inline: 16px;
+   }
+   /* SEC4 */
+   .sec4__case__img {
+      max-width: 222px;
+      max-height: 156px;
+   }
+   .sec4__case__title {
+      font-size: 22px;
+      inset-block-start: 68px;
+      inset-inline-start: 18px;
+   }
+   .sec4__case__text {
+      inset-block-end: 98px;
+      inset-inline-start: 18px;
+      font-size: 12px;
+   }
 }
