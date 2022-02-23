@@ -137,6 +137,11 @@ img {
 }
 
 .main__container {
+  max-width: 1440px;
+  margin: auto;
+}
+
+.container {
   max-width: 1088px;
   margin: auto;
 }
@@ -176,9 +181,6 @@ img {
 .hero__img {
   filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.16));
   min-height: 212px;
-  /* inset-block-start: 32px;
-  inset-inline-end: 6px;
-  padding-inline: 6px; */
   inset-block-start: 20px;
   inset-inline-end: 50%;
   transform: translateX(50%);
@@ -187,13 +189,6 @@ img {
   z-index: -1;
 }
 /* video */
-/* .video {
-  background-image: url(./img/slash_black.jpg);
-  height: 500px;
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-
 .video {
   position: relative;
 }
@@ -242,6 +237,23 @@ img {
   flex-direction: column;
   max-width: 460px;
   margin: auto;
+  position: relative;
+}
+
+.campaign__info {
+  padding-block-start: 12px;
+  margin: auto;
+}
+.campaign__title {
+  font-family: "Playfair Display", serif;
+  font-size: 1.75rem;
+  line-height: 2rem;
+  width: 232px;
+  margin-block-end: 16px;
+}
+.campaign__text {
+  width: 204px;
+  font-size: 0.75rem;
 }
 
 .card {
@@ -277,22 +289,6 @@ img {
 
 .card--second {
   align-self: flex-end;
-}
-
-.campaign__info {
-  padding-block-start: 12px;
-  margin: auto;
-}
-.campaign__title {
-  font-family: "Playfair Display", serif;
-  font-size: 1.75rem;
-  line-height: 2rem;
-  width: 232px;
-  margin-block-end: 16px;
-}
-.campaign__text {
-  width: 204px;
-  font-size: 0.75rem;
 }
 
 /* join */
