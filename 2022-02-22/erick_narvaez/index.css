@@ -1,0 +1,1030 @@
+:root{
+    --background-main:#4BA87D;
+    --background-effect:#CAEAC7;
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+.playfairtext{
+    font-family: Playfair Display;
+font-style: normal;
+}
+.ralewayText{
+font-family: 'Raleway', sans-serif;
+}
+.btnGreen{
+    background-color: var(--background-main) ;
+    color: white;
+    width: 200px;
+    height: 65px;
+    text-align: center;
+    padding: 20px 40px;
+}
+
+
+.navBtn{
+    width: 168px;
+height: 41px;
+background-color: var(--background-main) ;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+}
+.navBtn > a {
+    width: max-content;
+    color: white;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 17px;
+line-height: 20px;
+text-transform: uppercase;
+}
+.btnWhite{
+    background-color:white;
+    color: var(--background-main);
+    border: 3px solid #4BA87D;
+    width: 200px;
+   height: 65px;
+   padding: 20px 10px;
+   text-align: center;
+   }
+/* -----------------------------------------------DESKTOP---------------------------------*/
+
+.mainNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 102px;
+}
+.mainNavLogo{
+    display: flex;
+    align-items: center;
+
+
+}
+
+.mainNavLogo > img{
+    height: 64px;
+}
+
+.mainNavLogoText{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 41px;
+    text-transform: uppercase;
+}
+.nav{
+    border-bottom: #4BA87D solid 5px;
+    padding: 5px 5px;
+    text-transform: uppercase;
+}
+
+.mainFlex{
+    padding: 0px 174px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 100px;
+    margin-top: 60px;
+}
+/*------------------------------------HERO CSS-------------------------------------------*/
+.heroSection{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+.heroContainer{
+    position: relative;
+    top: 25px;
+    right: 26%;
+    width: 489px;
+    
+}
+.heroPhoto{
+    position: absolute;
+    inset-inline-start: 600px;
+    filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.160784));
+}
+.heroHeader{
+    font-weight: 900;
+font-size: 59px;
+line-height: 71px;
+height: 142px;
+    
+margin-block-end: 22px;
+}
+
+.heroText{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 19px;
+line-height: 26px;
+}
+
+.heroBtn{
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+    margin-block-start: 35px;
+}
+
+/*------------------------------------HERO CSS-------------------------------------------*/
+
+/*------------------------------------VideoSection CSS-------------------------------------------*/
+
+.videoSection{
+    background-color: white;
+}
+
+.videoContainer{
+    position: relative;
+  text-align: center;
+  color: white;
+  filter: drop-shadow(0px 3px 16px rgba(0, 0, 0, 0.160784));
+}
+
+
+
+.videoHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    width: fit-content;
+}
+.videoBtn{
+ color: var(--background-main);
+ background-color: white;
+ position: absolute;
+ top: 70%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ padding: 20px 32px;
+}
+
+.skewRectangule{
+    position: absolute;
+    background-color: var(--background-effect);
+    top: 1050px;
+    
+    width: 1440px; 
+     height: 700px; 
+     
+     transform: skew(0deg,171deg);
+}
+
+.circleBackground{
+    position: absolute;
+    
+    top: 102px;
+    
+    width: 1440px; 
+     height:2042px; 
+    background-image: url("./src/floating_elements.svg"); 
+    
+}
+
+
+.slashBlack{
+    position: absolute;
+    top: 561px;
+    overflow: hidden;
+    width: 500px; 
+     height:500px; 
+    background-image: url("./src/slash_black.jpg"); 
+}
+/*------------------------------------Section 3 CSS-------------------------------------------*/
+
+.section3{
+position: relative;
+display: flex; 
+flex-direction: row;
+column-gap:47px ;
+}
+.section3links{
+    color: var(--background-main);
+    font-family: Raleway;
+font-style: normal;
+font-weight: 800;
+font-size: 12px;
+line-height: 14px;
+}
+.section3Header{
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 31px;
+}
+
+.section3Template1{
+    display: flex;
+    flex-direction: column;
+    filter:drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.12));
+    padding: 30px;
+}
+
+.section3Template2{
+    display: flex;
+    flex-direction: column;
+    filter:drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.12));
+    padding: 30px;
+    transform: translateY(50px);
+}
+.section3Template3{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 30px;
+    transform: translateY(100px);
+}
+
+.section3Text{
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+
+}
+
+.section3TextContainer{
+    padding: 30px 22px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    background-color: white;
+}
+
+/*------------------------------------Section 3 CSS-------------------------------------------*/
+
+/*------------------------------------Section 4 CSS-------------------------------------------*/
+.section4{
+    display: flex;
+    flex-direction: row;
+    column-gap: 40px;
+}
+
+.section4Template{
+    position: relative;
+    text-align: center;
+}
+.section4Profile{
+    width: 341px;
+}
+.section4ProfileName{
+    position: absolute;
+    bottom: 41px;
+    left: 16px;
+    color: white;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+font-size: 34px;
+line-height: 40px;
+}
+.section4Text{
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    color: white;
+    font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 22px;
+}
+
+
+/*------------------------------------Section 4 CSS-------------------------------------------*/
+
+/*------------------------------------Section 5 CSS-------------------------------------------*/
+
+.section5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 40px;
+}
+
+.section5Header{
+    font-family: Playfair Display;
+font-style: normal;
+font-weight: 900;
+font-size: 44px;
+line-height: 48px;
+text-align: center;
+padding: 0px 90px;
+}
+
+.section5Header2{
+    padding: 0px 300px;
+}
+
+.section5Brands{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.section5Btn{
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    
+}
+.section5container{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+    
+}
+.section5input{
+
+padding-inline-end: 20px;
+
+}
+
+.section5Join{
+    padding: 20px;
+    text-align: center;
+}
+
+.inputEmail{
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 25px;
+    width: 420px;
+height: 65px;
+padding: 0px 20px;
+}
+.section5Join>a{
+    color: white;
+}
+
+.section4EmailText{
+
+    padding-top: 20px;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 500;
+font-size: 21px;
+line-height: 25px;
+/* identical to box height, or 119% */
+
+letter-spacing: 1.05px;
+color: var(--background-main);
+}
+
+/*------------------------------------Section 5 CSS-------------------------------------------*/
+
+/*------------------------------------GET STARTED SECTION CSS-------------------------------------------*/
+.getStarted{
+   background-color: var(--background-main);
+   position: relative; 
+   width: 1440px;
+   height: 366px;
+   top: 0;
+   left: -174px
+   ;
+}
+.getStartedHeader{position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 80px;
+    width: fit-content;
+    color: white;
+}
+
+.getStartedBtn{
+    background-color: white;
+    color: var(--background-main);
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 32px;
+    font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+font-size: 21px;
+line-height: 25px;
+}
+
+
+/*------------------------------------GET STARTED SECTION CSS-------------------------------------------*/
+
+/*------------------------------------FOOTER CSS-------------------------------------------*/
+
+.footer {
+    display: grid;
+    grid-template-columns: 420px auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: "footerLogo footerGrid1 footerGrid2 footerGrid3 footerGrid4"
+                        
+    ;
+    row-gap: 10px;
+    padding: 0 20px;
+    
+}
+
+.footerLogo{
+grid-area: footerLogo;
+font-size: 16px;
+line-height: 19px;
+}
+
+
+.footerGrid1{
+grid-area: footerGrid1;
+
+}
+.footerGrid2{
+grid-area: footerGrid2;
+
+}
+.footerGrid3{
+grid-area: footerGrid3;
+}
+.footerGrid4{
+grid-area: footerGrid4;
+}
+
+.footerIcon{
+height: 46px;
+}
+
+
+
+
+
+
+
+.footerLogoText{
+    font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+font-size: 26px;
+line-height: 31px;
+text-transform: uppercase;
+}
+
+
+.footerLinks{
+    font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 22px;
+/* identical to box height, or 116% */
+
+
+color: #000000;
+}
+
+.footFooterText{
+    border-top: 2px solid gray ;
+    height: 100px;
+    text-align: center;
+    padding: 0px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family: Raleway;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 18px;
+}
+
+/*------------------------------------FOOTER CSS-------------------------------------------*/
+
+
+
+/*------------------------------------Media Queries START-------------------------------------------*/
+/*------------------------------------Media Queries TABLET START-------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:768px){
+.mainFlex{
+    padding: 0px ;
+}
+    
+.mainNavLogoText{
+    font-size: 22px;
+line-height: 26px;
+}
+.nav{
+    font-size: 11px;
+line-height: 13px;
+}
+
+.navBtn{
+    width: 110px;
+
+
+}
+.mainNavLogo > img {
+    height: 42px;
+}
+
+.navBtn>a{
+    font-size: 11px;
+    line-height: 13px;
+}
+    .heroContainer{
+        width: 315px;
+        display: flex;
+        flex-direction: column;
+        top:0;
+    }
+.heroHeader {
+    font-size: 38px;
+line-height: 46px;
+height: 92px;
+}
+.heroPhoto{
+    position: absolute;
+    inset-inline-start: 260px;
+    height: auto;
+    width: 472px;
+}
+.heroText{
+    font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+}
+
+.heroBtn{
+ padding: 0px 0px;
+}
+.btnFormat{
+    width:132px;
+    height: 42px ;
+    padding: 10px 10px;
+}
+
+.skewRectangule{
+    position: absolute;
+    background-color: var(--background-effect);
+    top: 700px;
+    background-size: cover;
+    overflow: hidden;
+    width: 768px; 
+     height: 700px; 
+     
+     
+}
+
+.circleBackground{
+    position: absolute;
+    overflow: hidden;
+    top: 102px;
+    background-size: cover;
+    width: 768px; 
+     height:1500px; 
+    background-image: url("./src/floating_elements.svg"); 
+    
+}
+
+
+.slashBlack{
+    position: absolute;
+    top: 200px;
+    background-size: cover;
+    width: 500px; 
+     height:480px; 
+    background-image: url("./src/slash_black.jpg"); 
+    overflow: hidden;
+}
+
+.videoArea{
+    width: 616px;
+}
+
+.videoHeader {
+    font-size: 38px;
+line-height: 51px;
+
+}
+.section3{
+    column-gap: 0px;
+}
+
+.section3photo{
+    width: 202px;
+}
+
+
+.section4Profile{
+    width: 224px;
+}
+.section4{
+        column-gap: 0px;
+        justify-content: space-evenly;
+    }
+.inputEmail{
+    width: 275px;
+    height: 42px;
+}
+
+.section4EmailText{
+    font-size: 13px;
+line-height: 15px;
+}
+    
+    .getStarted{
+        width: 768px;
+        height: 366px;
+        top: 0;
+        left: 0px;
+        right: 0;
+    }
+    .getStartedBtn {
+        font-size: 13px;
+    line-height: 15px;
+    }
+    .footer {
+        display: flex;
+        flex-direction: row;
+        column-gap: 100px;
+        padding: 0px 16px;
+    }
+
+    .footerLogoText{
+        font-size: 16px;
+line-height: 19px;
+    }
+ .footerLinks{
+    font-size: 12px;
+    line-height: 14px;
+    font-weight: bold;
+ }   
+
+ .section5Header{
+    font-size: 28px;
+line-height: 36px;
+ }
+.section5Header2{
+    font-size: 28px;
+line-height: 36px;
+padding: 0px 250px
+}
+
+}
+
+
+
+/*------------------------------------Media Queries TABLET END------------------------------------------*/
+/*------------------------------------Media Queries TABLET END------------------------------------------*/
+/*------------------------------------Media Queries TABLET END------------------------------------------*/
+
+/*------------------------------------Media Queries MOBILE START------------------------------------------*/
+@media screen and (max-width:320px ) {
+    .navDesktop{
+        display: none ;
+    }
+.getStartedHeader{
+    font-size: 42px;
+line-height: 48px;
+text-align: center;
+}
+
+    .mainFlex{
+        padding: 0px ;
+    }
+        
+    .mainNavLogoText{
+        font-size: 22px;
+    line-height: 26px;
+    }
+    .nav{
+        font-size: 11px;
+    line-height: 13px;
+    }
+    
+    .navBtn{
+        width: 110px;
+    
+    
+    }
+    .mainNavLogo > img {
+        height: 42px;
+    }
+    
+    .navBtn>a{
+        font-size: 11px;
+        line-height: 13px;
+    }
+        .heroContainer{
+            width: 315px;
+            display: flex;
+            flex-direction: column;
+            top:0;
+            height: 324px;
+            column-gap: 50px;
+            left: 0;
+        }
+    .heroHeader {
+        font-size: 38px;
+    line-height: 46px;
+    height: 92px;
+    margin-block-end: 180px;
+    }
+    .heroPhoto{
+        position: absolute;
+        inset-inline-start: 10px;
+        height: auto;
+        width: 300px;
+    }
+    .heroText{
+        font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    }
+    
+    .heroBtn{
+     padding: 0px 0px;
+     margin-block-start: 20px;
+    }
+    .btnFormat{
+        width:132px;
+        height: 42px ;
+        padding: 10px 10px;
+    
+    }
+    
+    .skewRectangule{
+        position: absolute;
+        background-color: var(--background-effect);
+        top: 700px;
+        background-size: cover;
+        overflow: hidden;
+        width: 768px; 
+         height: 700px; 
+         
+         
+    }
+    
+    .circleBackground{
+        position: absolute;
+        overflow: hidden;
+        top: 102px;
+        background-size: cover;
+        width: 768px; 
+         height:1500px; 
+        background-image: url("./src/floating_elements.svg"); 
+        
+    }
+    
+    
+    .slashBlack{
+        position: absolute;
+        top: 200px;
+        background-size: cover;
+        width: 500px; 
+         height:480px; 
+        background-image: url("./src/slash_black.jpg"); 
+        overflow: hidden;
+    }
+    
+    .videoArea{
+        width: 300px;
+    }
+    
+    .videoHeader {
+        font-size: 38px;
+    line-height: 51px;
+    font-size: 22px;
+line-height: 29px;
+    }
+
+    .videoBtn{
+        height: 21px;
+        width: 65px;
+        font-family: Raleway;
+font-style: normal;
+font-weight: 900;
+font-size: 6px;
+line-height: 7px;
+    }
+
+    .section3{
+        column-gap: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .section3photo{
+        width: 209px;
+        overflow: hidden;
+        object-fit: fill;
+    }
+    .section3TextContainer {
+        width: 209px;
+        padding: 20px;
+    }
+
+    .section3Template1{
+    width: 209px;
+    padding: 0px 10px;
+                }
+
+    .section3Template2{
+        display: flex;
+        flex-direction: column;
+        width: 209px;
+        padding: 30px;
+        transform: translatex(50px);
+    }
+    .section3Template3{
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        padding: 30px;
+        transform: translateY(-10%);
+    }
+    .section4ProfileName{
+        font-size: 22px;
+        line-height: 26px;
+        left: 66px;
+        bottom: 24px;
+    }
+    .section4Text{
+        font-size: 12px;
+        line-height: 14px;
+        left: 66px;
+    }
+    .section3Text{
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .section4Profile{
+        width: 224px;
+    }
+    .section4{
+        flex-direction: column;
+            column-gap: 0px;
+            justify-content: space-evenly;
+            row-gap: 20px;
+        }
+
+    .section5Btn{
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .section5Brands{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        grid-template-areas: "brand1 . brand2"
+                            "brand3 . brand4"
+                            ". brand5 ."
+
+        
+        
+        ;
+    }
+    .brand1{
+        grid-area: brand1;
+    }
+    .brand2{
+        grid-area: brand2;
+    }
+    .brand3{
+        grid-area: brand3;
+    }
+    .brand4{
+        grid-area: brand4;
+    }
+    .brand5{
+        grid-area: brand5;
+    }
+
+
+
+    .inputEmail{
+        width: 275px;
+        height: 42px;
+    }
+    
+    .section4EmailText{
+        font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    }
+        
+        .getStarted{
+            width: 320px;
+            height: 366px;
+            top: 0;
+            left: 0px;
+            right: 0;
+        }
+        .getStartedBtn {
+            font-size: 13px;
+        line-height: 15px;
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-rows: auto;
+            grid-template-areas: "footerLogo ."
+                                "footerGrid1 footerGrid3"
+                                "footerGrid2 footerGrid4"
+            ;
+            padding: 0 20px;
+            
+        }
+    
+.footerLogo{
+    grid-area: footerLogo;
+    font-size: 16px;
+line-height: 19px;
+}
+.footerIcon{
+    height: 30px;
+}
+
+.footerGrid1{
+    grid-area: footerGrid1;
+    align-content: center;
+}
+.footerGrid2{
+    grid-area: footerGrid2;
+    margin-top: -18px;
+}
+.footerGrid3{
+    grid-area: footerGrid3;
+}
+.footerGrid4{
+    grid-area: footerGrid4;
+}
+
+        .footerLogoText{
+            font-size: 16px;
+    line-height: 19px;
+        }
+     .footerLinks{
+        font-size: 12px;
+        line-height: 14px;
+        font-weight: bold;
+     }   
+    
+     .section5Header{
+        font-size: 28px;
+    line-height: 36px;
+    padding: 0 20px;
+     }
+    .section5Header2{
+        font-size: 28px;
+    line-height: 36px;
+    padding: 0px 20px
+    }
+
+.section5Icons {
+width: 92px;
+}
+
+.footFooterText{
+    font-size: 9px;
+line-height: 19px;
+text-align:start;
+flex-direction: column;
+align-items: flex-start;
+}
+
+
+
+
+
+
+
+}
+
+
+
+/*------------------------------------Media Queries END-------------------------------------------*/
