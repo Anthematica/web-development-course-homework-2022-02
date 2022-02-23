@@ -665,12 +665,7 @@ line-height: 15px;
         font-size: 13px;
     line-height: 15px;
     }
-    .footer {
-        display: flex;
-        flex-direction: row;
-        column-gap: 100px;
-        padding: 0px 16px;
-    }
+    
 
     .footerLogoText{
         font-size: 16px;
@@ -693,7 +688,17 @@ padding: 0px 250px
 }
 
 }
+.footer{
+    grid-template-columns: 320px auto auto auto auto;
+    padding: 0 80px;
+   
 
+}
+.footerlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
 
 
 /*------------------------------------Media Queries TABLET END------------------------------------------*/
