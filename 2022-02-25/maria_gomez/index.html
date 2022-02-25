@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- navbar -->
+    <nav id="navi">
+        <div class="navi--left">
+            <div class="nav__logo">
+                <img id="logomark" src="images/Logomark.svg" alt="">
+                <img id="logotype" src="images/Logotype.jpg" alt="">
+            </div>
+    <!-- lista de links que solo se muestran en desktop -->
+            <ul id="navbar__menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Reporting</a></li>
+                <li><a href="#">Users</a></li>
+            </ul>
+        </div>
+        <div class="navi--right">
+            <button class="btn" id="navi--right__upgradebutton">
+                <img id="upgradebutton__icon" src="images/zap.svg" alt="">
+                Upgrade now</button>
+            <div id="navi--right__actions">
+                <img src="images/settings.jpg" alt="">
+                <img src="images/bell.jpg" alt="">
+            </div>
+            <div id="navi--right__dropdown">
+                <img src="images/icon.jpg" alt="">
+            </div>
+        </div>
+        <div id="mobilemenu">
+            <img  src="images/menu-2v2.svg" alt="">
+        </div>
+    </nav>
+    <!-- main parte de la pagina -->
+    <main class="content">
+        <!-- header donde van filtros y cosas asi -->
+        <header class="header">
+            <!-- bienvenida al usuario -->
+            <div class="header__pageheader">
+                <div id="pageheader__text">
+                    <h1>Welcome Back, Olivia</h1>
+                    <div>Here’s your account details and deposits.</div>
+                </div>
+                <div id="pageheader--right">
+                    <button class="pageheader__actionbutton actionbutton1">
+                        <img src="images/dollar-sign.svg" alt=""> Deposit</button>
+                    <button class="pageheader__actionbutton actionbutton2">Send Funds</button>
+                </div>
+            </div>
+            <!-- parte donde van los filtros de fecha y otros -->
+            <div id="header__tabs">
+                <div class="tabs__btngroup">
+                    <button class="btn btntime" id="btngroup__btn1">
+                       <span class="btndate__textfull">12 months</span> 
+                       <span class="btndate__textmobile">12 mths</span> 
+                    </button>
+                    <button class="btn btntime" id="btngroup__btn2">
+                       <span>30 days</span> 
+                    </button>
+                    <button class="btn btntime" id="btngroup__btn3">
+                     <span>7 days</span>   
+                    </button>
+                    <button class="btn btntime" id="btngroup__btn4">
+                      <span class="btndate__textfull">24 hours</span> 
+                      <span class="btndate__textmobile">24 hrs</span>  
+                    </button>
+                </div>
+                <div class="tabs--right">
+                    <button class="btn tabs--right__btndate">
+                        <img src="images/calendar.svg" alt="">
+                        <span>Select dates</span>
+                    </button>
+                    <button class="btn tabs--right__btnfilters"> 
+                        <img src="images/Filterslines.svg" alt=""> 
+                        <span>Filters</span>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <!-- section de ruedas y muestra el balance  -->
+        <section class="section1">
+            <div class="section1__wheels">
+                <div class="wheelscard">
+                    <div class="wheel">
+                        <div class="wheel__whitewheel">
+                        </div>                   
+                    </div>
+                    <!-- parte del texto al lado de la rueda  -->
+                    <div class="wheelscard__text">
+                        <div class="wheeltext__heading">
+                            <h2>Primary account</h2>
+                            <img src="images/Dropdown.svg" alt="">
+                        </div>
+                        <!-- parte de abajo del texto  -->
+                        <div class="wheeltext__notheading">
+                            <span>Current balance</span>
+                            <div class="notheading__numbers">
+                                <div class="wheels__balance">$40,206.20</div>
+                                <div class="wheels__badge">
+                                    <img src="images/arrow-up.svg" alt="">
+                                    <span>3.4%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- segunda tarjeta con rueda  -->
+                <div class="wheelscard">
+                    <div class="wheel" id="secondwheel">
+                        <div class="wheel__whitewheel">
+                        </div>                   
+                    </div>
+                    <!-- parte del texto al lado de la rueda  -->
+                    <div class="wheelscard__text">
+                        <div class="wheeltext__heading">
+                            <h2>Secondary account</h2>
+                            <img src="images/Dropdown.svg" alt="">
+                        </div>
+                        <!-- parte de abajo del texto  -->
+                        <div class="wheeltext__notheading">
+                            <span>Current balance</span>
+                            <div class="notheading__numbers">
+                                <div class="wheels__balance">$6,421.10</div>
+                                <div class="wheels__badge">
+                                    <img src="images/arrow-up.svg" alt="">
+                                    <span>2.0%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- segunda seccion de la pagina  -->
+        <section class="section2">
+            <div class="mainside">
+                <div class="mainside__balancetime">
+                    <!-- header de la grafica de balance time  -->
+                    <div class="balancetime__sectionheader">
+                        <h2>Balance over time</h2>
+                        <img src="images/Dropdown.svg" alt="">
+                    </div>
+                    <div class="balancetime__graphic">
+                        <div class="chart">
+                            <img src="images/Chart data.svg" alt="">
+                        </div>
+                        <!-- lista de meses debajo de la grafica  -->
+                        <ul>
+                            <li>Jan</li>
+                            <li class="mobilehide">Feb</li>
+                            <li>Mar</li>
+                            <li class="mobilehide">Apr</li>
+                            <li>May</li>
+                            <li class="mobilehide">Jun</li>
+                            <li>Jul</li>
+                            <li class="mobilehide">Aug</li>
+                            <li>Sep</li>
+                            <li class="mobilehide">Oct</li>
+                            <li>Nov</li>
+                            <li>Dec</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="sectioncards">
+                    <div class="cards__content">
+                        <div class="cards__heading">
+                            <h2>Your cards</h2>
+                            <img src="images/Dropdown.svg" alt="">
+                        </div>
+                        <div class="content__cards">
+                            <div class="cardsandtext cardsandtext1">
+                                <div class="cards" id="card1">
+                                    <div id="card1--othercolor">
+                                        <h3>Untitled.</h3>
+                                        <div id="card1__bottom">
+                                            <div class="card__name">
+                                                <p>Olivia Rhye</p>
+                                                <p>06/24</p>
+                                            </div>
+                                            <p class="card__number">1234 1234 1234 1234</p>
+                                        </div>
+                                    </div>
+                                    <div class="card1--samecolor">
+                                        <div class="card1--right">
+                                            <img id="paypass1" src="images/PayPass_icon.svg" alt="">
+                                            <img id="mastercard1" src="images/Mastercard.svg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="cards__textandprogress">
+                                    <div class="textandprogress__header">
+                                        <div class="text__spend">Spending this month</div>
+                                        <div class="money__spend">$2,840.40</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <img src="images/Progress_bar.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cardsandtext cardsandtext2">
+                                <div class="cards" id="card2">
+                                    <div id="card2--samecolor">
+                                        <h3>Untitled.</h3>
+                                        <div class="card2--right">
+                                            <img id="paypass2" src="images/PayPass_icon.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="card2--othercolor">
+                                        <div id="card2__bottom">
+                                            <div class="card__name">
+                                                <p>Olivia Rhye</p>
+                                                <p>06/24</p>
+                                            </div>
+                                            <div class="card2__bottombottom">
+                                                <p class="card__number">1234 1234 1234 1234</p>
+                                                <img id="mastercard2" src="images/Paymentmethodicon.svg" alt="">
+    
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                                <div class="cards__textandprogress">
+                                    <div class="textandprogress__header">
+                                        <div class="text__spend">Spending this month</div>
+                                        <div class="money__spend">$1,260.20</div>
+                                    </div>
+                                    <div class="progressbar">
+                                        <img src="images/Progress_bar2.svg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="sectioncards__footer">
+                        <button class="btn btn__manage">Manage Cards</button>
+                    </div>
+                </div>
+            </div>
+            <div class="section2__recent">
+                <div class="recent__header">
+                    <h2>Recent deposits</h2>
+                    <img src="images/Dropdown.svg" alt="">
+                </div>
+                <div class="depositsgroup">
+                    <div class="depositsgroup--left">
+                        <div class="deposit">
+                            <img src="images/visa.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p class="mobilehide">Visa ending in 1234</p>
+                                <p class="mobileshow">Ending in 1234</p>
+                                <span>Expiry 08/2024</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/mastercard2.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p class="mobilehide">Mastercard ending in 5678</p>
+                                <p class="mobileshow">Ending in 5678</p>
+                                <span>Expiry 06/2024</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/stripe.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p>Stripe deposit</p>
+                                <span>billing@untitled.com</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/visa.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p class="mobilehide">Visa ending in 1234</p>
+                                <p class="mobileshow">Ending in 1234</p>
+                                <span>Expiry 06/2024</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/paypal.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p>Paypal deposit</p>
+                                <span>alina@untitledui.com</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/applepay.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p>Apple Pay</p>
+                                <span>molly@untitledui.com</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/visa.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p class="mobilehide">Visa ending in 1234</p>
+                                <p class="mobileshow">Ending in 1234</p>
+                                <span>Expiry 06/2024</span>
+                            </div>
+                        </div>
+                        <div class="deposit">
+                            <img src="images/stripe.svg" alt="">
+                            <div class="deposit--left__text">
+                                <p>Stripe deposit</p>
+                                <span>billing@untitledui.com</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="depositsgroup--right">
+                        <div class="deposit__number">+ $244.00</div>
+                        <div class="deposit__number">+ $326.00</div>
+                        <div class="deposit__number">+ $408.00</div>
+                        <div class="deposit__number">+ $628.00</div>
+                        <div class="deposit__number">+ $166.00</div>
+                        <div class="deposit__number">+ $250.00</div>
+                        <div class="deposit__number">+ $144.00</div>
+                        <div class="deposit__number">+ $408.00</div>
+                    </div>
+                </div>
+                <a href="#">Show More</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
