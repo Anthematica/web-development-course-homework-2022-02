@@ -1,0 +1,16 @@
+.nav_list {
+    display: none;
+}
+.header_right {
+    display: none;
+}
+.menu_icon {
+    display: inline-block;
+    display: flex;
+    align-self: center;
+}
+header {
+    padding-inline-start: 16px;
+    padding-inline-end: 16px;
+    justify-content: space-between;
+}
