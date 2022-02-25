@@ -159,6 +159,14 @@
 	.navegation__lista, .navegation__config{
 		display: none;
 	}
+	.menu__bars:target{
+		display: flex;
+		transform: translateX(0);
+		transition: transform .5s ease-in-out;
+	}
+	.close_menu:target{
+		transform: translateX(-300px);
+	}
 	.menu{
 		display: block;
 		cursor: pointer;
@@ -419,5 +427,8 @@
 	}
 	.card__type-enlace{
 		height: 60px;
+	}
+	.menu__bars-content{
+		width: 100%;
 	}
 }
