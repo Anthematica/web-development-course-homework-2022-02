@@ -109,7 +109,7 @@ header ul .nav-links {
 }
 
 .logo .logo-blur {
-    background-image: url(/oscar-molina/img/Logomark.svg);
+    background-image: url(../img/Logomark.svg);
     position: absolute;
     width: 38px;
     height: 38px;
@@ -373,7 +373,7 @@ main {
 .card1 .card-item-pay-pass,
 .card1 .card-item-mark {
     background-color: var(--pink);
-    background-image: url(/oscar-molina/img/Lines.svg);
+    background-image: url(../img/Lines.svg);
     background-attachment: fixed;
     background-position: center;
 }
@@ -386,7 +386,7 @@ main {
 .card2 .card-intem-title,
 .card2 .card-item-pay-pass {
     background-color: var(--gray-100);
-    background-image: url(/oscar-molina/img/Lines.svg);
+    background-image: url(../img/Lines.svg);
     background-attachment: fixed;
     background-position: center;
 }
