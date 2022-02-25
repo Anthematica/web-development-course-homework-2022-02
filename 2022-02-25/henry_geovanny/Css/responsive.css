@@ -1,0 +1,423 @@
+
+
+@media (max-width: 1280px){
+	.info__graphic{
+		width: 600px;
+		width: auto;	
+	}	
+	.visa__content-items{
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.card__type{
+		width: auto;
+	}
+	.details__count-primary, .details__count-second{
+		width: 500px;
+	}
+	.details{
+		justify-content: space-between;
+	}
+}
+@media (max-width: 1220px){
+	.info__graphic, .content__card{
+		width: 500px;
+	}
+	.graphic-svg{
+		width: 100%;
+	}
+	.info_person{
+		width: auto;
+	}
+	.info__graphic-date{
+		grid-gap: 22px;
+	}
+	.visa__content-items{
+		justify-content: space-between;
+	}
+	.flex__card{
+		width: fit-content;
+		justify-self: center;
+		height: auto;
+	}
+	.card{
+		box-shadow: 0 16px 2px -10px #344054;
+	}
+	.target{
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+	.info__graphic-date{
+		grid-gap: 23px;
+	}
+	.flex__card:hover .target{
+		opacity: 1;
+		pointer-events: auto;
+		z-index: 10;
+	}
+	.flex__card:hover .card{
+		opacity: 0;
+	}
+	.flex__card:target .target{
+		position: relative;
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.flex__card:hover .progress__total{
+		opacity: 0;
+	}
+	.flex__card:hover  .progress__total-count{
+		opacity: 1;
+	}
+}
+@media (max-width: 1090px){
+	.navegation__lista{
+		/*grid-gap: 0;*/	
+	}
+	.navegation__enlaces{
+		padding: 8px 7px;
+	}
+	
+}
+@media (max-width: 1022px){
+	.navegation__enlaces{
+		padding: 8px 2px;
+	}
+	.config__update{
+		width: 128px;
+	}
+	.info, .details__count-primary, .details__count-second{
+		width: auto;
+	}
+	.info_person{
+		width: 490px;
+	}
+	.details__count-primary, .details__count-second{
+		display: flex;
+		flex-wrap: wrap;
+		height: auto;
+		padding: 19px 15px;
+	}
+	.details__info{
+		width: 100%;
+	}
+	.info__graphic, .content__card{
+		width: 435px;
+	}
+	.info__graphic-date{
+		grid-gap: 10px;
+	}
+}
+@media (max-width: 950px){
+	.info__graphic, .content__card{
+		width: 406px;
+	}
+}
+@media (max-width: 940px){
+	.navegation__config{
+		grid-gap: 0 2px;
+	}
+	.config__update-ajuste, .config__update-notification{
+		width: 36px;
+		height: 36px;
+	}
+}
+@media (max-width: 900px){
+	.navegation__enlaces,
+	.description__reference-enlace,
+	.filter__item-text{
+		font-family: 14px;
+	}
+	.config__update{
+		display: none;
+		/*grid-gap: 0 4px;*/
+	}
+	.description__reference-title{
+		font-family: 26px;
+	}
+	.filter__item{
+		width: 136px;
+	}
+	.navegation__config{
+		grid-gap: 0 16px;
+	}
+	.info__graphic, .content__card{
+		width: 386px;
+	}
+
+}
+@media (max-width: 830px){
+	.info__graphic, .content__card{
+		width: 352px;
+	}
+	.info__graphic-date{
+		grid-gap: 0 4px;
+	}
+}
+@media (max-width: 780px){
+	.navegation__lista, .navegation__config{
+		display: none;
+	}
+	.menu{
+		display: block;
+		cursor: pointer;
+	}
+	.info{
+		flex-wrap: wrap;
+	}
+	.info_person{
+		flex-grow: 1;
+	}
+	.info__graphic, .content__card{
+		width: 100%;
+	}
+	.info__graphic-date{
+		grid-gap: 0 30px;
+	}
+	.target{
+		position: relative;
+		opacity: 1;
+		pointer-events: auto;
+	}
+	.flex__card:hover .card{
+		transition: opacity .5s ease-in-out, box-shadow .5s;
+		opacity: 1;
+	}
+	.card{
+		box-shadow: none;
+	}
+	.flex__card:hover .progress__total{
+		opacity: 1;
+	}
+}
+@media (max-width: 760px){
+	.target{
+		position: absolute;
+		opacity: 0;
+		pointer-events: none;
+	}
+	.flex__card{
+		width: fit-content;
+		justify-self: center;
+	}
+	.flex__card:hover .card{
+		transition: opacity .5s ease-in-out;
+		pointer-events: none;
+		opacity: 0;
+	}
+	.flex__card:hover .progress__total{
+		opacity: 0;
+	}
+	.flex__card:hover  .progress__total-count{
+		opacity: 1;
+	}
+	.card{
+		box-shadow: 0 16px 2px -10px #344054;
+	}
+
+}
+@media (max-width: 690px){
+	.info__graphic, .content__card{
+		width: 580px;
+	}
+	.info__graphic-date{
+		grid-gap: 0 24px;
+	}
+	.info__details-money{
+		font-size: 26px;
+	}
+	.info__content{
+		flex-wrap: wrap;
+		grid-gap: 16px;
+	}
+}
+@media (max-width: 640px){
+	.info__graphic, .content__card{
+		width: 538px;
+	}
+	.description{
+		flex-wrap: wrap;
+		grid-gap: 16px;
+	}
+	.account{
+	    margin-block-start: 24px;
+	}
+}
+@media (max-width: 590px){
+	.details{
+		flex-wrap: wrap;
+		grid-gap: 20px 0;
+	    margin-block-start: 32px;
+	}
+	.details__count-primary, .details__count-second{
+		margin: 0;
+	}
+	.details__count-primary, .details__count-second{
+		flex-grow: 1;
+	}
+	.info__graphic, .content__card{
+		width: 490px;
+	}
+	.info__graphic-date{
+		grid-gap: 0 14px;
+	}
+}
+@media (max-width: 540px){
+	.info__graphic, .content__card{
+		width: auto;
+	}
+}
+@media (max-width: 500px){
+	.info__graphic, .content__card{
+		width: 400px;
+		justify-self: center;
+	}
+	.info__graphic-date{
+		grid-gap: 0 6px;
+	}
+	.info__details-money{
+		font-size: 30px;
+	}
+}
+@media (max-width: 442px){
+	.info_person{
+		width: auto;
+	}
+	.info__graphic, .content__card{
+		width: 380px;
+	}
+	.flex__card{
+		justify-self: start;
+	}
+	.info__graphic-date-items:not(.info__graphic-date-items:last-child):nth-child(even){
+		display: none;
+	}
+	.info__graphic-date{
+		grid-gap: 0 22px;
+
+	}
+	
+	.content__progress{
+		display: none;
+	}
+}
+@media (max-width: 420px){
+	.info__graphic, .content__card{
+		width: 350px;
+	}
+}
+@media (max-width: 400px){
+	.info__date-button, .info__date-button-modified{
+		padding: 10px 16px 10px 10px;
+	}
+	.info__graphic, .content__card{
+		width: 332px;
+	}
+}
+@media (max-width: 390px){
+	.info__graphic{
+		height: 289px;
+	}
+	.card__date{
+		width: 224px;
+	}
+	.card, .card2{
+		height: 187px;
+	}
+	.flex__card{
+		padding-inline-start: calc(16px - 1px);
+	}
+	.content__title{
+		margin-inline: calc(20px - 1px);
+   		margin-block-start: calc(16px - 1px);
+	}
+}
+@media (max-width: 375px){
+	.details{
+		width: 334px;
+	}
+	.info__date-button, .info__date-button-modified{
+		padding: 10px;
+	}
+}
+@media (max-width: 372px){
+	.details{
+		width: 290px;
+	}
+	.info__graphic, .content__card{
+		width: 290px;
+   		justify-self: center;
+	}
+	.card, .card2{
+		width: 256px;
+	}
+	.card__date{
+		width: auto;
+	}
+	.card__date-title{
+		margin-block-start: 16px;
+    margin-inline-start: 10px;
+	}
+	.card__date-info{
+		margin-inline-start: 13px;
+   	    margin-block-end: 18px;
+	}
+	.visa__content-info{
+		flex-wrap: wrap;
+		grid-gap: 0 52px;
+	}
+}
+@media (max-width: 346px){
+	.description__reference-title, .info__details-money	{
+		font-size: 24px;
+	}
+	.description__reference-enlace{
+		font-size: 14px;
+	}
+	.send__data, .info__content-date{
+		grid-gap: 8px;
+	}
+	
+	.info__date-button, .info__date-button-modified{
+		border: 1px solid #D0D5DD;
+		border-radius: 8px;
+	}
+	.info__graphic-date{
+		grid-gap: 0 12px;
+	}
+}
+@media (max-width: 328px){
+	.details{
+		width: 246px;
+		margin-inline: auto;
+	}
+	.details__count-primary, .details__count-second{
+		justify-content: center;
+	}
+	.info__graphic, .content__card{
+		width: 240px;
+	}
+	.info__graphic-date{
+		grid-gap: 0 4px;
+	}
+	.flex__card{
+		transform: scale(.8) translateX(-30px);
+	}
+	.manager{
+		width: 236px;
+		justify-content: center;
+	}
+	.content__title{
+		width: 200px;
+	}
+	.visa__content-items{
+		height: 106px;
+	}
+	.visa__content-items{
+		justify-content: end;
+	}
+	.card__type-enlace{
+		height: 60px;
+	}
+}

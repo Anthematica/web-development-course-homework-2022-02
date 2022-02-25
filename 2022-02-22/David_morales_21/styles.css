@@ -19,6 +19,11 @@ body {
     min-width: 360px;
 }
 
+input[type="submit"]:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
 .header {
     height: 70px;
     display: grid;
@@ -154,18 +159,6 @@ body {
     border: none;
 }
 
-.bg__section {
-    position: absolute;
-    background: #CAEAC7;
-    top: 50%;
-    width: 400%;
-    height: 300%;
-    inset-inline-start: -100%;
-    transform: rotate(-20deg);
-    z-index: -1;
-    display: none;
-}
-
 .main__section3 {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -192,21 +185,26 @@ body {
 .main__section3__subsection1 {
     position: relative;
     margin-inline-end: 0px;
+    background-color: white;
 }
 
 .main__section3__subsection2 {
     position: relative;
     margin-inline-start: 40%;
     margin-block-start: 20px;
+    background-color: white;
 }
 
 .main__section3__subsection3 {
     position: relative;
     margin-inline: 20%;
     margin-block-start: 50px;
-    background-color: white;
     padding-block: 30px;
     padding-inline: 10px;
+}
+
+.main__section3>div>p {
+    margin-inline: 20px;
 }
 
 .main__section3__subsection3>h2 {
@@ -484,6 +482,20 @@ body {
         position: relative;
         width: 100%;
     }
+    .main__section5>form {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn_form {
+        text-align: center;
+        height: 50px;
+        margin-inline-start: 30px;
+        margin-block-start: 20px;
+    }
+    .main__section5>form>span {
+        grid-row: 2;
+    }
     .main__section6 {
         text-align: center;
     }
@@ -535,12 +547,30 @@ body {
     .footer__section2__subsection3 * {
         display: flex;
     }
+    .footer__section1 {
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        row-gap: 0px;
+        justify-content: center;
+    }
+    .footer__section1>input {
+        position: relative;
+        margin-block-start: -50px;
+        height: 40px;
+        padding-block: 10px;
+        width: 40%;
+        margin-inline-start: 30%;
+    }
 }
 
 
 /*vista de desktop*/
 
 @media(min-width: 1000px) {
-    .main__section1,
-    .main__section3 {}
+    .main__section1 img {
+        max-height: 600px;
+    }
+    .main__section2__subsection {
+        font-size: 50px;
+    }
 }
