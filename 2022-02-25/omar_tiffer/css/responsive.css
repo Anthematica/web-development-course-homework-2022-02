@@ -79,7 +79,7 @@
   }
 
   .hide-desktop {
-      display: none;
+    display: none;
   }
 
   .show-desktop {
@@ -87,15 +87,15 @@
   }
 
   .logo__wrapper {
-      margin-inline-start: 112px;
+    margin-inline-start: 112px;
   }
 
   .nav__links {
-      height: 40px;
-      margin-inline-start: 28px;
-      display: flex;
-      align-items: center;
-      column-gap: 28px;
+    height: 40px;
+    margin-inline-start: 28px;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
   }
 
   .nav__btn {
@@ -103,27 +103,27 @@
   }
 
   .nav__btn:hover {
-      color: var(--primary-700);
-      transition: ease 0.2s;
+    color: var(--primary-700);
+    transition: ease 0.2s;
   }
 
   .upgrade__btn {
-      width: 150px;
-      height: 40px;
-      outline: none;
-      appearance: none;
-      border: none;
-      cursor: pointer;
-      border-width: 1px;
-      border-style: solid;
-      border-color: var(--gray-300);
-      border-radius: 8px;
-      background-color: var(--white);
-      box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      transition: ease 0.2s;
+    width: 150px;
+    height: 40px;
+    outline: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--gray-300);
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.2s;
   }
 
   .upgrade__btn:hover {
@@ -141,24 +141,24 @@
   }
 
   .upgrade__ico {
-      margin-inline-end: 8px;
-      transition: ease 0.2s;
+    margin-inline-end: 8px;
+    transition: ease 0.2s;
   }
 
   .gearico__link {
-      margin-inline-start: 16px;
+    margin-inline-start: 16px;
   }
 
   .bellico__link {
-      margin-inline-start: 4px;
+    margin-inline-start: 4px;
   }
 
   .profile__pic {
-      margin-inline-start: 16px;
+    margin-inline-start: 16px;
   }
 
   .header__right {
-      margin-inline-end: 112px;
+    margin-inline-end: 112px;
   }
 
   .card__container {
@@ -290,13 +290,13 @@
   }
 
   .leftcard__progress--inner {
-    width: 96px;
+    width: 174px;
     height: 8px;
     border-radius: 4px;
     background-color: var(--primary-600);
   }
 
   .cards__footer {
-      margin-block-start: 24px;
+    margin-block-start: 24px;
   }
 }
