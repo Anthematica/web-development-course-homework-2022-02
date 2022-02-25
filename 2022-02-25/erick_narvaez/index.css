@@ -1,0 +1,908 @@
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+/* =========================================== BTN FORMATS START=========================================*/
+.shadowCard{
+  display: none;}
+
+.btnFormatGeneral {
+  align-items: center;
+
+  padding: 10px 16px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+/* =========================================== NAVBAR START=========================================*/
+.mobile {
+  display: none;
+}
+.navBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 112px;
+  column-gap: 150px;
+  height: 74px;
+  border-bottom: 2px solid #eaecf0;
+}
+.navBarLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+  height: 74px;
+}
+.navBarRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 16px;
+}
+
+.navFormat {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: black;
+  padding: 8px 12px;
+}
+
+.navBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px 10px;
+  width: 150px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.navFormat:hover {
+  background-color: #f9f5ff;
+  color: #6941c6;
+}
+
+/* =========================================== NAVBAR END=========================================*/
+
+/* =========================================== MAIN START=========================================*/
+
+.main {
+  padding: 50px 112px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+
+/* =========================================== MAIN END=========================================*/
+
+/* =========================================== Section1 START=========================================*/
+.section1 {
+  display: grid;
+  grid-template-columns: auto 260px;
+  grid-template-rows: auto 48px auto;
+  grid-template-areas:
+    "section1Header section1MainBtn "
+    "section1Text ."
+    "section1MonthBtn section1Filters";
+}
+
+.section1Header {
+  grid-area: section1Header;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  color: #101828;
+}
+.section1MainBtn {
+  grid-area: section1MainBtn;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  text-align: center;
+}
+.section1Text {
+  grid-area: section1Text;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #667085;
+}
+.section1MonthBtn {
+  grid-area: section1MonthBtn;
+  display: flex;
+  flex-direction: row;
+  width: 360px;
+  height: 40px;
+  border: 1px solid #d0d5dd;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.purpleBtn {
+  background-color: #7f56d9;
+  color: white;
+}
+.btnBorder {
+  padding: 10px 16px;
+  border-right: 1px solid #d0d5dd;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* Gray/700 */
+  color: #344054;
+}
+
+.btnBorder:hover {
+  background-color: #f9fafb;
+}
+
+.noBorder {
+  border-right: none;
+}
+
+.section1Filters {
+  grid-area: section1Filters;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  text-align: center;
+}
+
+.btnFilters {
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.btnFilters1 {
+  padding: 10px 8px;
+}
+
+/* =========================================== Section1 END=========================================*/
+
+/* =========================================== Section2 START=========================================*/
+.section2 {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+
+  column-gap: 24px;
+}
+
+.section2Dashboard {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 120px 334px 70px;
+  grid-template-rows: 36px 48px 40px;
+  grid-template-areas:
+    "donutChart donutChartHeader donutChartMenu"
+    "donutChart donutChartText ."
+    "donutChart donutChartAmount donutChartPercent";
+  align-items: center;
+  padding: 24px;
+  column-gap: 10px;
+justify-content: space-between;
+  background: #ffffff;
+  /* Gray/200 */
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  /* Shadow/sm */
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+
+.donutChart {
+  grid-area: donutChart;
+}
+.donutPurple {
+  top: 30px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #7f56d9 0deg 80deg,
+    #9e77ed 80deg 180deg,
+    #b692f6 180deg 220deg,
+    #d6bbfb 220deg 270deg,
+    #f4ebff 270deg 360deg
+  );
+}
+.donutBW {
+  top: 30px;
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: conic-gradient(
+    #475467 0deg 80deg,
+    #667085 80deg 180deg,
+    #98a2b3 180deg 220deg,
+    #d0d5dd 220deg 270deg,
+    #f2f4f7 270deg 360deg
+  );
+}
+
+.donutWhite {
+  position: relative;
+  top: -60px;
+  left: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.donutChartHeader {
+  grid-area: donutChartHeader;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #101828;
+}
+.donutChartMenu {
+  grid-area: donutChartMenu;
+  text-align: end;
+}
+.donutChartText {
+  grid-area: donutChartText;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #667085;
+  align-self: flex-end;
+}
+.donutChartText {
+  grid-area: donutChartText;
+}
+.donutChartAmount {
+  grid-area: donutChartAmount;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 38px;
+  /* Gray/900 */
+  color: #101828;
+}
+.donutChartPercent {
+  grid-area: donutChartPercent;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  /* Success/700 */
+  color: #027a48;
+  background: #ecfdf3;
+  border-radius: 16px;
+  text-align: center;
+}
+
+/* =========================================== Section2 END=========================================*/
+
+/* =========================================== Section3 START=========================================*/
+.section3 {
+  display: grid;
+  grid-template-columns: 64% auto;
+  grid-template-rows: 300px auto;
+  grid-template-areas:
+    "balanceOverTime recentDeposits"
+    "yourCards recentDeposits";
+  gap: 24px;
+}
+
+/* =========================================== balanceOverTime START=========================================*/
+.balanceOverTime {
+  grid-area: balanceOverTime;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+  /* Base/White */
+  background: #ffffff;
+  /* Gray/200 */
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  /* Shadow/sm */
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+.balanceOTHeader{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.balanceOTChart {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.balanceGraph {
+  width: 100%;
+  overflow: hidden;
+}
+
+.balanceOTcalendar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  /* Gray/500 */
+  color: #667085;
+}
+/* =========================================== balanceOverTime END=========================================*/
+
+/* =========================================== yourCards START=========================================*/
+.yourCards {
+  grid-area: yourCards;
+  display: flex;
+  flex-direction: column;
+
+  /* Base/White */
+  background: #ffffff;
+  /* Gray/200 */
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  /* Shadow/sm */
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+
+.yourCardsHeader {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* Gray/900 */
+  color: #101828;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.yourCardsContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 16px 24px;
+}
+
+.yourCardsTemplate2 {
+  background: linear-gradient(to top, #344054 50%, #d0d5dd 50%);
+  width: 302px;
+  height: 182px;
+  box-shadow: 7.64557px 9.55696px 15.2911px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(11.4684px);
+  border-radius: 20px;
+}
+.yourCardsTemplate1 {
+  background: linear-gradient(to right, #344054 70%, #f4d9d0 30%);
+  width: 302px;
+  height: 182px;
+  box-shadow: 7.64557px 9.55696px 15.2911px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(11.4684px);
+  border-radius: 20px;
+}
+
+
+.whiteLetter {
+  color: white;
+  font-family: Manrope;
+  font-style: normal;
+  font-weight: 600;
+
+  /* identical to box height */
+
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+.cardHeader1 {
+  color: white;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.2911px;
+  line-height: 19px;
+}
+.cardHeader2 {
+  color: black;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.2911px;
+  line-height: 19px;
+}
+
+.format {
+  display: grid;
+  grid-template-columns: 40% 30% 30%;
+  grid-template-rows: 70% auto;
+  grid-template-areas:
+    "cardHeader . logoContact"
+    "cardName cardDate ."
+    "cardNumbers cardNumbers creditLogo";
+  padding: 15px;
+}
+.cardHeader {
+  grid-area: cardHeader;
+}
+.logoContact {
+  grid-area: logoContact;
+  text-align: center;
+  width: 100px;
+}
+.cardName {
+  grid-area: cardName;
+  font-size: 11.4684px;
+  line-height: 16px;
+}
+.cardDate {
+  grid-area: cardDate;
+  text-align: end;
+  font-size: 11.4684px;
+  line-height: 16px;
+}
+.cardNumbers {
+  grid-area: cardNumbers;
+  font-size: 15.2911px;
+  line-height: 21px;
+}
+.creditLogo {
+  grid-area: creditLogo;
+  text-align: center;
+  width: 100px;
+}
+
+.balance {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  padding: 0 24px;
+}
+.balanceTemplate {
+  width: 302px;
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-rows: auto 20px;
+  grid-template-areas:
+    "yourBalanceHeader yourBalanceRemaint"
+    "balanceBar balanceBar";
+  row-gap: 8px;
+}
+.yourBalanceHeader {
+  grid-area: yourBalanceHeader;
+}
+.yourBalanceRemaint {
+  grid-area: yourBalanceRemaint;
+  text-align: end;
+}
+.balanceBar {
+  grid-area: balanceBar;
+}
+.barPink {
+  position: relative;
+  background: #f9f5ff;
+  border-radius: 4px;
+  width: auto;
+  height: 8px;
+}
+.barPurple {
+  position: relative;
+  top: -8px;
+  background: #7f56d9;
+  border-radius: 4px;
+  width: 173px;
+  height: 8px;
+}
+.barPurple2 {
+  position: relative;
+  top: -8px;
+  background: #7f56d9;
+  border-radius: 4px;
+  width: 96px;
+  height: 8px;
+}
+
+.yourCardsbot {
+  border-top: 2px solid #eaecf0;
+  display: flex;
+  height: 73px;
+  align-items: center;
+  justify-content: right;
+  padding-right: 24px;
+  text-align: center;
+}
+
+/* =========================================== yourCards END=========================================*/
+
+/* =========================================== recentDeposits START=========================================*/
+.recentDeposits {
+  grid-area: recentDeposits;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px;
+  /* Base/White */
+  background: #ffffff;
+  /* Gray/200 */
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  /* Shadow/sm */
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+.recentDepositHeader {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+}
+.recentDepositsText {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  /* Gray/900 */
+  color: #101828;
+}
+
+.recentDepositsMenu {
+  text-align: center;
+
+  width: 40px;
+}
+
+.recenteDepoTransact {
+  display: grid;
+  grid-template-columns: 46px auto 70px;
+  grid-template-rows: 72px;
+  grid-template-areas: "transactLogo tansactText recenteDepositAmount";
+  align-items: center;
+  border-top: 2px solid #eaecf0;
+  column-gap: 12px;
+}
+.transactLogo {
+  grid-area: transactLogo;
+  background: #ffffff;
+  border: 1px solid #f2f4f7;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-align: center;
+}
+.tansactText {
+  grid-area: tansactText;
+  display: flex;
+  flex-direction: column;
+  font-family: Inter;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #101828;
+}
+
+.recentText {
+  font-weight: normal;
+}
+
+.recenteDepositAmount {
+  grid-area: recenteDepositAmount;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #039855;
+}
+
+.showMoreLink {
+  padding: 16px 0px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6941c6;
+}
+
+/* =========================================== Section3 END=========================================*/
+
+/* =========================================== MEDIA FOR MOBILE START=========================================*/
+@media screen and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+  }
+  .mobileRemove{
+    display: none;
+  }
+  
+
+  .main {
+    padding: 50px 16px;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px;
+    column-gap: 0px;
+    height: 74px;
+  }
+  /* =================================================SECTION 1 ======================================== */
+
+  .section1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "section1Header"
+      "section1Text"
+      "section1MainBtn"
+      "section1MonthBtn"
+      "section1Filters";
+    row-gap: 24px;
+  }
+
+  .section1Header {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .section1MonthBtn {
+    grid-area: section1MonthBtn;
+    display: flex;
+    flex-direction: row;
+    width: 360px;
+    height: 40px;
+    border: 1px solid #d0d5dd;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+  }
+
+  /* =================================================SECTION 1 ======================================== */
+
+  /* =================================================SECTION 2  ======================================== */
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 24px;
+  }
+
+  .section2Dashboard {
+    display: grid;
+    grid-template-columns: auto 70px;
+    grid-template-rows: 120px 48px 40px;
+    grid-template-areas:
+      "donutChart  ."
+      "donutChartText donutChartMenu"
+      "donutChartAmount donutChartPercent";
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+  }
+
+  .donutChartText {
+    font-size: 14px;
+    line-height: 20px;
+
+    align-self: center;
+  }
+
+  /* =========================================== Section2 END=========================================*/
+
+  /* =========================================== Section3 START=========================================*/
+
+  .section3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "balanceOverTime"
+      "yourCards"
+      "recentDeposits";
+    gap: 24px;
+  }
+  .yourCardsContainer {
+    display: flex;
+    flex-direction: column;
+    column-gap: 10px;
+    padding: 16px 24px;
+    align-items: center;
+  }
+    
+ 
+  .yourCardsTemplate1 {
+    position: relative;
+    top: -80px;
+    width: 320px;
+    border-bottom: 1px solid white;
+  }
+  .shadowCard{
+    display: block;
+    position: relative;
+    
+    background: linear-gradient(to top, #344054 50%, #d0d5dd 50%);
+    width: 290px;
+    height: 100px;
+    box-shadow: 7.64557px 9.55696px 15.2911px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(11.4684px);
+    border-radius: 20px;
+    top: 120px;
+  }
+  
+
+}
+
+/* =========================================== MEDIA FOR MOBILE END=========================================*/
+
+/* =========================================== MEDIA FOR TABLET START=========================================*/
+@media screen and (min-width:481px) and (max-width:768px) {
+  
+  .mobile {
+    display: block;
+  }
+.desktop{
+  display: none;
+}
+
+  .main {
+    padding: 50px 16px;
+  }
+
+  .navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 16px;
+    column-gap: 0px;
+    height: 74px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    gap: 24px;
+  }
+  .section2Dashboard {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 120px auto 70px;
+    grid-template-rows: 36px 48px 40px;
+    grid-template-areas:
+      "donutChart donutChartHeader donutChartMenu"
+      "donutChart donutChartText ."
+      "donutChart donutChartAmount donutChartPercent";
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    column-gap: 10px;
+  }
+  .section3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "balanceOverTime"
+      "yourCards"
+      "recentDeposits";
+    gap: 24px;
+  }
+  .yourCardsContainer {
+    
+    padding: 16px 24px;
+    align-items: center;
+  }
+
+
+
+
+}
+
+
+
+
+
+/* =========================================== MEDIA FOR TABLET START=========================================*/
+
+
+@media screen and (min-width:769px) and (max-width:1400px) {
+  .main {
+    padding: 50px 50px;
+  }
+
+.navBar {
+  padding: 16px 50px;
+  column-gap: 0px;
+}
+.navBarLeft{
+  column-gap: 0px;
+}
+
+.section2Dashboard {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 120px auto 70px;
+  grid-template-rows: 36px 48px 40px;
+  grid-template-areas:
+    "donutChart donutChartHeader donutChartMenu"
+    "donutChart donutChartText ."
+    "donutChart donutChartAmount donutChartPercent";
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px;
+  column-gap: 10px;
+}
+
+.section2{
+  justify-content: space-between;
+}
+
+.shadowCard{
+  display: none;
+}
+.yourCardsContainer {
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+  padding: 16px 24px;
+}
+
+}
