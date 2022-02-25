@@ -145,11 +145,11 @@
       transition: ease 0.2s;
   }
 
-  .gear__ico {
+  .gearico__link {
       margin-inline-start: 16px;
   }
 
-  .bell__ico {
+  .bellico__link {
       margin-inline-start: 4px;
   }
 
