@@ -152,7 +152,7 @@ a {
 }
 
 .movil__sidebar {
-  background-color: #60646CCC;
+  background-color: #60646ccc;
   display: none;
   inset: 0;
   justify-content: flex-end;
@@ -186,14 +186,14 @@ a {
   list-style-type: none;
 }
 
-.menu__mobil{
+.menu__mobil {
   margin-block-end: 22px;
 }
 
 .menu__footer {
   margin-block-end: 14px;
 }
-.menu__text{
+.menu__text {
   font-size: 00.875rem;
   font-weight: 300;
 }
@@ -202,7 +202,8 @@ a {
 }
 
 .content__nav {
-  width: 240px;
+  width: 248px;
+  margin-inline-end: 32px;
 }
 
 .content__nav--breadcrumbs {
@@ -210,8 +211,8 @@ a {
 }
 
 .content__header {
+  flex: 1;
   justify-content: space-between;
-  width: 100%;
 }
 
 .content__text {
@@ -262,6 +263,7 @@ a {
 
 .sidebar {
   width: 248px;
+  margin-inline-end: 32px;
 }
 
 .sidebar__text {
@@ -289,7 +291,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 100%;
+  flex: 1;
 }
 
 .galery__items {
@@ -350,34 +352,25 @@ a {
 }
 /* desktop */
 @media screen and (max-width: 1536px) {
+  .galery__img {
+    height: 312px;
+    width: 330px;
+  }
 }
 /* laptop */
 @media screen and (max-width: 1280px) {
-  .container {
-    max-width: 1020px;
-  }
-
   .main__container {
-    max-width: 1020px;
+    max-width: 1024px;
   }
   .menu__links {
     margin-inline-start: 48px;
   }
-
-  .galery__img {
-    height: 312px;
-    width: 320px;
-  }
-
 }
 
 /* tablet grandes*/
 @media screen and (max-width: 1024px) {
-  .container {
-    max-width: 768px;
-  }
-  .main__container {
-    width: 768px;
+  .galery__img {
+    width: 320px;
   }
 
   .menu {
@@ -399,26 +392,41 @@ a {
   .navigation__top {
     display: none;
   }
+}
+
+@media screen and (max-width: 996px) {
   .sidebar {
     display: none;
+  }
+
+  .main__container {
+    max-width: 800px;
   }
 }
 
 /* tablet pequeñas */
 @media screen and (max-width: 768px) {
+  .galery__img {
+    width: 336px;
+  }
 }
 /* telefonos */
-@media screen and (max-width: 640px) {
-  .container {
-    width: 100%;
-  }
-
+@media screen and (max-width: 740px) {
   .main__container {
-    width: 100%;
+    padding: 16px;
   }
 
   .content__sort {
     display: none;
+  }
+
+  .galery__items {
+    width: 100%;
+  }
+
+  .galery__img {
+    width: 100%;
+    height: auto;
   }
 
   .galery {

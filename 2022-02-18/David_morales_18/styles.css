@@ -1,0 +1,590 @@
+                                                        * {
+                                                            margin: 0;
+                                                            padding: 0;
+                                                            box-sizing: border-box;
+                                                            font-family: 'Crimson Pro';
+                                                        }
+                                                        
+                                                        li {
+                                                            list-style: none;
+                                                        }
+                                                        
+                                                        a {
+                                                            text-decoration: none;
+                                                        }
+                                                        
+                                                        body {
+                                                            position: relative;
+                                                            overflow-x: hidden;
+                                                            min-height: 100vh;
+                                                        }
+                                                        
+                                                        .header {
+                                                            background: #2B2826;
+                                                            width: 100%;
+                                                            height: 56px;
+                                                            display: grid;
+                                                            align-items: center;
+                                                        }
+                                                        
+                                                        .header__section__2 {
+                                                            position: absolute;
+                                                            inset-inline-end: 20px;
+                                                        }
+                                                        
+                                                        .header__section__1 {
+                                                            position: absolute;
+                                                        }
+                                                        
+                                                        .header__section__1>svg {
+                                                            margin-inline-start: 20px;
+                                                        }
+                                                        
+                                                        .suscribirse {
+                                                            background-color: #475784;
+                                                            color: white;
+                                                            width: fit-content;
+                                                            padding-inline: 40px;
+                                                            padding-block: 5px;
+                                                        }
+                                                        
+                                                        .main {
+                                                            position: relative;
+                                                            overflow-x: hidden;
+                                                            margin-block-start: 161px;
+                                                            padding-block-end: 1100px;
+                                                            padding-inline-end: 20px;
+                                                        }
+                                                        
+                                                        .main>div {
+                                                            margin-inline-start: 20px;
+                                                        }
+                                                        
+                                                        .main__section__1 {
+                                                            margin-block-end: 20px;
+                                                        }
+                                                        
+                                                        .main__section__1>img {
+                                                            position: relative;
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .hidden_tex_1,
+                                                        .hidden_tex_2 {
+                                                            display: none;
+                                                        }
+                                                        
+                                                        .hidden_tex_2 {
+                                                            display: none;
+                                                        }
+                                                        
+                                                        .main__section__1>p,
+                                                        .main__section__1>h2 {
+                                                            text-align: justify;
+                                                            margin-block: 15px;
+                                                        }
+                                                        
+                                                        .header__section__3 {
+                                                            position: absolute;
+                                                            text-align: center;
+                                                            width: 100%;
+                                                            inset-block-start: 80px;
+                                                        }
+                                                        
+                                                        .header__section__3>h1 {
+                                                            font-family: 'ChomskyRegular';
+                                                        }
+                                                        
+                                                        .header__section__3__subsection {
+                                                            position: relative;
+                                                            display: none;
+                                                        }
+                                                        
+                                                        .Continue_Reading {
+                                                            margin-block-start: 10px;
+                                                        }
+                                                        
+                                                        .Continue_Reading>a {
+                                                            font-weight: bold;
+                                                            color: black;
+                                                            text-decoration: none;
+                                                        }
+                                                        
+                                                        .main__section__2>div {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            margin-block-end: 20px;
+                                                            padding-block-end: 20px;
+                                                            grid-gap: 20px;
+                                                        }
+                                                        
+                                                        .main__section__2>div:not(:last-child),
+                                                        .main__section__4>:not(:last-child):not(h3) {
+                                                            border-bottom: 1px solid#D0CDC8;
+                                                        }
+                                                        
+                                                        .img_container {
+                                                            grid-column: 1 / 2;
+                                                        }
+                                                        
+                                                        .img_container>img {
+                                                            position: relative;
+                                                            width: 120px;
+                                                            height: 120px;
+                                                        }
+                                                        
+                                                        .text_container {
+                                                            grid-column: 2 / 4;
+                                                        }
+                                                        
+                                                        .text_container>h3 {
+                                                            margin-block: 5px;
+                                                        }
+                                                        
+                                                        .main__section__3>h3 {
+                                                            margin-block: 10px;
+                                                        }
+                                                        
+                                                        .main__section__3 {
+                                                            position: relative;
+                                                            text-align: center;
+                                                            color: gray;
+                                                            width: auto;
+                                                            margin-block-end: 50px;
+                                                        }
+                                                        
+                                                        .main__section__3>div {
+                                                            position: relative;
+                                                            width: 100%;
+                                                            height: 300px;
+                                                            background: #D0CDC8;
+                                                            margin-block: 18px;
+                                                        }
+                                                        
+                                                        .main__section__4__subsection {
+                                                            position: relative;
+                                                            margin-block-end: 10px;
+                                                            padding-block-end: 10px;
+                                                            padding-block: 20px;
+                                                        }
+                                                        
+                                                        .main__section__4__subsection>div {
+                                                            position: relative;
+                                                            width: auto;
+                                                            text-align: justify;
+                                                            margin-inline-end: 90px;
+                                                        }
+                                                        
+                                                        .main__section__4__subsection>div>p {
+                                                            margin-block-start: 10px;
+                                                        }
+                                                        
+                                                        .main__section__4__subsection>img {
+                                                            position: absolute;
+                                                            inset-inline-end: 10px;
+                                                            margin-block-start: -10px;
+                                                        }
+                                                        
+                                                        .main__section__5 {
+                                                            display: grid;
+                                                            position: relative;
+                                                            padding-block: 30px;
+                                                            grid-template-columns: 183px auto 183px;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection {
+                                                            border: 1px solid#D0CDC8;
+                                                            position: relative;
+                                                            width: 183px;
+                                                            height: 73px;
+                                                            margin-block-end: 20px;
+                                                            position: relative;
+                                                            display: grid;
+                                                            grid-template-columns: repeat(2, 1fr);
+                                                            column-gap: 30px;
+                                                            padding-inline: 10px;
+                                                            padding-block-start: 5px;
+                                                            padding-block-end: 10px;
+                                                            text-transform: uppercase;
+                                                            padding-block-start: 10px;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection:nth-child(even):not(h3) {
+                                                            grid-column: 1;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection:nth-child(odd):not(h3) {
+                                                            grid-column: 3;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection>span,
+                                                        .main__section__5__subsection>svg {
+                                                            grid-column: 2 / 3;
+                                                        }
+                                                        
+                                                        .down {
+                                                            color: red;
+                                                        }
+                                                        
+                                                        .up {
+                                                            color: blue;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection>h3 {
+                                                            position: absolute;
+                                                            inset-block-start: -20px;
+                                                            font-size: 24px;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection>h3,
+                                                        .main__section__5__subsection>h4 {
+                                                            grid-column: 1/ 2;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection>h4,
+                                                        .main__section__5__subsection>span {
+                                                            position: relative;
+                                                            inset-block-end: 10px;
+                                                        }
+                                                        
+                                                        .main__section__5__subsection>span {
+                                                            inset-inline-end: -40px;
+                                                        }
+                                                        
+                                                        .main__Section__6 {
+                                                            padding-block-start: 40px;
+                                                            display: grid;
+                                                            grid-row: 6;
+                                                            position: relative;
+                                                        }
+                                                        
+                                                        .section__body {
+                                                            overflow: auto;
+                                                            display: grid;
+                                                            word-wrap: break-word;
+                                                            grid-template-columns: 183px auto 183px;
+                                                        }
+                                                        
+                                                        .header__section {
+                                                            position: absolute;
+                                                            z-index: 2;
+                                                            width: 100%;
+                                                        }
+                                                        
+                                                        .header__section>p {
+                                                            position: absolute;
+                                                            inset-inline-end: 0px;
+                                                            inset-block-start: 0px;
+                                                        }
+                                                        
+                                                        .main__section__6__subsection {
+                                                            width: 183px;
+                                                        }
+                                                        
+                                                        .main__section__6__subsection>p {
+                                                            margin-block: 10px 20px;
+                                                            font-weight: bold;
+                                                        }
+                                                        
+                                                        .main__section__6__subsection>img {
+                                                            width: 183px;
+                                                            height: 132px;
+                                                        }
+                                                        
+                                                        .main__section__6__subsection:nth-child(even) {
+                                                            grid-column: 3;
+                                                        }
+                                                        
+                                                        .main__section__6__subsection:nth-child(odd) {
+                                                            grid-column: 1;
+                                                        }
+                                                        
+                                                        .footer {
+                                                            position: absolute;
+                                                            width: 100%;
+                                                            bottom: 0;
+                                                            display: grid;
+                                                            background: #2B2826;
+                                                            color: white;
+                                                            height: auto;
+                                                            row-gap: 20px;
+                                                        }
+                                                        
+                                                        .footer__header {
+                                                            padding-block: 40px;
+                                                            padding-inline: 40px;
+                                                            display: grid;
+                                                            grid-template-columns: auto 300px auto;
+                                                            row-gap: 20px;
+                                                        }
+                                                        
+                                                        .footer__header>nav {
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            grid-column: 2;
+                                                        }
+                                                        
+                                                        .footer__header>nav>ul {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(3, 1fr);
+                                                            column-gap: 0px;
+                                                        }
+                                                        
+                                                        .footer__header> :last-child {
+                                                            padding-block-end: 20px;
+                                                            text-align: center;
+                                                            grid-template-columns: repeat(2, 1fr);
+                                                        }
+                                                        
+                                                        .footer a {
+                                                            color: white;
+                                                        }
+                                                        
+                                                        .footer svg path {
+                                                            stroke: white;
+                                                        }
+                                                        
+                                                        .footer__body {
+                                                            font-size: 18px;
+                                                            display: grid;
+                                                            grid-column: auto;
+                                                            row-gap: 20px;
+                                                        }
+                                                        
+                                                        .footer__body li {
+                                                            padding: 5px;
+                                                        }
+                                                        
+                                                        .footer__body nav>ul>:first-child {
+                                                            font-size: 24px;
+                                                        }
+                                                        
+                                                        .footer__body>div {
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .footer__footer {
+                                                            background: #100F0F;
+                                                            padding-block: 20px;
+                                                            text-align: center;
+                                                        }
+                                                        
+                                                        .footer__footer>h1 {
+                                                            font-weight: lighter;
+                                                            font-family: 'ChomskyRegular';
+                                                        }
+                                                        /* Diseño de tablet*/
+                                                        
+                                                        @media(min-width: 770px) {
+                                                            .main {
+                                                                display: grid;
+                                                                grid-template-columns: repeat(3, 1fr);
+                                                                column-gap: 30px;
+                                                                grid-auto-rows: minmax(100px, auto);
+                                                                padding-block-end: 800px;
+                                                            }
+                                                            .main__section__1 {
+                                                                grid-column: 1/3;
+                                                                grid-row: 1/2;
+                                                                margin: 0;
+                                                            }
+                                                            .hidden_tex_1,
+                                                            .hidden_tex_2 {
+                                                                display: inline;
+                                                            }
+                                                            .main__section__2 {
+                                                                grid-column: 3/4;
+                                                                margin: 0;
+                                                                grid-row: 1/2;
+                                                                border-left: 1px solid #D0CDC8;
+                                                                padding-inline-start: 20px;
+                                                            }
+                                                            .main__section__2__subsection {
+                                                                display: grid;
+                                                                grid-column: 2;
+                                                                grid-row: 2;
+                                                            }
+                                                            .text_container {
+                                                                grid-column: 1/4;
+                                                                grid-row: 2;
+                                                            }
+                                                            .img_container {
+                                                                grid-column: 1/4;
+                                                                grid-row: 1;
+                                                            }
+                                                            .main__section__3 {
+                                                                margin: 0;
+                                                                grid-column: 1/4;
+                                                                grid-row: 3;
+                                                            }
+                                                            .main__section__3>div {
+                                                                width: 100%;
+                                                                height: 120px;
+                                                            }
+                                                            .main__section__4 {
+                                                                grid-column: 1/4;
+                                                                grid-row: 4;
+                                                                display: grid;
+                                                                padding-block: 30px;
+                                                                grid-template-columns: repeat(4, 1fr);
+                                                                column-gap: 30px;
+                                                                grid-auto-rows: minmax(100px, auto);
+                                                            }
+                                                            .main__section__4>:not(:last-child):not(h3) {
+                                                                border: none;
+                                                            }
+                                                            .main__section__4>h3 {
+                                                                position: absolute;
+                                                            }
+                                                            .main__section__5 {
+                                                                grid-column: 1/4;
+                                                                grid-row: 5;
+                                                                grid-template-columns: repeat(4, 1fr);
+                                                            }
+                                                            .main__section__5__subsection:nth-child(even):not(h3) {
+                                                                grid-column: auto;
+                                                            }
+                                                            .main__section__5__subsection:nth-child(odd):not(h3) {
+                                                                grid-column: auto;
+                                                            }
+                                                            .main__Section__6 {
+                                                                grid-column: 1/4;
+                                                            }
+                                                            .section__body {
+                                                                width: 100%;
+                                                                grid-column: 1/4;
+                                                                overflow-x: auto;
+                                                                grid-template-columns: 5;
+                                                                gap: 70px;
+                                                                grid-template-columns: auto;
+                                                                grid-template-rows: 1;
+                                                            }
+                                                            .main__section__6__subsection:nth-child(even):not(h3),
+                                                            .main__section__6__subsection:nth-child(odd):not(h3) {
+                                                                grid-column: auto;
+                                                            }
+                                                            /*   .main__section__6__subsection:nth-child(even):not(h3) {
+                                                                grid-column: auto;
+                                                                position: relative;
+                                                                background-color: red;
+                                                                width: 300px;
+                                                                grid-row: 1;
+                                                                overflow: hidden;
+                                                                margin-inline-end: 100px;
+                                                            }
+                                                            .main__section__6__subsection:nth-child(odd):not(h3) {
+                                                                grid-column: auto;
+                                                                grid-row: 1;
+                                                                position: relative;
+                                                            }*/
+                                                            .main__section__6__subsection {
+                                                                grid-row: 1;
+                                                            }
+                                                            .main__section__6__subsection,
+                                                            .main__section__6__subsection>img {
+                                                                width: 220px;
+                                                            }
+                                                            .footer__header {
+                                                                display: flex;
+                                                                justify-content: center;
+                                                            }
+                                                            .footer__header li {
+                                                                margin-inline-end: 20px;
+                                                            }
+                                                            .footer__body {
+                                                                grid-template-columns: repeat(3, 1fr);
+                                                                text-align: justify;
+                                                            }
+                                                        }
+                                                        
+                                                        @media(min-width:1050px) {
+                                                            .header__section__3 {
+                                                                position: relative;
+                                                                inset-block-start: 80px;
+                                                                text-align: center;
+                                                                inset-block-start: -30px;
+                                                            }
+                                                            .header {
+                                                                background: none;
+                                                                padding-block-start: 60px;
+                                                            }
+                                                            .main {
+                                                                padding-inline: 50px;
+                                                                padding-block-end: 600px;
+                                                                grid-template-columns: repeat(5, 1fr);
+                                                            }
+                                                            .main__section__2 {
+                                                                grid-column: 3/5;
+                                                                grid-template-columns: repeat(2, 1fr);
+                                                            }
+                                                            .text_container {
+                                                                grid-row: 1;
+                                                                grid-column: auto;
+                                                                padding-inline-start: 80px;
+                                                            }
+                                                            .main__section__4 {
+                                                                grid-column: 5/6;
+                                                                grid-row: 1;
+                                                                padding-inline-start: 10px;
+                                                                grid-template-columns: 1fr;
+                                                                grid-auto-rows: minmax(100px, auto);
+                                                                border-left: 1px solid #D0CDC8;
+                                                            }
+                                                            .main__section__4>div:not(:last-child) {
+                                                                border-bottom: 1px solid #D0CDC8;
+                                                            }
+                                                            .main__section__3 {
+                                                                grid-column: 3/6;
+                                                                grid-row: 2;
+                                                                padding-block-start: 40px;
+                                                                padding-inline-start: 10px;
+                                                                border-left: 1px solid #D0CDC8;
+                                                                border-top: 1px solid #D0CDC8;
+                                                            }
+                                                            .main__section__5 {
+                                                                grid-column: 1/4;
+                                                                grid-row: 3;
+                                                                grid-template-columns: repeat(3, 1fr);
+                                                            }
+                                                            .main__Section__6 {
+                                                                grid-column: 4/6;
+                                                                grid-row: 3;
+                                                                border-left: 1px solid #D0CDC8;
+                                                                padding-inline: 20px;
+                                                            }
+                                                            .footer__body {
+                                                                grid-template-columns: repeat(4, 1fr);
+                                                            }
+                                                            svg path {
+                                                                stroke: black;
+                                                            }
+                                                            .header__section__2 {
+                                                                display: none;
+                                                            }
+                                                            .header__section__3__subsection {
+                                                                position: absolute;
+                                                                inset-inline-end: 20px;
+                                                                inset-block-start: 10px;
+                                                                display: grid;
+                                                                grid-row: 2;
+                                                                row-gap: 10px;
+                                                                padding-right: 10px;
+                                                            }
+                                                            .header__section__3__subsection a {
+                                                                border-bottom: 1px solid;
+                                                                width: fit-content;
+                                                            }
+                                                            .main__Section__6 h3 {
+                                                                padding-inline-start: 20px;
+                                                            }
+                                                            .footer__footer {
+                                                                padding-inline-start: 30px;
+                                                                text-align: left;
+                                                            }
+                                                            .hidden_tex_2 {
+                                                                display: none;
+                                                            }
+                                                            .footer__header {
+                                                                justify-content: flex-end;
+                                                            }
+                                                        }

@@ -1,0 +1,844 @@
+:root {
+    --primary: #6941c6;
+    --primary-50: #f9f5ff;
+    --primary-100: #f4ebff;
+    --primary-300: #d6bbfb;
+    --primary-400: #b692f6;
+    --primary-500: #9e77ed;
+    --primary-600: #7f56d9;
+    --primary-700: #6941c6;
+    --white: #fff;
+    --gray-025: #fcfcfd;
+    --gray-050: #f9fafb;
+    --gray-100: #f2f4f7;
+    --gray-200: #eaecf0;
+    --gray-300: #d0d5dd;
+    --gray-400: #98a2b3;
+    --gray-500: #667085;
+    --gray-600: #475467;
+    --gray-700: #344054;
+    --gray-900: #101828;
+    --success-50: #ecfdf3;
+    --success-500: #12b76a;
+    --success-700: #027a48;
+    --pink: #f4d9d0;
+    --inter: "Inter", sans-serif;
+    --manrope: "Manrope", sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: var(--inter);
+    color: var(--gray-900);
+}
+
+/* ---------------------------------------- mobile start------------------------------------- */
+/* estilos generales */
+
+/* container max with */
+.main-container,
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.title-container {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.title {
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.title button {
+    border: none;
+    background: none;
+}
+
+.border-shadow {
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+        0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+button {
+    font-size: 14px;
+    line-height: 20px;
+    background: none;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+/* ------------------------- header nav section ---------------------- */
+header {
+    border-block-end: 1px solid var(--gray-200);
+}
+
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul .nav-links {
+    display: none;
+}
+
+.left-nav ul li .logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    text-decoration: none;
+    gap: 10px;
+    /* display: none; */
+}
+
+.logo .logo-blur {
+    background-image: url(../img/Logomark.svg);
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    clip: rect(19px 38px 38px -19px);
+    filter: blur(3px);
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+/* -------------------- main -------------------- */
+main {
+    background-color: var(--gray-025);
+}
+/* ---------------------------- user banner section ----------------------- */
+.user-banner {
+    padding-block-start: 2rem;
+    padding-inline: 1rem;
+}
+
+.user-banner-welcome h2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal;
+}
+
+.user-banner-welcome span {
+    font-size: 1rem;
+    line-height: 24px;
+    color: var(--gray-500);
+}
+
+.user-banner-right-buttons {
+    margin-block-start: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-banner-right-buttons button {
+    width: 112px;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+    background: none;
+}
+
+.user-banner-right-buttons .deposit-button {
+    border: 1px solid var(--gray-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.user-banner-right-buttons .funds-button {
+    background-color: var(--primary-600);
+    color: var(--white);
+}
+
+/* user banner options start */
+
+.user-banner-options .left-options {
+    display: flex;
+    flex-direction: row;
+    margin-block-start: 24px;
+}
+
+.left-options button {
+    border-radius: 0px;
+    border: 1px solid var(--gray-300);
+    background: none;
+    padding-block: 10px;
+    padding-inline: 1rem;
+}
+
+/* para ocultar el texto a desplegar en modo escritorio */
+.desktop,
+.cards .desktop {
+    display: none;
+}
+
+.left-options .left-button {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: var(--gray-050);
+}
+
+.left-options .right-button {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.right-options {
+    margin-block-start: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 12px;
+}
+
+.right-options button {
+    border: 1px solid var(--gray-300);
+    border-radius: 8px;
+    padding: 10px 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.right-options .selected {
+    color: var(--gray-500);
+}
+
+/* current balance charts section*/
+.current-balance {
+    margin-block-start: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+}
+
+.accounts {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    padding: 20px 1rem;
+    border: 1px solid var(--gray-200);
+    border-radius: 8px;
+}
+
+.pie-chart {
+    grid-column: 1 / 4;
+    width: 120px;
+    height: 120px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+.primary-account .pie-chart {
+    background: radial-gradient(
+            circle closest-side,
+            white 0,
+            white 50%,
+            transparent 50%,
+            transparent 100%,
+            white 0
+        ),
+        conic-gradient(
+            var(--primary-600) 0,
+            var(--primary-600) 20%,
+            var(--primary-500) 0,
+            var(--primary-500) 55%,
+            var(--primary-400) 0,
+            var(--primary-400) 65%,
+            var(--primary-300) 0,
+            var(--primary-300) 75%,
+            var(--primary-100) 0,
+            var(--primary-100) 100%
+        );
+}
+
+.secondary-account .pie-chart {
+    background: radial-gradient(
+            circle closest-side,
+            white 0,
+            white 50%,
+            transparent 50%,
+            transparent 100%,
+            white 0
+        ),
+        conic-gradient(
+            var(--gray-600) 0,
+            var(--gray-600) 20%,
+            var(--gray-500) 0,
+            var(--gray-500) 55%,
+            var(--gray-400) 0,
+            var(--gray-400) 65%,
+            var(--gray-300) 0,
+            var(--gray-300) 75%,
+            var(--gray-100) 0,
+            var(--gray-100) 100%
+        );
+}
+
+.account-balance {
+    grid-column: 1 / 3;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 0.5rem;
+}
+
+.first-span {
+    display: none;
+    color: var(--gray-900);
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.mid-span {
+    color: var(--gray-500);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+}
+
+.third-span {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.badge-dropdown {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.badge-dropdown span {
+    background-color: var(--success-50);
+    border-radius: 1rem;
+    padding-inline: 10px;
+    padding-block: 2px;
+    color: var(--success-500);
+}
+
+.badge-dropdown button {
+    text-align: right;
+}
+
+/*------------------------------------ card ---------------------------------------*/
+
+.cards {
+    border-radius: 0.5rem;
+    border: 1px solid var(--gray-200);
+}
+
+.box-shadow {
+    box-shadow: 0px 20px 0px -10px var(--gray-900);
+}
+
+.cards-container {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    margin-block-end: 24px;
+    padding-inline: 1rem;
+}
+
+.card1 .card-intem-title,
+.card1 .card-item-detail {
+    background-color: var(--gray-700);
+}
+.card1 .card-item-pay-pass,
+.card1 .card-item-mark {
+    background-color: var(--pink);
+    background-image: url(../img/Lines.svg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card1,
+.card2 {
+    color: var(--white);
+}
+
+.card2 .card-intem-title,
+.card2 .card-item-pay-pass {
+    background-color: var(--gray-100);
+    background-image: url(../img/Lines.svg);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.card2 .card-item-detail,
+.card2 .card-item-mark {
+    background-color: var(--gray-700);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: 1fr 1fr;
+    /* outline: 1px solid rgba(0, 0, 0, 0.05);
+    offset: -1px; */
+    border: 1px solid var(--gray-300);
+    border-radius: 20px;
+    overflow: hidden;
+    width: 320px;
+    height: 182px;
+}
+
+.card-intem-title,
+.card-item-detail,
+.card-item-pay-pass,
+.card-item-mark {
+    padding: 1rem;
+}
+
+.card-intem-title,
+.card-item-detail {
+    grid-column: 1 / 2;
+}
+
+.card-item-pay-pass,
+.card-item-mark {
+    grid-column: 2 / 3;
+    text-align: right;
+}
+
+.card-intem-title,
+.card-item-pay-pass {
+    grid-row: 1 / 2;
+    padding-block-end: 42px;
+}
+
+.card-item-detail,
+.card-item-mark {
+    grid-row: 2 / 3;
+}
+
+.card-item-mark {
+    display: flex;
+    align-items: center;
+}
+
+.card-item-detail {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.card-date {
+    text-align: right;
+    margin-inline-start: auto;
+}
+
+/* font styles for cards */
+.card-intem-title {
+    font-weight: 600;
+    line-height: 19px;
+}
+
+.card-item-detail {
+    font-family: var(--manrope);
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 1rem;
+    font-weight: 600;
+}
+
+.card-number {
+    flex-basis: 100%;
+    font-size: 1rem;
+    line-height: 22px;
+    letter-spacing: 3px;
+}
+
+.card2 .card-intem-title,
+.card2 .card-item-pay-pass {
+    color: var(--gray-700);
+}
+
+/* hidding second card mobile */
+.cards .card2 {
+    display: none;
+}
+
+/* card-balance-detail mini section*/
+
+.card-balance-detail {
+    margin-block-start: 1rem;
+    width: 320px;
+    display: flex;
+    flex-flow: row wrap;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.card-balance-detail .card-balance-amount {
+    font-weight: 400;
+    color: var(--gray-500);
+}
+
+.card-balance-detail .progress-bar {
+    margin-block-start: 0.5rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--primary-100);
+}
+
+.card-balance-detail .progress-bar-value {
+    width: 60%;
+    height: 100%;
+    border-radius: inherit;
+    background-color: var(--primary-600);
+}
+
+.card-balance-detail .less {
+    width: 35%;
+}
+
+/* manage cards buttom */
+.cards-bottom-container {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+    border-block-start: 1px solid var(--gray-200);
+    text-align: right;
+}
+
+.cards-bottom-container button {
+    border: 1px solid var(--gray-200);
+    padding: 10px 1rem;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+/*------------------- account details */
+.account-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+    margin-inline: 1rem;
+}
+
+/* balance over time */
+
+.balance-overtime .title-container {
+    padding-inline: 0;
+}
+
+.balance-overtime {
+    border: 1px solid var(--gray-200);
+    border-radius: 0.5rem;
+    padding-inline: 1rem;
+    padding-block-end: 20px;
+    margin-block-start: 2rem;
+}
+
+.balance-overtime-chart {
+    background-image: linear-gradient(
+        180deg,
+        #eaecf0 1.28%,
+        #ffffff 1.28%,
+        #ffffff 50%,
+        #eaecf0 50%,
+        #eaecf0 51.28%,
+        #ffffff 51.28%,
+        #ffffff 100%
+    );
+    background-size: 67px 67px;
+    overflow: hidden;
+}
+
+.balance-overtime-chart svg {
+    transform: scaleX(2);
+    width: 100%;
+}
+
+.balance-overtime-months {
+    color: var(--gray-500);
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* muestra los meses impares, con even se eliminan los elementos pares */
+.balance-overtime-months span:nth-child(even) {
+    display: none;
+}
+/* mostramos el ultimo elemento de la lista */
+.balance-overtime-months span:last-child {
+    display: block;
+}
+
+/* ------------------------- recent deposits section ---------------------- */
+.recent-deposits {
+    border: 1px solid var(--gray-200);
+    border-radius: 0.5rem;
+}
+
+.recent-deposits-items-container {
+    padding-inline: 1rem;
+}
+
+.recent-deposit-item {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    align-items: center;
+    border-block-start: 1px solid var(--gray-200);
+    padding-block: 1rem;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.recent-deposit-logo figure {
+    margin: 0;
+}
+
+.recent-deposit-logo img {
+    width: 100%;
+}
+
+.recent-deposit-info {
+    display: flex;
+    flex-flow: column wrap;
+    margin-inline-start: 12px;
+}
+
+.additional-info {
+    color: var(--gray-500);
+}
+
+.amount {
+    text-align: right;
+    color: var(--success-500);
+}
+
+.recent-deposits-bottom {
+    margin-block-start: 1rem;
+    padding-inline-start: 1rem;
+    margin-block-end: 1.25rem;
+}
+
+.recent-deposits-bottom a {
+    text-decoration: none;
+    color: var(--primary-700);
+}
+
+/* -------------------------------- tablet size start ---------------------------------------- */
+@media screen and (min-width: 768px) {
+    /* general */
+    .left-options .desktop,
+    .cards .desktop {
+        display: block;
+    }
+
+    .left-options .phone {
+        display: none;
+    }
+
+    /* User banner seccion */
+    .user-banner-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+    }
+
+    .user-banner-right-buttons {
+        margin: 0;
+    }
+
+    .user-banner-options {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-block-start: 24px;
+        align-items: flex-end;
+    }
+
+    .user-banner-options .right-options,
+    .user-banner-options .left-options {
+        margin: 0;
+    }
+
+    /* aligning current balance horizontaly */
+    .current-balance {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    /* balance over time */
+    .balance-overtime-months span:nth-child(even) {
+        display: block;
+    }
+
+    /* your cards */
+    .cards .card2 {
+        display: grid;
+    }
+
+    .card1 {
+        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+            0px 1px 2px rgba(16, 24, 40, 0.06);
+    }
+
+    /* recent deposits */
+    .recent-deposits-items-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+}
+
+/* ----------------------------------- desktop size start ------------------------------------ */
+@media screen and (min-width: 1200px) {
+    /* general styles */
+    .desktop {
+        display: block;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    /* nav bar styles */
+    header ul .nav-links {
+        display: block;
+    }
+
+    .right-nav .burguer-list {
+        display: none;
+    }
+
+    .left-nav ul {
+        display: flex;
+        gap: 4px;
+        align-items: center;
+    }
+
+    /* estilos de los links izquierdos*/
+
+    .left-nav ul li a {
+        text-decoration: none;
+        padding-block: 8px;
+        padding-inline: 12px;
+        text-transform: capitalize;
+        color: var(--gray-700);
+        font-size: 1rem;
+        line-height: 24px;
+        display: block;
+    }
+
+    .left-nav .logo {
+        padding-inline-start: 0;
+    }
+
+    .left-nav .focus a {
+        padding: 8px 12px;
+        background-color: var(--primary-50);
+        color: var(--primary-700);
+        border-radius: 8px;
+    }
+
+    /* estilos de los links derechos */
+    .right-nav ul {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .right-nav-button {
+        padding: 10px 1rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border: 1px solid var(--gray-300);
+        border-radius: 8px;
+        color: var(--gray-700);
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 500;
+    }
+
+    /* account balance styles */
+    .accounts {
+        grid-template-columns: 1fr 2fr auto;
+    }
+
+    .accounts .first-span {
+        display: block;
+        margin-block-end: 24px;
+    }
+
+    .pie-chart {
+        grid-column: 1/2;
+    }
+
+    .account-balance {
+        grid-column: 2/3;
+    }
+
+    .badge-dropdown {
+        grid-column: 3/4;
+    }
+
+    /* main grid styles */
+    .account-details {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto 1fr;
+        gap: 24px;
+        margin-block-start: 24px;
+    }
+
+    .balance-overtime {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-block-start: 0;
+    }
+
+    .cards {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    /* recent deposits */
+    .recent-deposits {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+
+    .recent-deposits-items-container {
+        grid-template-columns: 1fr;
+    }
+
+    .recent-deposit-item {
+        grid-template-columns: auto 2fr auto;
+    }
+}

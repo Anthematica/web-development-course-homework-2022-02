@@ -1,0 +1,525 @@
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+}
+
+@media screen and (max-width: 834px) {
+  /*---------- Container ----------*/
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-100);
+  }
+
+  /*---------- Header ----------*/
+  .header {
+    height: 200px;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__top--mobile {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-900);
+  }
+
+  .header__bottom--mobile {
+    display: block;
+  }
+
+  .menu__left {
+    margin-inline-start: 16px;
+  }
+
+  .menu__burger {
+    margin-inline-start: 24px;
+  }
+
+  .menu__right {
+    margin-inline-end: 16px;
+  }
+
+  .header__title {
+    text-align: center;
+    margin-block-start: 48px;
+  }
+
+  .header__date {
+    text-align: center;
+    margin-block-start: -4px;
+  }
+
+  /*---------- Main grid section ----------*/
+
+  .frontpage {
+    margin-inline: 16px;
+    display: grid;
+    grid-template-areas:
+      "headline secondary"
+      "advert advert"
+      "opinion opinion"
+      "market market"
+      "sports sports";
+    grid-template-columns: 518px 252px;
+    column-gap: 16px;
+  }
+
+  .headline {
+    width: 518px;
+    margin-block-start: 72px;
+    padding-inline-end: 16px;
+  }
+
+  .headline__img {
+    width: 518px;
+  }
+
+  .headline__title {
+    width: 506px;
+  }
+
+  .headline__p {
+    height: 398px;
+  }
+
+  .secondary {
+    width: 242px;
+    border: none;
+    padding: 0;
+    margin-inline-start: 16px;
+  }
+
+  .secondary__article {
+    display: block;
+  }
+
+  .secondary__img {
+    width: 252px;
+    height: 120px;
+  }
+
+  .secondary__img,
+  .secondary__header,
+  .secondary__p {
+    margin: 0;
+  }
+
+  .secondary__line {
+    margin-block-end: 16px;
+  }
+
+  .advertisement {
+    width: 802px;
+    padding: 0;
+    margin-block-start: 48px;
+    border-top: none;
+  }
+
+  .opinion {
+    margin-block-start: 48px;
+  }
+
+  .opinion__container {
+    display: flex;
+    column-gap: 24px;
+  }
+
+  .opinion__img {
+    position: static;
+    margin-block-end: 8px;
+  }
+
+  .opinion__title {
+    width: 160px;
+  }
+
+  .market,
+  .sports {
+    width: 802px;
+    margin-inline: 0;
+    grid-column: 1 / 3;
+  }
+
+  .market {
+    border: none;
+  }
+
+  .market__stock {
+    width: 188px;
+  }
+
+  .sports {
+    position: static;
+  }
+
+  .sports__container {
+    margin-block-start: 16px;
+  }
+
+  .sports__article {
+    margin-inline: 0;
+  }
+
+  .footer {
+    margin-block-start: 48px;
+  }
+
+  .footer__top {
+    margin-inline: 16px;
+    justify-content: center;
+  }
+
+  .footer__main {
+    width: 656px;
+    margin-inline-start: 16px;
+    margin-inline-end: 0;
+    display: grid;
+    grid-template-areas:
+      "discover regional careers"
+      "legal legal legal";
+    justify-content: start;
+    row-gap: 32px;
+    column-gap: 84px;
+  }
+
+  .nav__discover,
+  .nav__careers,
+  .nav__regional,
+  .nav__legal {
+    width: 182px;
+  }
+
+  .footer__bottom {
+    text-align: center;
+  }
+
+  .bottom__title,
+  .bottom__copy {
+    margin: 0;
+  }
+
+  .bottom__title {
+    padding-block-start: 10px;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .header {
+    height: 170px;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__top--mobile {
+    height: 56px;
+    display: flex;
+    align-items: center;
+    background-color: var(--gray-900);
+  }
+
+  .header__bottom--mobile {
+    display: block;
+  }
+
+  .menu__left {
+    display: flex;
+    justify-content: flex-start;
+    margin-inline-start: 16px;
+  }
+
+  .menu__burger {
+    margin-inline-start: 24px;
+  }
+
+  .menu__right {
+    margin-inline-end: 16px;
+  }
+
+  .header__title {
+    text-align: center;
+    margin-block-start: 32px;
+  }
+
+  .header__date {
+    text-align: center;
+    margin-block-start: -4px;
+  }
+
+  .frontpage {
+    margin-block: 48px;
+    margin-inline: 16px;
+    display: block;
+  }
+
+  .headline {
+    margin-block-start: 0;
+  }
+
+  .headline__img {
+    width: 382px;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .headline__title {
+    width: 346px;
+    margin-block-start: 16px;
+  }
+
+  .headline__p {
+    width: 382px;
+    height: 196px;
+    margin-block-start: 8px;
+  }
+
+  .italic {
+    font-style: italic;
+  }
+
+  .headline__link {
+    font-weight: 700;
+    font-style: italic;
+    display: block;
+    margin-block-start: 20px;
+  }
+
+  .secondary {
+    margin: 0;
+  }
+
+  .secondary__header {
+    display: none;
+  }
+
+  .secondary__article {
+    display: flex;
+  }
+
+  .secondary__img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-block-start: 8px;
+    border-radius: 4px;
+  }
+
+  .secondary__title,
+  .secondary__p {
+    margin-inline-start: 16px;
+  }
+
+  .secondary__title {
+    width: 246px;
+  }
+
+  .secondary__p {
+    width: 238px;
+    height: 66px;
+    margin-block-start: 4px;
+    margin-block-end: 4px;
+    margin-inline-end: 8px;
+  }
+
+  .secondary__line {
+    margin-block-start: 16px;
+    margin-block-end: 8px;
+    color: var(--gray-300);
+  }
+
+  .opinion__article {
+    position: relative;
+    margin-block-start: 16px;
+  }
+
+  .opinion__title {
+    width: 276px;
+  }
+
+  .opinion__container {
+    display: block;
+  }
+
+  .opinion__img {
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-start: 2px;
+  }
+
+  .opinion__line {
+    margin-block-start: 16px;
+  }
+
+  .advertisement__header {
+    width: 382px;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 2.4rem;
+    font-style: italic;
+    text-align: center;
+    color: var(--gray-700);
+  }
+
+  .advertisement__box {
+    width: 382px;
+    height: 300px;
+    margin-block-start: 8px;
+    background-color: var(--gray-300);
+  }
+
+  .market {
+    width: 382px;
+  }
+
+  .market__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stock__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-block-start: 16px;
+    gap: 16px;
+  }
+
+  .market__stock {
+    width: 182px;
+    height: 72px;
+    border-radius: 4px;
+    background-color: var(--white);
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+  .stock__name {
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-start: 12px;
+  }
+
+  .stock__graph {
+    position: absolute;
+    inset-block-start: 12px;
+    inset-inline-end: 12px;
+  }
+
+  .stock__exch {
+    position: absolute;
+    inset-block-end: 8px;
+    inset-inline-start: 12px;
+  }
+
+  .stock__perf {
+    position: absolute;
+    inset-block-end: 8px;
+    inset-inline-end: 12px;
+  }
+
+  .sports {
+    width: 382px;
+  }
+
+  .sports__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .sports__container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 16px;
+    gap: 16px;
+  }
+
+  .sports__article {
+    width: 182px;
+  }
+
+  .sports__img {
+    width: 182px;
+    height: 132px;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  .footer {
+      padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--gray-900);
+  }
+
+  .footer__top {
+    height: 76px;
+    margin-inline: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__links {
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .footer__social {
+    margin-block-start: 16px;
+    display: flex;
+    column-gap: 16px;
+  }
+
+  .footer__main {
+      width: 384px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 32px;
+      margin-block-start: 32px;
+  }
+
+  .nav__discover,
+  .nav__careers,
+  .nav__regional,
+  .nav__legal {
+    width: 384px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav__item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__bottom {
+    margin-block-start: 48px;
+    background-color: var(--offblack);
+  }
+
+  .bottom__title,
+  .bottom__copy {
+    text-align: center;
+  }
+
+  .bottom__copy {
+    margin-block-end: 20px;
+  }
+}
+
+@media screen and (max-width: 834px) {
+}

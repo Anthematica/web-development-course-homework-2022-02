@@ -1,0 +1,697 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --offblack: hsla(24, 5%, 6%, 1);
+  --gray-900: hsla(24, 6%, 16%, 1);
+  --gray-700: hsla(28, 5%, 40%, 1);
+  --gray-500: hsla(30, 4%, 60%, 1);
+  --gray-300: hsla(35, 8%, 80%, 1);
+  --gray-100: hsla(40, 12%, 95%, 1);
+  --white: hsla(0, 0%, 100%, 1);
+  --primary: hsla(224, 30%, 40%, 1);
+  --secondary: hsla(180, 34%, 37%, 1);
+  --urgent: hsla(360, 55%, 54%, 1);
+}
+
+html {
+  font-family: "Crimson Pro", serif;
+  background-color: var(--gray-100);
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.tablet-image {
+  display: none;
+}
+
+/* || mobile nav styles */
+.mobile-nav {
+  background-color: var(--gray-900);
+}
+
+.mobile-nav__container {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.nav__left-icons {
+  display: flex;
+  align-items: center;
+  column-gap: 32px;
+}
+
+/* || mobile header styles */
+.mobile-header__container {
+  padding-block: 32px;
+
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-header__title {
+  font-family: "ChomskyRegular";
+  font-weight: 400;
+  font-size: 48px;
+  color: var(--offblack);
+}
+
+.mobile-header__date {
+  font-size: 18px;
+}
+
+/* || header styles */
+.header__container,
+.main-grid__container,
+.secondary-grid__container,
+.first-row__container,
+.main-row__container,
+.bottom-row__container {
+  max-width: 1440px;
+  padding-inline: 120px;
+  margin: 0 auto;
+}
+
+.header__container {
+  padding-block-start: 16px;
+
+  display: grid;
+  align-items: center;
+  gap: 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    "header__icons    header__title    header__subscribe"
+    "     .           header__date     header__already-subscribed";
+}
+
+.header__icons {
+  grid-area: header__icons;
+  width: fit-content;
+
+  display: flex;
+  column-gap: 32px;
+}
+
+.header__title {
+  grid-area: header__title;
+  justify-self: center;
+  font-family: "ChomskyRegular";
+  font-weight: 400;
+  color: var(--offblack);
+  font-size: 25px;
+}
+
+.header__subscribe {
+  grid-area: header__subscribe;
+  justify-self: end;
+  padding-inline: 24px;
+  padding-block: 11px;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--primary);
+  text-transform: uppercase;
+  font-family: Helvetica;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.header__date {
+  grid-area: header__date;
+  align-self: start;
+  justify-self: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header__already-subscribed {
+  grid-area: header__already-subscribed;
+  margin-inline-end: 10px;
+  justify-self: end;
+  align-self: start;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-900);
+}
+
+.header__already-subscribed:hover {
+  color: var(--primary);
+}
+
+/* || main-grid styles */
+.main-grid__container {
+  margin-block: 80px 60px;
+  display: grid;
+  grid-template-columns: 1.5fr auto auto;
+  grid-template-areas:
+    "main-story    mid-stories      opinion-stories"
+    "main-story    advertisement    advertisement";
+}
+
+/* main-story styles */
+.main-story {
+  border-inline-end: 1px solid var(--gray-300);
+  padding-inline-end: 16px;
+  grid-area: main-story;
+}
+
+.main-story__title {
+  padding-block: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gray-900);
+}
+
+.hidden-text {
+  display: none;
+}
+
+.main-story__paragraph {
+  line-height: 1.5;
+  font-weight: 200;
+  font-size: 16px;
+  padding-block-end: 30px;
+}
+
+.main-story__continue {
+  text-decoration: none;
+  color: var(--gray-900);
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* mid-stories styles */
+.mid-stories {
+  padding-inline: 16px;
+  border-inline-end: 1px solid var(--gray-300);
+  grid-area: mid-stories;
+}
+
+.mid-stories__card {
+  padding-block: 16px;
+  border-block-end: 1px solid var(--gray-300);
+
+  display: flex;
+  column-gap: 20px;
+  align-items: flex-start;
+}
+
+.mid-stories__card:first-child {
+  padding-block-start: 0;
+}
+
+.mid-stories__card:last-child {
+  border: none;
+}
+
+.mid-stories__title,
+.mid-stories__paragraph {
+  line-height: 1.3;
+}
+
+.mid-stories__title {
+  padding-block-start: 0;
+}
+
+/* opinion stories */
+.opinion-stories {
+  padding-inline-start: 16px;
+  grid-area: opinion-stories;
+}
+
+.opinion__title {
+  color: var(--gray-900);
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.opinion__card {
+  padding-block: 16px;
+  border-block-end: 1px solid var(--gray-300);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.opinion__card:last-child {
+  border: none;
+}
+
+.opinion__name {
+  font-size: 18px;
+  color: var(--gray-700);
+  padding-block-end: 5px;
+}
+
+.opinion__description {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+/* advertisement styles */
+.advertisement {
+  padding-inline-start: 16px;
+  grid-area: advertisement;
+}
+
+.advertisement__container {
+  margin-block-start: 10px;
+  border-block-start: 1px solid var(--gray-300);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.advertisement__title {
+  padding-block: 16px 8px;
+  align-self: center;
+  color: var(--gray-700);
+  font-size: 16px;
+  font-style: italic;
+}
+
+.advertisement__content {
+  height: 120px;
+  background-color: var(--gray-300);
+}
+
+/* || secondary-grid styles */
+.secondary-grid__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.secondary-grid__container > * {
+  margin-block-end: 48px;
+}
+
+/* market-section styles */
+.market-section {
+  border-inline-end: 1px solid var(--gray-300);
+}
+
+.market-section__data,
+.sports-section__data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-end: 24px;
+}
+
+.market-section__title,
+.sports-section__title {
+  font-size: 24px;
+  color: var(--gray-900);
+}
+
+.market-section__visit,
+.sports-section__visit {
+  font-family: Helvetica;
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--gray-900);
+  font-weight: 700;
+}
+
+.market-section__stocks {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.market-section__visit {
+  padding-inline-end: 16px;
+}
+
+/* sports-section syles */
+.sports-section {
+  padding-inline-start: 16px;
+  overflow-x: auto;
+}
+
+.sports-section__data {
+  margin-block-end: 33px;
+}
+
+.sports-section__stories {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 16px;
+}
+
+/* || footer styles */
+footer {
+  font-family: helvetica;
+}
+
+.first-row,
+.main-row {
+  background-color: var(--gray-900);
+}
+
+/* first-row styles */
+.first-row__container {
+  padding-block: 26px;
+  border-block-end: 1px solid var(--gray-700);
+  display: flex;
+  column-gap: 50px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.first-row__text {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.first-row__item {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--gray-300);
+}
+
+.first-row__item:hover {
+  color: var(--primary);
+}
+
+.first-row__icons {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+/* main-row styles */
+.main-row__container {
+  padding-block-start: 32px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.info {
+  padding-block-end: 32px;
+}
+
+.info__title {
+  color: var(--gray-300);
+  font-weight: 700;
+  font-size: 18px;
+  padding-block-end: 10px;
+}
+
+.info__list {
+  list-style-type: none;
+
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.info__item {
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--white);
+}
+
+.info__item:hover {
+  color: var(--primary);
+}
+
+/* bottom-row styles */
+.bottom-row {
+  background-color: var(--offblack);
+}
+
+.bottom-row__container {
+  padding-block: 20px;
+}
+
+.bottom-row__logo {
+  font-family: "ChomskyRegular";
+  color: var(--gray-100);
+  font-weight: 400;
+  font-size: 25px;
+  padding-block-end: 8px;
+}
+
+.bottom-row__copyright {
+  font-family: helvetica;
+  color: var(--gray-500);
+  font-size: 14px;
+}
+
+/* Tablet size */
+@media (max-width: 834px) {
+  .header__container,
+  .main-grid__container,
+  .secondary-grid__container,
+  .first-row__container,
+  .main-row__container,
+  .bottom-row__container {
+    width: 100%;
+    padding-inline: 16px;
+  }
+
+  .mid-stories__image {
+    display: none;
+  }
+
+  .tablet-image {
+    display: block;
+    width: 252px;
+    height: 120px;
+  }
+
+  .main-grid__container {
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+      "main-story         mid-stories"
+      "advertisement      advertisement"
+      "opinion-stories    opinion-stories";
+  }
+
+  .mobile-header__container,
+  .mobile-nav__container {
+    display: flex;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .hidden-text {
+    display: block;
+    line-height: 1.5;
+    font-weight: 200;
+    font-size: 16px;
+    padding-block-end: 30px;
+  }
+
+  .main-story__image {
+    max-width: 100%;
+  }
+
+  .main-story__paragraph {
+    display: none;
+  }
+
+  .mid-stories {
+    border-inline-end: none;
+  }
+
+  .mid-stories__card {
+    flex-direction: column;
+  }
+
+  .advertisement__container {
+    border: none;
+  }
+
+  .advertisement,
+  .opinion-stories {
+    padding: 0;
+  }
+
+  .opinion-stories {
+    margin-block-start: 48px;
+  }
+
+  .opinion__cards-container {
+    padding-block: 16px;
+
+    display: flex;
+    align-items: flex-start;
+    column-gap: 32px;
+  }
+
+  .opinion__card {
+    padding: 0;
+    border-block-end: none;
+
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    row-gap: 10px;
+  }
+
+  .secondary-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .market-section {
+    padding: 0;
+    border: none;
+  }
+
+  .market-section__stocks {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .market-section__stocks > * {
+    width: 100%;
+  }
+
+  .market-section__visit {
+    padding: 0;
+  }
+
+  .sports-section {
+    padding: 0;
+  }
+
+  .first-row__container {
+    justify-content: center;
+  }
+
+  .bottom-row__container {
+    text-align: center;
+  }
+}
+
+/* Phone styles */
+@media (max-width: 414px) {
+  .main-grid__container {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main-story"
+      "mid-stories"
+      "opinion-stories"
+      "advertisement";
+  }
+
+  .tablet-image {
+    display: none;
+  }
+
+  .mid-stories__image {
+    display: block;
+  }
+
+  .mid-stories,
+  .opinion-stories,
+  .advertisement,
+  .market-section,
+  .sports-section,
+  footer {
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-row__container {
+    padding: 0;
+  }
+
+  .hidden-text {
+    display: none;
+  }
+
+  .main-story {
+    border: none;
+    margin-block: -80px 60px;
+    padding-inline-end: 0;
+  }
+
+  .main-story__paragraph {
+    display: block;
+  }
+
+  .mid-stories__card {
+    flex-direction: row;
+  }
+
+  .opinion__cards-container {
+    flex-direction: column;
+    justify-content: space-between;
+    column-gap: 0;
+  }
+
+  .opinion__card {
+    padding-block: 16px;
+    border-block-end: 1px solid var(--gray-300);
+    flex-direction: row;
+    width: 100%;
+    row-gap: 0;
+  }
+
+  .opinion__card:last-child {
+    border: none;
+  }
+
+  .advertisement__content {
+    height: 300px;
+  }
+
+  .market-section {
+    height: fit-content;
+  }
+
+  .market-section__stocks {
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sports-section {
+    margin-block: -120px 50px;
+  }
+
+  .sports-section img {
+    width: 170px;
+  }
+  .sports-section__stories > * {
+    padding-block-end: 10px;
+    width: 100%;
+  }
+
+  .sports-section__stories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__container {
+    text-align: center;
+  }
+
+  .first-row__container {
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  .main-row {
+    padding-block: 32px 48px;
+  }
+}
