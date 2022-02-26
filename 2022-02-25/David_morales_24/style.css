@@ -1,508 +1,560 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Manrope', sans-serif;
-    }
-    
-    a {
-        color: inherit;
-        text-decoration: none;
-    }
-    
-    li {
-        list-style: none;
-    }
-    
-    button {
-        position: relative;
-        background: none;
-        border: 1px solid gray;
-        border-radius: 5px;
-        padding-block: 10px;
-        padding-inline: 30px;
-        height: 45px;
-    }
-    
-    button>span {
-        position: relative;
-        inset-block-start: -5px;
-    }
-    
-    body {
-        position: relative;
-        min-height: 100vh;
-        min-width: 410px;
-        background-color: #FCFCFD;
-    }
-    
-     ::-webkit-scrollbar {
-        width: 20px;
-        background-color: white;
-    }
-    
-     ::-webkit-scrollbar-track {
-        border-radius: 10px;
-    }
-    
-     ::-webkit-scrollbar-thumb {
-        border-radius: 10px;
-        background-color: #7f56d993;
-        /*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    position: relative;
+    background: none;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-block: 10px;
+    padding-inline: 30px;
+    height: 45px;
+}
+
+button>span {
+    position: relative;
+    inset-block-start: -5px;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    min-width: 410px;
+    background-color: #FCFCFD;
+}
+
+ ::-webkit-scrollbar {
+    width: 20px;
+    background-color: white;
+}
+
+ ::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #7f56d993;
+    /*
     
     background-color: #7F56D9;*/
+}
+
+.main,
+.main>div {
+    display: grid;
+    position: relative;
+}
+
+.line_graph>svg {
+    position: absolute;
+    height: 600px;
+}
+
+.line_graph {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 500px;
+}
+
+.navegation__config {
+    display: none;
+}
+
+.navegation__config>:not(:first-child) {
+    border: none;
+}
+
+.navegation__config>:first-child {
+    width: 180px;
+}
+
+.header {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    inset-inline: 0px;
+    inset-block-start: 0px;
+    margin-block-end: 30px;
+    background-color: white;
+}
+
+.header>:nth-child(1) {
+    position: relative;
+    width: fit-content;
+    margin-block: 20px;
+    margin-inline-start: 20px;
+}
+
+.header nav>li {
+    list-style: none;
+    margin-inline-end: 30px;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.active {
+    color: #6941C6;
+    background-color: #ddd2f73b;
+    border-radius: 6px;
+    padding-inline: 20px;
+}
+
+.option__desktop {
+    display: none;
+    position: absolute;
+    inset-inline-start: 160px;
+    inset-block-start: 6px;
+}
+
+.header nav {
+    display: flex;
+}
+
+.header>:nth-child(1)>svg {
+    inset-inline-start: 10px;
+}
+
+.header>:nth-child(1)>:nth-child(2) {
+    position: relative;
+    margin-block-end: 10px;
+}
+
+.header__section2 {
+    display: flex;
+    position: absolute;
+    inset-inline-end: 10px;
+    inset-block-start: 20px;
+    cursor: pointer;
+}
+
+.main {
+    padding-block-end: 200px;
+    overflow-x: hidden;
+}
+
+.main>div {
+    inset-block-start: 80px;
+    margin-inline: 20px;
+    margin-block-end: 20px;
+    padding-block: 20px;
+    border-radius: 6px;
+    padding-inline-end: 20px;
+}
+
+.main> :not(:first-child) {
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.6);
+    padding-inline-start: 20px;
+    background-color: white;
+}
+
+.main__section1>div>a {
+    color: gray;
+}
+
+.main__section1>:not(:last-child) {
+    margin-block-end: 26px;
+}
+
+.buttonGroup {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.buttonGroup>button {
+    position: relative;
+    border: none;
+    border-left: 1px solid gray;
+    border-radius: 0px;
+    padding-inline: 26px;
+}
+
+.buttonGroup>:first-child {
+    border: none;
+}
+
+.btn__send {
+    background: #7F56D9;
+    position: relative;
+    color: white;
+    inset-block-start: -4px;
+}
+
+.grafica {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-block-end: 20px;
+}
+
+.main__section2 .grafica {
+    background-image: conic-gradient(#7F56D9 20%, #9E77Ed 20% 60%, #B692F6 60% 70%, #D6BBFB 70% 80%, #E9D7FE 80%);
+}
+
+.main__section3 .grafica {
+    background-image: conic-gradient(#475467 20%, #667085 20% 60%, #98A2B3 60% 70%, #D0D5DD 70% 80%, #F2F4F7 80%);
+}
+
+.grafica::before {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    inset-block-start: 25%;
+    inset-inline-start: 25%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.main__subsection__bottom {
+    color: #027A48;
+    position: absolute;
+    inset-inline-end: 20px;
+    inset-block-end: 20px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 10px;
+}
+
+.main__subsection__bottom>svg,
+.main__subsection__top>svg {
+    cursor: pointer;
+    position: relative;
+    inset-inline-start: 100%;
+}
+
+.main__subsection__bottom>span {
+    padding-block: 5px;
+    padding-inline: 10px;
+    border-radius: 40px;
+    background-color: #ECFDF3;
+}
+
+.main__subsection__top {
+    position: absolute;
+    inset-inline-end: 20px;
+    inset-block-start: 20px;
+}
+
+.main__section4 {
+    padding-block: 200px;
+}
+
+.footer__main__section4 {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.footer__main__section4>:nth-child(even):not(:last-child) {
+    display: none;
+}
+
+.main__section5__body {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card__body {
+    position: relative;
+    width: 100%;
+    margin-inline-end: 20px;
+    margin-block: 20px;
+    display: grid;
+    color: white;
+    border: white;
+    display: grid;
+    overflow-x: hidden;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    height: 190px;
+    border-radius: 20px;
+    width: 310px;
+    justify-content: center;
+    box-shadow: 0px 1px 5px rgba(16, 24, 40, 0.6);
+}
+
+.card1 {
+    z-index: 2;
+}
+
+.card1 .card__section2>:first-child {
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+}
+
+.card1 .card__section2>:last-child {
+    position: absolute;
+    inset-block-end: 20px;
+    inset-inline-end: 20px;
+}
+
+.card2 .card__section1>svg {
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-end: 20px;
+}
+
+.card2 .card__section2>svg {
+    position: absolute;
+    inset-block-end: 20px;
+    inset-inline-end: 20px;
+}
+
+.card2 {
+    position: absolute;
+    inset-block-start: 70px;
+}
+
+.card__body>div {
+    position: relative;
+}
+
+.title_card {
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-start: 20px;
+}
+
+.card__footer {
+    position: absolute;
+    inset-inline-start: 20px;
+    inset-block-end: 20px;
+}
+
+.card__footer span {
+    position: relative;
+    margin-inline-end: 20px;
+}
+
+.card__footer>div {
+    position: relative;
+    margin-block-start: 10px;
+}
+
+.card2>.card__section1>span {
+    color: black;
+    font-weight: 700;
+}
+
+.card__footer>:nth-child(2) {
+    position: absolute;
+    inset-inline-end: 0px;
+}
+
+.card1>.card__body>.card__section1 {
+    background-color: #344054;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.card1>.card__body>.card__section2 {
+    background-color: #F4D9D0;
+    grid-row: 1/3;
+}
+
+.card2>.card__body>.card__section1 {
+    background-color: rgb(228, 228, 228);
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.card2>.card__body>.card__section1>span {
+    color: black;
+}
+
+.card2>.card__body>.card__section2 {
+    background-color: #344054;
+    grid-column: 1/4;
+    grid-row: 2;
+}
+
+.details__card {
+    position: relative;
+    display: none;
+    margin-block: 10px;
+    width: 300px;
+    overflow: auto;
+    display: none;
+}
+
+.details__card>p {
+    position: absolute;
+    inset-inline-end: 0px;
+    inset-block-start: 0px;
+}
+
+.details__card>progress {
+    width: 300px;
+    height: 20px;
+}
+
+.main__section5__body {
+    justify-content: center;
+}
+
+.main__section5__footer {
+    border-top: 1px solid gray;
+    padding-block-start: 30px;
+    margin-block: 30px;
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.main__section5__footer>button {
+    position: absolute;
+    inset-inline-end: 0px;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+
+.main__section6__body {
+    position: relative;
+    margin-block: 20px;
+}
+
+.main__section6>a {
+    color: #6941C6;
+}
+
+.main__section6__body>div>span {
+    color: #039855;
+    position: absolute;
+    inset-block-start: 30px;
+    inset-inline-end: 10px;
+}
+
+.main__section6__body>:first-child {
+    border-top: 1px solid gray;
+}
+
+.main__section6__body>div {
+    position: relative;
+    border-bottom: 1px solid gray;
+    padding-block: 20px;
+    display: flex;
+}
+
+.main__section6__body>div>div {
+    position: relative;
+    inset-inline-start: 20px;
+}
+
+@media(min-width:640px) {
+    .main {
+        grid-template-columns: repeat(2, 1fr);
     }
-    
-    .main,
-    .header,
-    .main>div {
-        display: grid;
+    .main__section1,
+    .main__section4,
+    .main__section5,
+    .main__section6 {
+        grid-column: 1/4;
+    }
+    .card2 {
         position: relative;
+        inset-block-start: 0px;
     }
-    
-    .line_graph>svg {
-        position: absolute;
-        height: 600px;
-    }
-    
-    .line_graph>:first-child {}
-    
-    .line_graph {
-        position: relative;
-        overflow: hidden;
-        width: 100%;
-        height: 500px;
-    }
-    
-    .navegation__config {
-        display: flex;
-        position: relative;
-        inset-block-start: -10px;
-        inset-inline-end: 100px;
-    }
-    
-    .navegation__config>:not(:first-child) {
-        border: none;
-    }
-    
-    .header {
-        height: 70px;
-        background-color: white;
-        margin-block-end: 30px;
-    }
-    
-    .header>:nth-child(1) {
-        position: relative;
-        width: fit-content;
-        margin-block: 20px;
-        margin-inline-start: 20px;
-    }
-    
-    .header nav>li {
-        list-style: none;
-        margin-inline-end: 30px;
-        padding-inline: 20px;
-        padding-block: 5px;
-    }
-    
-    .active {
-        color: #6941C6;
-        background-color: #ddd2f73b;
-        border-radius: 6px;
-        padding-inline: 20px;
-    }
-    
-    .option__desktop {
+}
+
+@media (min-width:1100px) {
+    .header__section2>svg {
         display: none;
-        position: absolute;
-        inset-inline-start: 200px;
-        inset-block-start: 10px;
     }
-    
-    .header nav {
-        display: flex;
-    }
-    
-    .header>:nth-child(1)>svg {
-        inset-inline-start: 10px;
-    }
-    
-    .header>:nth-child(1)>:nth-child(2) {
-        position: relative;
-        margin-block-end: 10px;
-    }
-    
-    .header>:nth-child(2) {
-        position: absolute;
-        inset-inline-end: 10px;
-        inset-block-start: 20px;
-        cursor: pointer;
-    }
-    
-    .main>div {
-        margin-inline: 20px;
-        margin-block-end: 20px;
-        padding-block: 20px;
-        border-radius: 6px;
-        padding-inline-end: 20px;
-    }
-    
-    .main> :not(:first-child) {
-        box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.6);
-        padding-inline-start: 20px;
-        background-color: white;
-    }
-    
-    .main__section1>div>a {
-        color: gray;
-    }
-    
-    .main__section1>:not(:last-child) {
-        margin-block-end: 26px;
-    }
-    
-    .buttonGroup {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        border: 1px solid gray;
-        border-radius: 5px;
-    }
-    
-    .buttonGroup>button {
-        position: relative;
-        border: none;
-        border-left: 1px solid gray;
-        border-radius: 0px;
-        padding-inline: 26px;
-    }
-    
-    .buttonGroup>:first-child {
-        border: none;
-    }
-    
-    .btn__send {
-        background: #7F56D9;
-        position: relative;
-        color: white;
-        inset-block-start: -4px;
-    }
-    
-    .grafica {
-        position: relative;
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        margin-block-end: 20px;
-    }
-    
-    .main__section2 .grafica {
-        background-image: conic-gradient(#7F56D9 20%, #9E77Ed 20% 60%, #B692F6 60% 70%, #D6BBFB 70% 80%, #E9D7FE 80%);
-    }
-    
-    .main__section3 .grafica {
-        background-image: conic-gradient(#475467 20%, #667085 20% 60%, #98A2B3 60% 70%, #D0D5DD 70% 80%, #F2F4F7 80%);
-    }
-    
-    .grafica::before {
-        content: "";
-        position: absolute;
-        width: 50%;
-        height: 50%;
-        inset-block-start: 25%;
-        inset-inline-start: 25%;
-        background-color: white;
-        border-radius: 50%;
-    }
-    
-    .main__subsection__bottom {
-        color: #027A48;
-        position: absolute;
-        inset-inline-end: 20px;
-        inset-block-end: 20px;
-        display: grid;
-        grid-template-rows: repeat(2, 1fr);
-        row-gap: 10px;
-    }
-    
-    .main__subsection__bottom>svg,
-    .main__subsection__top>svg {
-        cursor: pointer;
-        position: relative;
-        inset-inline-start: 100%;
-    }
-    
-    .main__subsection__bottom>span {
-        padding-block: 5px;
-        padding-inline: 10px;
-        border-radius: 40px;
-        background-color: #ECFDF3;
-    }
-    
-    .main__subsection__top {
-        position: absolute;
-        inset-inline-end: 20px;
-        inset-block-start: 20px;
-    }
-    
     .main__section4 {
         padding-block: 600px;
     }
-    
-    .footer__main__section4 {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(7, 1fr);
+    .main {
+        padding-inline: 50px;
+        grid-template-columns: repeat(6, 1fr);
     }
-    
-    .footer__main__section4>:nth-child(even):not(:last-child) {
-        display: none;
+    .header__section1 {
+        inset-inline-start: 40px;
     }
-    
-    .card__body {
-        position: relative;
-        width: 100%;
-        margin-inline-end: 20px;
-        margin-block: 20px;
-        display: grid;
-        color: white;
-        border: 2px solid white;
-        display: grid;
-        overflow-x: hidden;
+    .header__section2 {
+        inset-inline-end: 60px;
+    }
+    .main__section1 {
+        grid-column: 1/7;
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
-        grid-template-columns: repeat(3, 1fr);
-        height: 190px;
-        border-radius: 20px;
     }
-    
-    .title_card {
-        position: absolute;
-        inset-block-start: 20px;
-        inset-inline-start: 20px;
-    }
-    
-    .card__footer {
-        position: absolute;
-        inset-inline-start: 20px;
-        inset-block-end: 20px;
-    }
-    
-    .card__footer span {
-        position: relative;
-        margin-inline-end: 20px;
-    }
-    
-    .card__footer>div {
-        position: relative;
-        margin-block-start: 10px;
-    }
-    
-    .card2>.card__section1>span {
-        color: black;
-        font-weight: 700;
-    }
-    
-    .card__footer>:nth-child(2) {
-        position: absolute;
-        inset-inline-end: 0px;
-    }
-    
-    .card1 {
-        position: relative;
-        z-index: 2;
-    }
-    
-    .card1>.card__body>.card__section1 {
-        background-color: #344054;
-        grid-column: 1/3;
-        grid-row: 1/3;
-    }
-    
-    .card1>.card__body>.card__section2 {
-        background-color: #F4D9D0;
-        grid-row: 1/3;
-    }
-    
-    .card2>.card__body>.card__section1 {
-        background-color: rgb(228, 228, 228);
+    .main__section2 {
         grid-column: 1/4;
-        grid-row: 1;
     }
-    
-    .card2>.card__body>.card__section1>span {
-        color: black;
+    .main__section3 {
+        grid-column: 4/7;
     }
-    
-    .card2>.card__body>.card__section2 {
-        background-color: #344054;
-        grid-column: 1/4;
+    .main__section4 {
+        grid-column: 1/5;
+        grid-row: 3/4;
+    }
+    .main__section5 {
+        grid-column: 1/5;
+        grid-row: 4;
+    }
+    .main__section6 {
+        grid-column: 5/7;
+        grid-row: 3/5;
+        min-width: 380px
+    }
+    .main__section1>:nth-child(2) {
+        grid-column: 3;
+    }
+    .main__section1>:nth-child(3) {
+        grid-column: 1/2;
         grid-row: 2;
     }
-    
-    .card2 {
-        position: absolute;
-        width: 280px;
-        inset-inline-start: 40px;
-        inset-block-start: 60px;
+    .buttonGroup>button {
+        height: auto;
     }
-    
-    .details__card {
+    .main__section1>:nth-child(4) {
         position: relative;
-        display: none;
-        margin-block: 10px;
+        grid-column: 3;
+        grid-row: 2;
     }
-    
-    .details__card>p {
-        position: absolute;
-        inset-inline-end: 0px;
-        inset-block-start: 0px;
-    }
-    
-    .details__card>progress {
-        width: 400px;
-        height: 20px;
-    }
-    
-    .main__section5__body {
-        justify-content: center;
-    }
-    
-    .main__section5__footer {
-        position: relative;
-        width: 100%;
-        height: 50px;
-    }
-    
-    .main__section5__footer>button {
-        position: absolute;
-        inset-inline-end: 0px;
-        border-radius: 10px;
-        border: 1px solid gray;
-    }
-    
-    .main__section6__body {
-        position: relative;
-        margin-block: 20px;
-    }
-    
-    .main__section6>a {
-        color: #6941C6;
-    }
-    
-    .main__section6__body>div>span {
-        color: #039855;
-        position: absolute;
-        inset-block-start: 30px;
-        inset-inline-end: 10px;
-    }
-    
-    .main__section6__body>:first-child {
-        border-top: 1px solid gray;
-    }
-    
-    .main__section6__body>div {
-        position: relative;
-        border-bottom: 1px solid gray;
-        padding-block: 20px;
+    .footer__main__section4>:nth-child(even):not(:last-child) {
         display: flex;
     }
-    
-    .main__section6__body>div>div {
-        position: relative;
-        inset-inline-start: 20px;
+    .footer__main__section4 {
+        grid-template-columns: repeat(12, 1fr);
     }
-    
-    @media(min-width:640px) {
-        .main {
-            grid-template-columns: repeat(2, 1fr);
-        }
-        .main__section1,
-        .main__section4,
-        .main__section5,
-        .main__section6 {
-            grid-column: 1/4;
-        }
-        .card2 {
-            position: relative;
-            inset: 0;
-            width: 100%;
-        }
+    .option__desktop {
+        display: block;
     }
-    
-    @media (min-width:1100px) {
-        .main {
-            margin-inline: 50px;
-        }
-        .header {
-            padding-inline: 120px;
-        }
-        .main {
-            grid-template-columns: repeat(6, 1fr);
-        }
-        .main__section1 {
-            grid-column: 1/7;
-            grid-template-columns: 400px auto 400px;
-            grid-template-rows: repeat(2, 1fr);
-        }
-        .main__section2 {
-            grid-column: 1/4;
-        }
-        .main__section3 {
-            grid-column: 4/7;
-        }
-        .main__section4 {
-            grid-column: 1/5;
-            grid-row: 3/4;
-        }
-        .main__section5 {
-            grid-column: 1/5;
-            grid-row: 4;
-            min-width: 900px;
-        }
-        .main__section6 {
-            grid-column: 5/7;
-            grid-row: 3/5;
-            min-width: 380px
-        }
-        .main__section1>:nth-child(2) {
-            grid-column: 3;
-        }
-        .main__section1>:nth-child(3) {
-            grid-column: 1;
-            grid-row: 2;
-        }
-        .main__section1>:nth-child(4) {
-            position: relative;
-            grid-column: 3;
-            grid-row: 2;
-        }
-        /**/
-        .footer__main__section4>:nth-child(even):not(:last-child) {
-            display: flex;
-        }
-        .footer__main__section4 {
-            grid-template-columns: repeat(12, 1fr);
-        }
-        .option__desktop {
-            display: block;
-        }
-        .details__card {
-            display: block;
-        }
-        progress {
-            margin-block: 10px;
-        }
-        .main__section5__body {
-            display: grid;
-            grid-template-rows: repeat(1, 1fr);
-            grid-template-columns: 400px auto 400px;
-            grid-row: 30px;
-            row-gap: 10px;
-            justify-content: space-around;
-        }
-        .card1 {
-            grid-column: 1/2;
-        }
-        .card2 {
-            grid-column: 3/4;
-        }
+    .details__card {
+        display: block;
     }
+    .progress {
+        margin-block: 10px;
+    }
+    .main__section5__body {
+        justify-content: space-around;
+    }
+    .navegation__config {
+        display: flex;
+        position: absolute;
+        inset-block-start: -10px;
+        inset-inline-end: 0px;
+    }
+}
