@@ -4,8 +4,12 @@
     --primary-400:#B692F6;
     --primary-300: #D6BBFB;
     --gray: #344054;
+    --gray-100: #F2F4F7;
     --gray-900: #101828;
+    --gray-600:#475467;
     --gray-700: #344054;
+    --gray-300: #D0D5DD;
+    --gray-400: #98A2B3;
     --gray--500: #667085;
     --primary-100: #F4EBFF;
     --succes-50: #ECFDF3;
@@ -22,14 +26,20 @@ html {
     font-family: 'Inter', sans-serif;
 }
 
+/* In order to each icon has a cursor pointer */
+svg {
+    cursor: pointer;
+}
 /*-------------- Header's styles -----------------*/
 header {
     height: 73px;
     display: flex;
     background-color: white;
-    border-bottom: 1px solid var(--gray);
+    border-bottom: 1px solid #eaecf0;
     justify-content: space-between;
     justify-content: space-around;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 .menu_icon {
     display: none;
@@ -135,6 +145,7 @@ header {
 
 .button_template:hover {
     color: #667085;
+    background-color: #FCFCFD;
 }
 .header_right button span {
     margin-inline-end: 10px;
@@ -149,6 +160,11 @@ header {
 main {
     background-color: #FCFCFD;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
 }
 
 .mobile_graph_option {
@@ -159,6 +175,7 @@ main {
     padding-inline-end: 112px;
     display: flex;
     flex-wrap: wrap;
+    max-width: 1440px;
 
 }
 .account_details__up {
@@ -199,6 +216,10 @@ main {
 .purple_button {
     background-color: var(--purple);
     color: white;
+}
+.purple_button:hover {
+    background-color: var(--primary-500);
+    color: var(--primary-100)
 }
 
 .account_details_down {
@@ -257,6 +278,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     row-gap: 20px;
+    max-width: 1440px;
 }
 .card {
     width: 600px;
@@ -274,11 +296,19 @@ main {
     width: 120px;
     height: 120px;
     border-radius: 50%;
-    background-image: radial-gradient(white 25%,transparent 25% 100%), 
+    background-image: radial-gradient(white 35%,transparent 35% 100%), 
     conic-gradient(var(--purple) 0, var(--purple) 20%, var(--primary-500) 20%, var(--primary-500) 50%, var(--primary-400) 50%, var(--primary-400) 60%, var(--primary-300) 60%, var(--primary-300) 75%, var(--primary-100) 75%, var(--primary-100) 100%);
     margin-inline-end: 24px;
 }
 
+.donut_chart2 {
+    background-image: radial-gradient(white 35%,transparent 35% 100%), 
+    conic-gradient(var(--gray-600) 0, var(--gray-600) 20%, var(--gray--500) 20%, var(--gray--500) 50%, var(--gray-400) 50%, var(--gray-400) 60%, var(--gray-300) 60%, var(--gray-300) 75%, var(--gray-100) 75%, var(--gray-100) 100%);
+}
+
+.donut_chart_info {
+    margin-block-start: 20px;
+}
 .donut_chart_info_row1 {
  display: flex;
 }
@@ -362,12 +392,17 @@ main {
     font-weight: 400;
     color: var(--gray--500)
 }
+
 .title {
     display: flex;
     justify-content: space-between;
     margin-block-end: 32px;
+}
+
+.graph h1 {
     font-size: 18px;
     font-weight: 500;
+    color: var(--gray-900)
 }
 
 .credit_cards {
@@ -378,6 +413,7 @@ main {
     border-radius: 8px;
     padding: 24px 24px 0 24px;
     margin-block-start: 24px;
+    position: relative;
 }
 
 .cards-items {
@@ -429,6 +465,8 @@ main {
     font-weight: 600;
     color: white;
     font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 
 }
 
@@ -440,10 +478,14 @@ main {
 }
 
 .card1-left-number_account li{
-    font-size: 11px;
+    font-size: 15px;
     font-weight: 600;
     color: white;
     font-family: 'Manrope', sans-serif;
+    letter-spacing: 2px;
+}
+.masterCardError {
+    background-repeat: no-repeat;
 }
 
 .card1-right {
@@ -526,6 +568,9 @@ main {
     background-color: var(--purple);
     border-radius: 4px;
 }
+.graph-purple2 {
+    width: 100px;
+}
 
 .button-container {
     display: flex;
@@ -536,7 +581,7 @@ main {
 }
 
 .recents_deposits {
-    width: 400px;
+    width: 398px;
     height: 718px;
     border-radius: 8px;
     box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
@@ -563,6 +608,11 @@ main {
     align-items: center;
     height: 72px;
     border-bottom: 1px solid #EAECF0;
+}
+
+
+.deposits_details1 {
+    border-top: 1px solid #EAECF0;
 }
 
 .expiry_info {
@@ -596,6 +646,28 @@ main {
     color: var(--purple);
     text-decoration: none;
 }
+
+.show_more:hover {
+    color: white;
+    background-color: var(--purple);
+}
+.card2_left_name {
+    margin-block-start: 14px;
+}
+
+.manageCards {
+    position: absolute;
+    inset-inline-end: 24px;
+    inset-block-end: 20px;
+}
+.border_bottom {
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray-300);
+    inset-block-end: 80px;
+    inset-inline-start: 0;
+}
 /*-------------- /Main's styles ------------------*/
 
 /*-------------- mediaqueries para desktop ------------------*/
@@ -621,15 +693,20 @@ main {
         flex-direction: row-reverse;
         justify-content: space-between;
     }
-
+  
     .graph {
         width: 343px;
         height: 294px;
     }
 
+    .recents_deposits {
+        width: 360px;
+    }
+
     .credit_cards {
         width: 343px;
         height: 362px;
+       
     }
 
     .percentages-graph {
@@ -662,6 +739,11 @@ main {
         width: 343px;
         height: 294px;
     }
+
+    .master-card svg {
+        display: none;
+    }
+    
     .credit_cards {
         width: 343px;
         height: 362px;
@@ -679,7 +761,8 @@ main {
     }
     .card1 {
         position: absolute;
-        transform: translateY(-12px);
+        transform: translateY(-12px) translateX(-4px);
+        border-bottom: 1px solid #98A2B3;
     }
     .month li:nth-child(2), .month li:nth-child(4), .month li:nth-child(6), .month li:nth-child(8), .month li:nth-child(10) {
         display: none;

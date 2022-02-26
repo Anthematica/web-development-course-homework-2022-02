@@ -1,0 +1,54 @@
+.card {
+    width: 343px;
+    height: 246px;
+}
+
+.card_title {
+    display: none;
+}
+.donut_chart_info_up{
+    display: flex;
+    width: 100%;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.graph {
+    width: 343px;
+    height: 294px;
+}
+
+.recents_deposits {
+    width: 360px;
+}
+
+.credit_cards {
+    width: 343px;
+    height: 362px;
+   
+}
+
+.percentages-graph {
+    display: none;
+}
+
+.account_details {
+    padding: 0;
+    padding-left: 16px;
+}
+.credit_cards_container {
+    position: relative;
+
+}
+
+.card1 {
+    position: absolute;
+}
+
+.dates_button {
+    width: 85px;
+}
+
+.month li:nth-child(2), .month li:nth-child(4), .month li:nth-child(6), .month li:nth-child(8), .month li:nth-child(10) {
+    display: none;
+}
