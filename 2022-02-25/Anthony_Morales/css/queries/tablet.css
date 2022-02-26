@@ -1,9 +1,11 @@
 .nav_list {
     display: none;
 }
+
 .header_right {
     display: none;
 }
+
 .menu_icon {
     display: inline-block;
     display: flex;
@@ -32,6 +34,7 @@ header {
 .percentages-graph {
     display: none;
 }
+
 .account_details {
     padding: 0;
     padding-inline-start: 16px;
@@ -41,6 +44,7 @@ header {
     position: relative;
 
 }
+
 .card1 {
     position: absolute;
     transform: translateY(-12px) translateX(-4px);
@@ -52,13 +56,16 @@ header {
 .donut_chart_info {
     width: 100%;
 } 
+
 .card {
     width: 343px;
     height: 246px;
 }
+
 .card_title {
     display: none;
 }
+
 .donut_chart_info_up{
     display: flex;
     width: 100%;
