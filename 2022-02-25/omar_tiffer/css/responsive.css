@@ -1,4 +1,6 @@
-@media screen and (min-width: 481px) {
+/*---------- Change to mobile ----------*/
+
+@media screen and (min-width: 480px) {
   .show-tablet {
     display: block;
   }
@@ -46,18 +48,30 @@
     padding-block-start: 24px;
   }
 
+  .linechart__graph,
+  .linechart__bg {
+    transform: scale(1);
+  }
+
   .deposits {
     padding-inline: 24px;
     padding-block: 24px;
   }
 }
 
-@media screen and (min-width: 769px) {
-  .main {
-    padding-block-start: 48px;
-    padding-block-end: 96px;
-    padding-inline: 112px;
+/*---------- Remove top buttons margins ----------*/
+
+@media screen and (min-width:620px) {
+  .welcome__right,
+  .filter__buttons {
+    margin-top: 0;
   }
+}
+
+/*---------- Change to tablet ----------*/
+
+@media screen and (min-width: 768px) {
+
   .dashboard {
     flex-wrap: nowrap;
   }
@@ -72,10 +86,26 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-    margin-inline: auto;
+/*---------- Change to desktop (min space available to increase paddings) ----------*/
+
+@media screen and (min-width: 1280px) {
+  .main {
+    padding-block-start: 48px;
+    padding-block-end: 96px;
+    padding-inline: 112px;
+  }
+
+  .dashboard {
+    flex-wrap: nowrap;
+  }
+
+  .dashboard__left {
+    flex-grow: 1;
+  }
+
+  .deposits {
+    flex-grow: 1;
+    margin-block-start: 0;
   }
 
   .hide-desktop {
@@ -92,18 +122,33 @@
 
   .nav__links {
     height: 40px;
-    margin-inline-start: 28px;
+    margin-inline-start: 16px;
     display: flex;
-    align-items: center;
-    column-gap: 28px;
+    /* align-items: center; */
   }
 
   .nav__btn {
+    padding-block: 8px;
+    padding-inline: 12px;
+    margin-inline-end: 4px;
+    border-radius: 6px;
     transition: ease 0.2s;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav__btn:last-child {
+    margin-inline-end: 0;
+  }
+
+  .nav__btn.active {
+    color: var(--primary-700);
+    background-color: var(--primary-50);
   }
 
   .nav__btn:hover {
     color: var(--primary-700);
+    background-color: var(--primary-50);
     transition: ease 0.2s;
   }
 
@@ -159,6 +204,19 @@
 
   .header__right {
     margin-inline-end: 112px;
+  }
+
+  .welcome__heading {
+    font-size: 3rem;
+    line-height: 3.8rem;
+  }
+
+  .dashboard {
+    margin-block-start: 24px;
+  }
+
+  .dashboard__left {
+    row-gap: 24px;
   }
 
   .card__container {
@@ -230,6 +288,7 @@
   .rightcard__strip {
     width: 302px;
     height: 92px;
+    inset-block-start: 90px;
   }
 
   .rightcard__holder {
@@ -298,5 +357,14 @@
 
   .cards__footer {
     margin-block-start: 24px;
+  }
+}
+
+/*---------- Keep content in 1440px layout on bigger screens ----------*/
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    margin-inline: auto;
   }
 }
