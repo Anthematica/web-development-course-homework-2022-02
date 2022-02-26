@@ -266,7 +266,7 @@ body{
     border-radius: 8px;
     height:168px;
     /* width: 596px; */
-    padding-inline:24px;
+    padding-inline-start:24px;
 }
 /* para crear las dos ruedas de colores  */
 .wheel{
@@ -494,7 +494,8 @@ body{
     justify-content: space-between;
 }
 .cards{
-    width: 302px;
+    max-width: 302px;
+    width: 100%;
     height: 182px;
     border-radius: 20px;
 }
@@ -655,6 +656,10 @@ body{
 .progressbar{
     display: flex;
     margin-block-start: 8px;
+}
+.progressbar img{
+ max-width: 302px;
+ width: 100%;
 }
 .sectioncards__footer{
     margin-block-start: 24px;
@@ -926,3 +931,34 @@ body{
         margin-block: 16px 20px;
     }
 }
+@media only screen and (max-width:1200px){
+    .section1__wheels{
+        margin-inline:80px;
+    }
+    .section2{
+        margin-inline: 80px;
+        justify-items: center;
+    }
+    .navi--left{
+        margin-inline-start: 60px;
+    }
+    .navi--right{
+        margin-inline-end:60px;
+    }
+
+}
+@media only screen and (max-width:1000px){
+    .content__cards{
+        flex-direction: column;
+    }
+}
+@media only screen and (max-width:1024px){
+    .navi--left{
+        margin-inline-start: 20px;
+    }
+    .navi--right{
+        margin-inline-end:20px;
+    }
+
+}
+
