@@ -18,7 +18,7 @@ button {
     position: relative;
     background: none;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 8px;
     padding-block: 10px;
     padding-inline: 30px;
     height: 45px;
@@ -175,7 +175,12 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.buttonGroup>:first-child {
+    background-color: #F9FAFB;
 }
 
 .buttonGroup>button {
