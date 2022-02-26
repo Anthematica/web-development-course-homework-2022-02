@@ -1,0 +1,928 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --gray50:#F9FAFB;
+    --gray25:#FCFCFD;
+    --gray200:#EAECF0;
+    --gray300:#D0D5DD;
+    --gray400:#98A2B3;
+    --gray500:#667085;
+    --gray600:#475467;
+    --gray700:#344054;
+    --gray900:#101828;
+    --primary200:#E9D7FE;
+    --primary500:#F9F5FF;
+    --primary600:#7F56D9;
+    --primary700:#6941C6;
+    --sucess600:#039855;
+    --success700:#027A48;
+    --success50:#ECFDF3;
+}
+
+
+body{
+    background-color: var(--gray25);
+}
+/* barra de nav, tambien tiene borde de abajo*/
+#navi{
+    display: flex;
+    flex-direction: row;
+    height: 73px;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--gray200);
+    background-color: white;
+}
+/* barra de nav que contiene el logo y el menu de links */
+.navi--left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    margin-inline-start: 112px;
+    margin-block: 16px 16px;
+}
+.nav__logo{
+    display: flex;
+    margin-inline-end: 16px;
+    align-items: center;
+}
+#logotype{
+    margin-inline-start: 10px;
+}
+/* lista donde estan el menu de links */
+.navi--left ul{
+    list-style-type: none;
+    display: flex;
+}
+
+.navi--left ul li a{
+    text-decoration: none;
+    color:var(--gray700);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+/* usando pseudoselectores para el menu de links */
+.navi--left ul li a:hover{
+    background-color: var(--primary500);
+    color: var(--primary700);
+}
+/* la parte derecha del nav donde hay boton y otras herramientas */
+.navi--right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-inline: 0 112px;
+    column-gap: 16px;
+}
+#navi--right__upgradebutton{
+    display: flex;
+    width: 150px;
+    height: 40px;
+    border: 1px solid var(--gray300);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    border-radius: 8px;
+    background-color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#upgradebutton__icon{
+    height: 20px;
+    width: 20px;
+    margin-inline-end: 8px;
+}
+#navi--right__actions{
+    display: flex;
+    
+}
+#navi--right__dropdown{
+    border-radius: 200px;
+}
+#mobilemenu{
+    display: none;
+}
+/* .content{
+    background-color: var(--gray25);
+} */
+
+/* agregando estilo al header y sus elementos  */
+.header{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter',sans-serif;
+    margin: 48px 80px;
+    /* el padding es para el espacio dentro */
+    padding-inline: 32px;
+}
+/* darle estilo a la parte de arriba del header */
+.header__pageheader {
+    display: flex;
+    justify-content: space-between;
+    margin-block-end: 24px;
+}
+#pageheader__text h1{
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+}
+#pageheader__text div{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--gray500);
+    margin-block-start: 4px;
+}
+#pageheader--right{
+    display: flex;
+    column-gap: 12px;
+}
+/* botones al lado del texto de bienvenida  */
+.pageheader__actionbutton{
+    height: 40px;
+    border-radius: 8px;
+    font-weight: 500;
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    font-size: 14px;
+    line-height: 20px;
+}
+/* boton deposit  */
+.actionbutton1{
+    display: flex;
+    width: 112px;
+    background-color: white;
+    border: 1px solid var(--gray300);
+    color: var(--gray700);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.actionbutton1 img{
+    height: 20px;
+    width: 20px;
+    margin-inline-end: 8px;
+    margin-block: 10px;
+}
+/* boton send funds  */
+.actionbutton2{
+    width: 109px;
+    background-color:var(--primary600);
+    border: 1px solid var(--primary600);
+    color: white;
+}
+/* parte de abajo del header con todos los botones */
+#header__tabs{
+    display: flex;
+    justify-content: space-between;
+}
+.tabs__btngroup{
+    display:flex;
+
+
+}
+/* clase base para botones  */
+.btn{
+    display: flex;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    font-family: 'Inter', sans-serif;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--gray300);
+    border-radius: 8px;
+
+}
+/* para configurar los botones filtros  */
+.btntime{
+    border-radius: 0px;
+    padding-inline:16px;
+}
+.btndate__textmobile{
+    display:none;
+}
+/* para hacer el efecto de que solo el primero y el ultimo sean redondos  */
+.btntime:first-child{
+    border-radius: 8px 0px 0px 8px;
+}
+.btntime:not(:last-child){
+    border-right:none;
+}
+.btntime:last-child{
+    border-radius: 0px 8px 8px 0px;
+}
+/* cuando se haga hover en un boton  */
+.btn:hover{
+    background-color: var(--gray50);
+}
+/* para la seccion derecha de filtros  */
+.tabs--right{
+    display: flex;
+}
+.tabs--right__btndate{
+    margin-inline-end: 12px;
+    padding-inline:16px;
+}
+.tabs--right__btndate img{
+    width: 20px;
+    height: 20px;
+    margin-inline-end: 8px;
+}
+.tabs--right__btnfilters{
+    padding-inline:16px;
+
+}
+.tabs--right__btnfilters img{
+    width: 20px;
+    height: 20px;
+    margin-inline-end: 8px;
+}
+/* las graficas de ruedas  */
+.section1__wheels{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 24px;
+    font-family: 'Inter',sans-serif;
+    font-weight: 500;
+    margin-inline:112px;
+}
+.wheelscard{
+    display: flex;
+    background-color: white;
+    border:1px solid var(--gray200);
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    height:168px;
+    /* width: 596px; */
+    padding-inline:24px;
+}
+/* para crear las dos ruedas de colores  */
+.wheel{
+    background:
+		conic-gradient(#7f56d9 0,#7f56d9 18.1%,#9e77ed 0,#9e77ed 52.8%,
+        #b692f6 0,#b692f6 62.5%,#d6bbfb 0,#d6bbfb 73.6%,#e9d7fe 0,
+        #e9d7fe 94.4%,#f4ebff 0,#f4ebff 100%
+	);
+    border-radius: 50%;
+	position: relative;
+	width: 120px;
+    min-width: 120px;
+	min-height: 120px;
+    height:120px;
+	margin: 0;
+	outline: 1px solid #ccc;
+    margin-block-start: 24px;
+
+}
+/* cambiar los colores para la segunda rueda  */
+#secondwheel{
+    background:
+		conic-gradient(var(--gray600) 0,var(--gray600) 18.1%,var(--gray500) 0,var(--gray500) 52.8%,
+        var(--gray400) 0,var(--gray400) 62.5%,var(--gray300) 0,var(--gray300) 73.6%,var(--primary200) 0,
+        var(--primary200) 94.4%,#f4ebff 0,#f4ebff 100%
+	);
+}
+
+/* para crear la parte de en medio de la rueda  */
+.wheel__whitewheel{
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    color: black;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 0 auto;
+    position:relative;
+    top: 32px;
+}
+
+/* parte de texto al lado de la rueda  */
+.wheelscard__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-inline: 24px;
+    margin-block: 24px 30px;
+    /* width: 404px; */
+    width: 100%;
+}
+.wheeltext__heading{
+    display: flex;
+    justify-content: space-between;
+}
+.wheeltext__heading img{
+    width: 20px;
+    height: 20px;
+}
+.wheeltext__heading h2{
+    font-size: 16px;
+    line-height: 24px;
+    color:var(--gray900);
+}
+.wheeltext__notheading > span{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--gray500);
+    margin-block-end: 8px;
+}
+/* el balance   */
+
+.wheeltext__notheading{
+    display: flex;
+    flex-direction: column;
+}
+.notheading__numbers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.wheels__balance{
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 38px;
+    color: var(--gray900);
+}
+/* el porcentaje  */
+.wheels__badge{
+    display: flex;
+
+    width: 68px;
+    height:24px;
+    background-color: var(--success50);
+    border-radius: 16px;
+    align-items: center;
+
+}
+.wheels__badge img{
+    width: 12px;
+    height: 12px;
+    margin-inline-start: 10px;
+}
+.wheels__badge span{
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--success700);    
+
+}
+/* configurando la seccion 2  */
+.section2{
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    margin-inline: 112px;
+    margin-block-start: 24px;
+    column-gap: 24px;
+    margin-block-end: 96px;
+}
+.mainside{
+    grid-area: 1 / 1 / 2 / 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 296px 1fr;
+    font-family: 'Inter',sans-serif;
+    font-weight: 400;
+    row-gap: 24px;
+}
+/* the balance over time div inside the grid  */
+.mainside__balancetime{
+    grid-area: 1 / 1 / 2 / 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    /* de box shadow a border se repite con parte de sectioncards  */
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    border:1px solid var(--gray200);
+    height: 296px;
+}
+/* header of the balance over time part  */
+.balancetime__sectionheader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-inline:24px;
+    margin-block-start: 24px;
+}
+.balancetime__sectionheader > h2{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--gray900);
+}
+.balancetime__sectionheader > img{
+    height: 20px;
+    width: 20px;
+}
+.balancetime__graphic{
+    margin-inline:24px;
+}
+/* styling chart and the background image  */
+.chart{
+    background-image: url('images/_Y-axis.svg');
+}
+.chart img{
+    max-width: 744px;
+    max-height: 176px;
+    width: 100%;
+    height:100%;
+    max-height: 277px;
+    object-fit: cover;
+    min-height: 170px;
+}
+/* styling the months list below the chart  */
+.balancetime__graphic ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 12px;
+    line-height: 18px;
+    color:var(--gray500);
+    margin-block-end: 24px;
+
+}
+.sectioncards{
+    display: flex;
+    flex-direction: column;
+    grid-area: 2 / 1 / 3 / 2;
+    background-color: white;
+    justify-content: space-between;
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    border:1px solid var(--gray200);
+
+}
+.cards__content{
+    font-family: 'Inter',sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+.cards__heading{
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 24px;
+    margin-block: 24px 20px;
+}
+.content__cards{
+    display: flex;
+    margin-inline-start: 24px;
+}
+.cards__heading > h2{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+/* tarjetas de credito  */
+.cardsandtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cards{
+    width: 302px;
+    height: 182px;
+    border-radius: 20px;
+}
+/* base de la tarjeta  */
+#card1{
+    display: flex;
+    justify-content: space-between;
+    background:#F4D9D0;
+    box-shadow: 7.64557px 9.55696px 15.2911px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(11.4684px);
+    margin-inline-end: 20px;
+
+}
+#card1--othercolor{
+    display: flex;
+    flex-direction: column;
+    height: 182px;
+    width: 217px;
+    background-color: var(--gray700);
+    border-radius: 20px 0 0 20px;
+    justify-content: space-between;
+}
+#card1--othercolor > h3{
+    font-weight: 600;
+    font-size: 15.2911px;
+    line-height: 19px; 
+    color:white;
+    width: 64px;
+    height: 19px;
+    margin-inline-start: 19.11px;
+    margin-block-start: 19.11px;
+}
+#card1__bottom{
+    display: flex;
+    flex-direction: column;
+    margin-inline-start: 15.29px;
+
+}
+.card__name{
+    display: flex;
+    font-size: 11.4684px;
+    font-weight: 600;
+    line-height: 16px;
+    color: white;
+    text-transform: uppercase;
+    justify-content: space-between;
+    margin-inline-end: 18.52px;
+    letter-spacing: 0.05em;
+    margin-block-end: 6.94px;
+}
+.card__number{
+    font-family: 'Manrope',sans-serif;
+    font-weight: 600px;
+    font-size: 15.2911px;
+    line-height: 21px;
+    letter-spacing: 0.15em;
+    color: white;
+    margin-block-end: 15.73px;
+    margin-inline-end: 17.61px;
+}
+.card1--samecolor{
+    display: flex;
+}
+.card1--right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+#paypass1{
+    width: 20px;
+    height: 20px;
+    margin-inline-end: 19.11px;
+    margin-block-start: 19.11px;
+}
+#mastercard1{
+    width: 28.49px;
+    height: 17.08px;
+    margin-inline-end: 22.16px;
+    margin-block-end: 22.81px;
+}
+#card2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(112.91deg, rgba(255, 255, 255, 0.51) 3.51%, rgba(255, 255, 255, 0) 111.71%);
+    filter: drop-shadow(7.64557px 9.55696px 15.2911px rgba(0, 0, 0, 0.05));
+    backdrop-filter: blur(11.4684px);
+}
+#card2--samecolor{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#card2--samecolor > h3{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18px;
+    margin-block-start: 18px;
+    color: var(--gray600);
+    margin-inline-start: 18px;
+}
+#paypass2{
+    margin-inline-end: 18px;
+    margin-block-start: 18px;
+}
+.card2--othercolor{
+    display: flex;
+    height: 92px;
+    flex-direction: column;
+    /* flex-direction: column;
+    width: 217px; */
+    background-color: var(--gray700);
+    border-radius: 20px;
+    justify-content: flex-end;
+}
+#card2__bottom{
+    margin-inline-start: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card2--othercolor .card__name{
+}
+#card2__bottom .card__name{
+    margin-block-start: 32px;
+}
+
+.card2__bottombottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card2__bottombottom img{
+    margin-block-end: 16px;
+    margin-inline-end: 14px;
+}
+.cards__textandprogress{
+    margin-inline-end: 20px;
+}
+.textandprogress__header{
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 16px;
+}
+.text__spend {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--gray700);
+}
+.money__spend{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.progressbar{
+    display: flex;
+    margin-block-start: 8px;
+}
+.sectioncards__footer{
+    margin-block-start: 24px;
+    border-top: 1px solid var(--gray200);
+    display: flex;
+    justify-content: right;
+}
+.btn__manage{
+    margin-inline-end: 24px;
+    margin-block: 16px;
+    padding: 10px 16px;
+}
+/* seccion de depositos reciente que va al lado derecho  */
+.section2__recent{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    /* esta parte se repite con balancetime  */
+    box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1), 0px 1px 2px rgba(16, 24, 40, 0.06);
+    border-radius: 8px;
+    border:1px solid var(--gray200);
+    font-family: 'Inter', sans-serif;
+}
+.recent__header{
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 24px;
+    margin-inline: 24px;
+    padding-block-end:20px ;
+    border-bottom: solid 1px var(--gray200);
+
+}
+.recent__header > h2{
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 500;
+    color: var(--gray900);
+}
+.depositsgroup{
+    display: grid;
+    grid-template-columns: 1fr 94px;
+    margin-inline: 24px;
+}
+.depositsgroup--left{
+    border-bottom: 1px solid var(--gray200);
+}
+.deposit{
+    display: flex;
+    flex-direction: row;
+    padding-block: 16px;
+    border-bottom: 1px solid var(--gray200);
+}
+.deposit img{
+    width: 46px;
+    height: 32px;
+    margin-inline-end: 12px;
+}
+.deposit--left__text{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+
+}
+.deposit--left__text > p{
+    color: var(--gray900);
+}
+.deposit--left__text > span{
+    color: var(--gray500);
+}
+.depositsgroup--right{
+    justify-items: right;
+    border-bottom: 1px solid var(--gray200);
+}
+.deposit__number{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--sucess600);
+    padding-block: 26px;
+    border-bottom: 1px solid var(--gray200);
+    
+}
+.mobileshow{
+    display: none;
+}
+.section2__recent > a{
+    text-decoration: none;
+    margin-block-start: 16px;
+    margin-inline-start: 16px ;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color:var(--primary700);
+}
+/* modo para mobile pantalla width 375px */
+@media only screen and (max-width:376px) {
+    /* para ocultar el menu de links y el menu derecho */
+    #navbar__menu{
+        display: none;
+    }
+    .navi--right{
+        display: none;
+    }
+    /* mostrando icon menu movil y tambien calcular el tamaño */
+    #mobilemenu img{
+        width: 24px;
+        height: 24px;
+    }
+    #mobilemenu{
+        display: flex;
+        padding: 8px;
+        margin-inline-end: 8px;
+        align-items: center;
+    }    
+    /* cambiando el margen de inicio de la parte derecha del nav */
+    .navi--left{
+        margin-inline-start: 16px;
+    }
+    /* para cambiar como se mira el header empezando con espacio del borde */
+    .header{
+        margin-inline: 16px;
+        padding: 0;
+    }
+    /* cambiando la direccion de row a column  */
+    .header__pageheader{
+        flex-direction: column;
+        padding:0;
+    }
+
+    #pageheader__text{
+        margin-block-end: 16px;
+    }
+     /* cambiando la direccion de row a column  */
+    #header__tabs {
+        flex-direction: column;
+    }
+    /* cambiando las proporciones de los botones en mobile  */
+    .btn{
+        font-size: 14px;
+        line-height: 20px;
+        padding-inline:16px;
+    }
+    /* para hacer que el texto corto apareza  */
+    .btndate__textfull{
+        display: none;
+    }
+    .btndate__textmobile{
+        display:inline;
+    }
+    .tabs__btngroup{
+        margin-block-end: 16px;
+    }
+    /* para acomodar las wheel cards  */
+    .section1__wheels{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap:20px;
+    margin-inline: 16px;
+    }
+    .wheelscard{
+        height: 343px;
+        flex-wrap: wrap;
+    }
+    .wheelscard__text{
+        margin-inline: 0;
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        margin-inline: 0;
+        row-gap:20px
+    }
+    /* para acomodar la grafica del balance meses  */
+    .mainside{
+        margin-inline:16px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 296px 1fr;
+    }
+    .balancetime__graphic ul{
+        margin-block-start: 8px;
+        margin-block-end: 20px;
+    }
+    /* esconder algunos meses cuando es movil  */
+    .mobilehide{
+        display:none;
+    }
+    .mobileshow{
+        display: block;
+    }
+
+    .cards__textandprogress{
+        display: none;
+    }
+    .cards__textandprogress{
+        display: none;
+    }
+    .content__cards{
+        position:relative;
+    }
+    #card1{
+        position: absolute;
+        transform: translateY(-20px);
+    }
+    #card2{
+        filter:none;
+        backdrop-filter: none;
+    }
+    .section2__recent > a{
+        margin-block: 16px 20px;
+    }
+}
+/* connfigurando vista para tablet  */
+@media only screen and (max-width:769px){
+    #navbar__menu{
+        display: none;
+    }
+    .navi--right{
+        display: none;
+    }
+    /* mostrando icon menu movil y tambien calcular el tamaño */
+    #mobilemenu img{
+        width: 24px;
+        height: 24px;
+    }
+    #mobilemenu{
+        display: flex;
+        padding: 8px;
+        margin-inline-end: 8px;
+        align-items: center;
+    }  
+        /* cambiando el margen de inicio de la parte derecha del nav */
+        .navi--left{
+            margin-inline-start: 16px;
+        }
+        /* para cambiar como se mira el header empezando con espacio del borde */
+        .header{
+            margin-inline: 16px;
+            padding: 0;
+        }
+        .header__pageheader{
+            flex-direction: column;
+            padding:0;
+        }
+        .btn{
+            font-size: 14px;
+            line-height: 20px;
+            padding-inline:16px;
+        }
+            /* para acomodar las wheel cards  */
+    .section1__wheels{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap:20px;
+        margin-inline: 16px;
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        margin-inline: 16px;
+        row-gap:20px
+    }
+    .cards__textandprogress{
+        display: none;
+    }
+    .content__cards{
+        margin-inline: 4px;
+    }
+    .section2__recent > a{
+        margin-block: 16px 20px;
+    }
+}

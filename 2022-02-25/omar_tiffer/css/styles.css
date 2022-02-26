@@ -1,0 +1,839 @@
+:root {
+  --font-inter: "Inter", sans-serif;
+  --font-manrope: "Manrope", sans-serif;
+  --gray-900: #101828;
+  --gray-800: #1d2939;
+  --gray-700: #344054;
+  --gray-600: #475467;
+  --gray-500: #667085;
+  --gray-400: #98a2b3;
+  --gray-300: #d0d5dd;
+  --gray-200: #eaecf0;
+  --gray-100: #f2f4f7;
+  --gray-50: #f9fafb;
+  --gray-25: #fcfcfd;
+  --primary-50: #f9f5ff;
+  --primary-700: #6941c6;
+  --primary-600: #7f56d9;
+  --primary-500: #9e77ed;
+  --primary-400: #b692f6;
+  --primary-300: #d6bbfb;
+  --primary-200: #e9d7fe;
+  --primary-100: #f4ebff;
+  --success-700: #027a48;
+  --success-600: #039855;
+  --success-50: #ecfdf3;
+  --card-color: #f4d9d0;
+  --progress-bg: #f9f5ff;
+  --white: #ffffff;
+}
+
+html {
+  font-size: 10px;
+}
+
+.hide {
+  display: none;
+}
+
+/*---------- Font definitions ----------*/
+
+.inter-nav,
+.inter-upgrade-btn,
+.inter-welcome-heading,
+.inter-welcome-text,
+.inter-welcomebtns,
+.inter-filtertabs,
+.inter-filterbtns,
+.inter-piechart-heading,
+.inter-balance-title,
+.inter-balance-amnt,
+.inter-balance-perf,
+.inter-linechart-heading,
+.inter-cards-heading,
+.inter-card-title,
+.inter-card-text,
+.inter-card-spending,
+.inter-cards-btn,
+.inter-months-item,
+.inter-deposits-heading,
+.inter-depo-cardnum,
+.inter-depo-expiry,
+.inter-depo-amount,
+.inter-depo-link {
+  font-family: var(--font-inter);
+}
+
+.inter-nav {
+  font-size: 1.6rem;
+  line-height: 2.4px;
+  font-weight: 500;
+  color: var(--gray-700);
+}
+
+.inter-welcome-heading {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 3.2rem;
+  color: var(--gray-900);
+}
+
+.inter-welcome-text {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--gray-500);
+}
+
+.inter-upgrade-btn,
+.inter-welcomebtns,
+.inter-filtertabs,
+.inter-filterbtns,
+.inter-balance-title,
+.inter-balance-perf,
+.inter-depo-cardnum,
+.inter-depo-expiry,
+.inter-depo-amount,
+.inter-depo-link,
+.inter-cards-btn {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--gray-700);
+}
+
+.inter-piechart-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+  color: var(--gray-900);
+}
+
+.inter-balance-title {
+  color: var(--gray-500);
+}
+
+.inter-balance-amnt {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 3.8rem;
+  color: var(--gray-900);
+}
+
+.inter-balance-perf {
+  color: var(--success-700);
+}
+
+.inter-linechart-heading,
+.inter-deposits-heading,
+.inter-cards-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.8rem;
+  color: var(--gray-900);
+}
+
+.inter-card-title {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  color: var(--gray-700);
+}
+
+.inter-card-text {
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: var(--gray-700);
+}
+
+.inter-card-spending {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--gray-500);
+}
+
+.inter-months-item {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: var(--gray-500);
+}
+
+.inter-depo-cardnum {
+  color: var(--gray-900);
+}
+
+.inter-depo-expiry {
+  font-weight: 400;
+  color: var(--gray-500);
+}
+
+.inter-depo-amount {
+  font-weight: 500;
+  color: var(--success-600);
+}
+
+.inter-depo-link {
+  color: var(--primary-700);
+}
+
+.manrope-card-name,
+.manrope-card-expiry,
+.manrope-card-number {
+  font-family: var(--font-manrope);
+}
+
+.manrope-card-name,
+.manrope-card-expiry {
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.6rem;
+  letter-spacing: 0.05em;
+  color: var(--white);
+}
+
+.manrope-card-name {
+  text-transform: uppercase;
+}
+
+.manrope-card-number {
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 2rem;
+  letter-spacing: 0.15em;
+  color: var(--white);
+}
+
+/*---------- Document Navigation ----------*/
+
+.header {
+  width: 100%;
+  height: 66px;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.logo__wrapper {
+  display: inline-flex;
+  margin-inline-start: 16px;
+}
+
+.logo-text__link {
+  margin-inline-start: 10px;
+}
+
+.header__right {
+  display: inline-flex;
+  align-items: center;
+  margin-inline-end: 8px;
+}
+
+/*---------- Document main ----------*/
+
+.main {
+  padding-inline: 16px;
+  padding-block-start: 32px;
+  padding-block-end: 48px;
+  background-color: var(--gray-25);
+}
+
+/*** Main header ***/
+
+.maintop__welcome {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.welcome__text {
+  margin-block-start: 4px;
+}
+
+/*** Main header buttons ***/
+
+.welcome__right {
+  margin-block-start: 16px;
+  display: inline-flex;
+  column-gap: 12px;
+}
+
+.welcome__depositbtn,
+.welcome__sendbtn {
+  outline: none;
+  appearance: none;
+  border: none;
+  background-color: var(--white);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-300);
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 16px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.dollar__ico {
+  margin-inline-end: 8px;
+  transition: ease 0.2s;
+}
+
+.welcome__depositbtn:hover,
+.welcome__sendbtn:hover {
+  color: var(--white);
+  background-color: var(--primary-600);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--primary-600);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  transition: ease 0.2s;
+}
+
+.welcome__depositbtn:hover .dollar__ico {
+  opacity: 0.4;
+}
+
+/*** Main header filters ***/
+
+.maintop__filter {
+  margin-block-start: 24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.filter__tabgroup {
+  display: inline-flex;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-300);
+  border-radius: 8px;
+  filter: drop-shadow(0px 1px 2px rgba(16, 24, 40, 0.05));
+}
+
+.filter__tab {
+  outline: none;
+  appearance: none;
+  cursor: pointer;
+  text-align: center;
+  padding-inline: 16px;
+  padding-block: 10px;
+  border: none;
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--gray-300);
+  background-color: var(--white);
+  transition: ease 0.2s;
+}
+
+.filter__tab:last-child {
+  border-right: none;
+}
+
+.filter__tab:hover {
+  color: var(--gray-800);
+  background-color: var(--gray-50);
+  transition: ease 0.2s;
+}
+
+.filter__buttons {
+  margin-block-start: 16px;
+  display: inline-flex;
+  column-gap: 12px;
+}
+
+.dates__btn,
+.filters__btn {
+  outline: none;
+  appearance: none;
+  border: none;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 8px;
+  border-color: var(--gray-300);
+  background-color: var(--white);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-block: 10px;
+  padding-inline: 16px;
+  cursor: pointer;
+  transition: ease 0.2s;
+}
+
+.calendar__ico,
+.filter__ico {
+  margin-inline-end: 8px;
+}
+
+.dates__btn:hover,
+.filters__btn:hover {
+  color: var(--gray-500);
+  transition: ease 0.2s;
+}
+
+/*---------- Piecharts section ----------*/
+
+.piecharts {
+  min-width: 308px;
+  margin-block-start: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  column-gap: 24px;
+}
+
+.piecharts__left,
+.piecharts__right {
+  flex-grow: 1;
+  padding-inline: 16px;
+  padding-block: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-200);
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.left-piechart__graph,
+.right-piechart__graph {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.left-piechart__graph {
+  background-image: conic-gradient(
+    var(--primary-600) 0deg,
+    var(--primary-600) 75deg,
+    var(--primary-500) 75deg,
+    var(--primary-500) 195deg,
+    var(--primary-400) 195deg,
+    var(--primary-400) 235deg,
+    var(--primary-300) 235deg,
+    var(--primary-300) 275deg,
+    var(--primary-200) 275deg,
+    var(--primary-200) 335deg,
+    var(--primary-100) 335deg,
+    var(--primary-100) 380deg
+  );
+}
+
+.right-piechart__graph {
+  background-image: conic-gradient(
+    var(--gray-600) 0deg,
+    var(--gray-600) 75deg,
+    var(--gray-500) 75deg,
+    var(--gray-500) 195deg,
+    var(--gray-400) 195deg,
+    var(--gray-400) 235deg,
+    var(--gray-300) 235deg,
+    var(--gray-300) 275deg,
+    var(--gray-100) 275deg,
+    var(--gray-100) 380deg
+  );
+}
+
+.piechart__center {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--white);
+  position: absolute;
+  inset-inline-start: 28px;
+  inset-block-start: 28px;
+}
+
+.piechart__data {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.piechart__balance {
+  display: flex;
+  justify-content: space-between;
+}
+
+.balance__title {
+  margin-block-start: 20px;
+}
+
+.balance__amount {
+  margin-block-start: 8px;
+}
+
+.balance__right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.balancemoreico__link {
+  margin-block-start: 20px;
+}
+
+.balance__perf {
+  margin-block-start: 14px;
+  padding-block: 2px;
+  padding-inline-start: 10px;
+  padding-inline-end: 8px;
+  border-radius: 16px;
+  background-color: var(--success-50);
+  display: flex;
+  column-gap: 4px;
+  align-items: center;
+}
+
+/*---------- Dashboard linechart ----------*/
+
+.dashboard {
+  min-width: 308px;
+  margin-block-start: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+}
+
+.dashboard__left {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  flex-grow: 1;
+}
+
+.linechart {
+  padding-block: 20px;
+  padding-inline: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-200);
+  border-radius: 8px;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+
+.linechart__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.linechart__wrapper {
+  margin-block-start: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linechart__box {
+  height: 100%;
+  position: relative;
+}
+
+.linechart__graph {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.linechart__bg {
+  width: 100%;
+  height: 100%;
+}
+
+.linechart__months {
+  display: flex;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+/*---------- Dashboard linechart ----------*/
+
+.cards {
+  min-width: 308px;
+  padding-inline: 16px;
+  padding-block-start: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-200);
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__right {
+  position: relative;
+  inset-block-start: 46px;
+  inset-inline-start: 12px;
+}
+
+.rightcard__wrapper {
+  position: relative;
+  align-self: center;
+}
+
+.rightcard__bg {
+  width: 286px;
+  height: 172px;
+  border-radius: 20px;
+  background: linear-gradient(
+    112.91deg,
+    rgba(255, 255, 255, 1) 3.51%,
+    rgba(255, 255, 255, 0) 111.71%
+  );
+  filter: drop-shadow(5px 9px 10px rgba(102, 95, 95, 0.2));
+  backdrop-filter: blur(11.4684px);
+  position: absolute;
+}
+
+.rightcard__mockup {
+  width: 286px;
+  height: 172px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.rightcard__title {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-start: 20px;
+}
+
+.rightcard__paypassico {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+}
+
+.rightcard__strip {
+  width: 286px;
+  height: 86px;
+  border-radius: 0 0 20px 20px;
+  background-color: var(--gray-700);
+  position: relative;
+  inset-block-start: 86px;
+}
+
+.rightcard__holder {
+  position: absolute;
+  inset-block-start: 26px;
+  inset-inline-start: 16px;
+}
+
+.rightcard__expiry {
+  position: absolute;
+  inset-block-start: 26px;
+  inset-inline-end: 102px;
+}
+
+.rightcard__number {
+  position: absolute;
+  inset-block-end: 16px;
+  inset-inline-start: 16px;
+}
+
+.rightcard__mastercardico {
+  position: absolute;
+  inset-block-end: 18px;
+  inset-inline-end: 14px;
+}
+
+.card__left {
+  margin-block-start: 20px;
+}
+
+.leftcard__wrapper {
+  position: relative;
+  inset-block-start: -86px;
+  align-items: center;
+}
+
+.leftcard__mockup {
+  width: 312px;
+  height: 186px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--card-color);
+  background-image: url("../assets/images/card_lines.png");
+  box-shadow: 7.87342px 9.84177px 15.7468px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(11.8101px);
+  position: absolute;
+}
+
+.leftcard__title {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-start: 20px;
+}
+
+.leftcard__paypassico {
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-end: 20px;
+}
+
+.leftcard__mastercardico {
+  position: absolute;
+  inset-block-end: 24px;
+  inset-inline-end: 22px;
+}
+
+.leftcard__strip {
+  width: 224px;
+  height: 186px;
+  border-radius: 20px 0 0 20px;
+  background-color: var(--gray-700);
+  position: relative;
+}
+
+.leftcard__title {
+  color: var(--white);
+  position: absolute;
+  inset-block-start: 20px;
+  inset-inline-start: 20px;
+}
+
+.leftcard__holder {
+  position: absolute;
+  inset-block-end: 46px;
+  inset-inline-start: 16px;
+}
+
+.leftcard__expiry {
+  position: absolute;
+  inset-block-end: 46px;
+  inset-inline-end: 20px;
+}
+
+.leftcard__number {
+  position: absolute;
+  inset-block-end: 16px;
+  inset-inline-start: 16px;
+}
+
+.cards__footer {
+  margin-block-start: -46px;
+  padding-block: 16px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--gray-200);
+  background-color: var(--white);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.cards__btn {
+  outline: none;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-300);
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  padding-block: 10px;
+  padding-inline: 16px;
+  transition: ease 0.2s;
+}
+
+.cards__btn:hover {
+  background-color: var(--gray-50);
+  transition: ease 0.2s;
+}
+
+/*---------- Dashboard deposits ----------*/
+
+.deposits {
+  min-width: 308px;
+  margin-block-start: 32px;
+  padding-block: 20px;
+  padding-inline: 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--gray-200);
+  border-radius: 8px;
+  background-color: var(--white);
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  flex-grow: 1;
+}
+
+.deposits__header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.deposits__list {
+  margin-block-start: 20px;
+}
+
+.deposit__item {
+  display: flex;
+  align-items: center;
+  padding-block: 16px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--gray-200);
+}
+
+.deposit__item:last-child {
+  border-top: none;
+}
+
+.deposit__wrapper,
+.deposit__amount {
+  flex-grow: 1;
+}
+
+.deposit__wrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.deposit__cardnum,
+.deposit__expiry {
+  display: block;
+}
+
+.deposit__amount {
+  text-align: right;
+}
+
+.deposits__morelink {
+  display: block;
+  margin-block-start: 16px;
+}
