@@ -1,0 +1,302 @@
+@media screen and (min-width: 481px) {
+  .show-tablet {
+    display: block;
+  }
+
+  .hide-tablet {
+    display: none;
+  }
+
+  .piecharts__left,
+  .piecharts__right {
+    padding-block: 24px;
+    padding-inline: 24px;
+  }
+
+  .piechart__header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .piechart__balance {
+    margin-block-start: 24px;
+  }
+
+  .balance__left,
+  .balance__perf,
+  .balance__title {
+    margin-block-start: 0;
+  }
+
+  .balance__right {
+    display: block;
+  }
+
+  .balance__perf {
+    margin-block-start: 34px;
+  }
+
+  .linechart {
+    padding-inline: 24px;
+    padding-block: 24px;
+  }
+
+  .cards {
+    padding-inline: 24px;
+    padding-block-start: 24px;
+  }
+
+  .deposits {
+    padding-inline: 24px;
+    padding-block: 24px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main {
+    padding-block-start: 48px;
+    padding-block-end: 96px;
+    padding-inline: 112px;
+  }
+  .dashboard {
+    flex-wrap: nowrap;
+  }
+
+  .dashboard__left {
+    flex-grow: 1;
+  }
+
+  .deposits {
+    flex-grow: 1;
+    margin-block-start: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    margin-inline: auto;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .show-desktop {
+    display: block;
+  }
+
+  .logo__wrapper {
+    margin-inline-start: 112px;
+  }
+
+  .nav__links {
+    height: 40px;
+    margin-inline-start: 28px;
+    display: flex;
+    align-items: center;
+    column-gap: 28px;
+  }
+
+  .nav__btn {
+    transition: ease 0.2s;
+  }
+
+  .nav__btn:hover {
+    color: var(--primary-700);
+    transition: ease 0.2s;
+  }
+
+  .upgrade__btn {
+    width: 150px;
+    height: 40px;
+    outline: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--gray-300);
+    border-radius: 8px;
+    background-color: var(--white);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.2s;
+  }
+
+  .upgrade__btn:hover {
+    color: var(--white);
+    background-color: var(--primary-600);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--primary-600);
+    box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+    transition: ease 0.2s;
+  }
+
+  .upgrade__btn:hover .upgrade__ico {
+    opacity: 0.4;
+  }
+
+  .upgrade__ico {
+    margin-inline-end: 8px;
+    transition: ease 0.2s;
+  }
+
+  .gearico__link {
+    margin-inline-start: 16px;
+  }
+
+  .bellico__link {
+    margin-inline-start: 4px;
+  }
+
+  .profile__pic {
+    margin-inline-start: 16px;
+  }
+
+  .header__right {
+    margin-inline-end: 112px;
+  }
+
+  .card__container {
+    margin-block-start: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    column-gap: 20px;
+  }
+
+  .card__left {
+    margin-block: 0;
+  }
+
+  .card__right {
+    inset-inline: 0;
+    inset-block: 0;
+  }
+
+  .leftcard__wrapper {
+    inset-block-start: 0;
+  }
+
+  .leftcard__mockup {
+    width: 302px;
+    height: 182px;
+    inset-inline: 0;
+  }
+
+  .leftcard__strip {
+    width: 218px;
+    height: 182px;
+  }
+
+  .leftcard__mastercardico {
+    inset-block-end: 16px;
+    inset-inline-end: 14px;
+  }
+
+  .leftcard__title {
+    color: var(--white);
+    position: absolute;
+    inset-block-start: 20px;
+    inset-inline-start: 20px;
+  }
+
+  .leftcard__holder {
+    inset-block-end: 44px;
+    inset-inline-start: 16px;
+  }
+
+  .leftcard__expiry {
+    inset-block-end: 44px;
+    inset-inline-end: 18px;
+  }
+
+  .rightcard__bg {
+    width: 302px;
+    height: 182px;
+    inset-block: 0;
+  }
+
+  .rightcard__mockup {
+    width: 302px;
+    height: 182px;
+    inset-block: 0;
+  }
+
+  .rightcard__strip {
+    width: 302px;
+    height: 92px;
+  }
+
+  .rightcard__holder {
+    inset-block-start: 32px;
+    inset-inline-start: 16px;
+  }
+
+  .rightcard__expiry {
+    inset-block-start: 32px;
+    inset-inline-end: 102px;
+  }
+
+  .rightcard__mastercardico {
+    inset-block-end: 16px;
+    inset-inline-end: 14px;
+  }
+
+  .card__details {
+    margin-block-start: 106px;
+  }
+
+  .card__spending {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .card__progress {
+    width: 302px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--progress-bg);
+    margin-block-start: 8px;
+  }
+
+  .card__progress--inner {
+    width: 96px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--primary-600);
+  }
+
+  .leftcard__details {
+    margin-block-start: 16px;
+    position: relative;
+  }
+
+  .leftcard__spending {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .leftcard__progress {
+    width: 302px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--progress-bg);
+    margin-block-start: 8px;
+  }
+
+  .leftcard__progress--inner {
+    width: 174px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: var(--primary-600);
+  }
+
+  .cards__footer {
+    margin-block-start: 24px;
+  }
+}

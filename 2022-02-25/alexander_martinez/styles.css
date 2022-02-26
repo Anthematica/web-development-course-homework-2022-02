@@ -54,7 +54,7 @@ a {
 .nav {
   justify-content: space-between;
   max-width: 1216px;
-  padding-inline: 16px;
+  margin-inline: 16px;
   margin: auto;
 }
 .nav__logo-text {
@@ -186,6 +186,7 @@ a {
   height: 40px;
   padding-block: 10px;
   padding-inline: 16px;
+  cursor: pointer;
 }
 
 .header__button:hover {
@@ -403,6 +404,10 @@ a {
   display: flex;
   font-size: 0.75rem;
   justify-content: space-between;
+}
+
+.balance__link:hover {
+  color: var(--purple-600);
 }
 
 .balance--hidden {
