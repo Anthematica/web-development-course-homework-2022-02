@@ -770,6 +770,9 @@ body{
     .navi--right{
         margin-inline-end:60px;
     }
+    .content__cards{
+        flex-direction: column;
+    }
     /* connfigurando vista para tablet  */
 @media only screen and (max-width:769px){
     #navbar__menu{
