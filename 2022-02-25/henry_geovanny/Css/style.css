@@ -173,7 +173,132 @@ body{
 .target,.card{
 	transition: opacity .4s ease-in;
 }
+.menu{
+	display: none;
+}
+.target,.card{
+	transition: opacity .4s ease-in;
+}
+/*=========menu=================*/
+.menu__bars{
+	position: fixed;
+	inset-block-start: 0;
+	z-index: 100;
+	transition: transform .5s ease-in-out;
+	transform: translateX(-310px);
+	background-color: #171717;
 
+}
+.navbars{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 80px;
+}
+.menu__bars-content{
+	width: 300px;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+}
+
+.menu__config{
+	display: flex;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 70px;
+	align-items: center;
+	border-block-end: 1px solid #444;
+}
+.navegation__log{
+	justify-self: center;
+}
+.navegation__lista-menu{
+	list-style: none;
+	line-height: 60px;
+}
+.navegation__list{
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+	grid-gap: 10px;
+	height: 588p;
+	flex-direction: column;
+}
+.menu__config-logo{
+	display: flex;
+	justify-content: center;
+	height: 130px;
+	align-items: end;
+}
+.menu__enlace{
+	text-transform: capitalize;
+	text-decoration: none;
+	font-weight: 600;
+	transition: color .2s ease-in;
+	color: var(--gray-300);
+}
+.navegation__lista-menu:hover .menu__enlace{
+	color: var(--primary-400);
+}
+.notification__menu{
+	width: 120px;
+}
+.config__update-menu{
+	 display: flex;
+    height: 40px;
+    justify-content: center;
+    width: 279px;
+    grid-gap: 10px;
+    text-decoration: none;
+    border: 1px solid var(--primary-300);
+    border-radius: 8px;
+}
+.config__update-button-menu{
+	cursor: pointer;
+	font-size: 14px;
+	color: var(--success-600);
+	height: 100%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+.menu__close{
+	display: flex;
+	height: 40px;
+	width: 90%;
+	justify-content: end;
+	align-items: center;
+}
+.menu__close-button{
+	position: relative;
+	width: 24px;
+	height: 3px;
+	border: 6px;
+	cursor: pointer;
+	transform: rotate(45deg);
+	background-color: var(--gray-500);
+}
+.menu__close-button::before{
+	content: "";
+	position: absolute;
+	width: inherit;
+	height: inherit;
+	inset-inline-start: 0;
+	transform: translate(0) rotate(-90deg);
+	background-color: var(--gray-500);
+}
+.notification__menu{
+	border: none;
+	cursor: pointer;
+	width: fit-content;
+	height: fit-content;
+	background-color: transparent;
+}
+.navbar_logotipe{
+	transform: scale(1.8);
+}
 /*========main count===========*/
 .account{
 	margin-block-start: 32px;
