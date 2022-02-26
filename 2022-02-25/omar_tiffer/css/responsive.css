@@ -219,6 +219,10 @@
     row-gap: 24px;
   }
 
+  .linechart__months {
+    column-gap: 40px;
+  }
+
   .card__container {
     margin-block-start: 20px;
     display: flex;
