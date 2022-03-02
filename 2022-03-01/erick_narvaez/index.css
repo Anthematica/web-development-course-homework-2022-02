@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+.main {
+  padding: 92px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 30%;
+  padding: 50px;
+  background: #ffffff;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+.artDescriptionHeader {
+  font-size: 20px;
+  font-weight: 700;
+}
+.artDescriptionText {
+  color: gray;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.filterMenu {
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  justify-content: center;
+  row-gap: 20px;
+  color: gray;
+}
+
+.filterMenuItem {
+  color: gray;
+}
+
+.artDescription {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.menuActive{
+    color: #4d0976;
+    font-weight: 600;
+    
+}
+
+.menuActive::before{
+    content: '';
+    display: inline-block;
+    position: relative;
+    left: -50px;
+    width: 8px;
+    height: 16px;
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px ;
+    background-color: #4d0976;
+ }
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  background: #ffffff;
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+}
+.mainImage {
+  overflow: hidden;
+  width: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+.gridImages {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: scroll;
+  overflow-y: hidden;
+  height: auto;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+.gridImg {
+  border: 1px solid #eaecf0;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 3px rgba(16, 24, 40, 0.1),
+    0px 1px 2px rgba(16, 24, 40, 0.06);
+  border-radius: 8px;
+}
+
+.gridImgSelected {
+  filter: invert(0%) sepia(1%) saturate(100%) hue-rotate(3deg) brightness(100%)
+    contrast(50%);
+  border: 2px solid #4d0976;
+  border-radius: 8px;
+}
