@@ -1,0 +1,3 @@
+
+principal: 516 378
+thumbs: 40*40
