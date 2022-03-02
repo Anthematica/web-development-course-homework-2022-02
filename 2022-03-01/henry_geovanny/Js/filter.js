@@ -5,18 +5,21 @@ const loader = document.querySelector(".loader");
 
 
 currentImage.src = "https://picsum.photos/id/664/1000/500";
-
+images[0].classList.add("active");
 images.forEach(element =>{
 	element.addEventListener("click", e=>{
 		e.preventDefault();
+		
+		const portaImage = document.querySelector(".list__image-items.active");
 		loader.classList.remove("ocultar");
-		element.classList.add("active");
+		portaImage ? portaImage.classList.remove("active") : null
 		setTimeout( ()=>{
 		currentImage.src = element.dataset.filter;
 		element.classList.remove("url__active");
 		loader.classList.add("ocultar");
 		}, 500);
 		
+		element.parentElement.classList.add("active");
 	})
 });
 

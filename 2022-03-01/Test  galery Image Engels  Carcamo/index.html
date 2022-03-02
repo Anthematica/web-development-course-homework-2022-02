@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="style.css">
+	<title>Test Imagenes</title>
+</head>
+<body>
+
+	<main class="container">
+		
+		<aside class="sidebar">
+
+			<div>
+				<h4>Art categories</h4>
+
+				<div>
+
+					<p>
+						Vlad is a digital product designer based in Iasi, Romania. who likes to experiment with crazy ideas. He uses power of "the tools" to express himself through a range of design related items, to provide value and inspire other.
+					</p>
+
+				</div>
+
+			</div>
+
+
+			<div>
+
+			<ul>
+				<li>Abstract</li>
+				<li>Generic bio</li>
+				<li>Herbs</li>
+				<li>Minimalist</li>
+				<li>Wood</li>
+			</ul>
+
+			<img src="imagen4.jpg" alt="">
+				
+			</div>
+
+
+			<div class="circle"></div>
+			
+		</aside>
+
+
+		<section class="containerglobal-IMG">
+
+			<div class="contentimagenBig"></div>
+
+			<section class="content-imagenSmall">
+
+				<img src="imagen1.jpg" alt="Snyder carcamo">
+				<img src="imagen2.jpeg" alt="Snyder carcamo">
+				<img src="imagen11.jpg" alt="Snyder carcamo">
+				<img src="imagen4.jpeg" alt="Snyder carcamo">
+				<img src="imagen5.jpeg" alt="Snyder carcamo">
+				<img src="imagen6.jpeg" alt="Snyder carcamo">
+				<img src="imagen7.jpeg" alt="Snyder carcamo">
+				<img src="imagen8.jpeg" alt="Snyder carcamo">
+				<img src="imagen9.jpg" alt="Snyder carcamo">
+				<img src="imagen10.jpeg" alt="Snyder carcamo">
+				<img src="imagen11.jpg" alt="Snyder carcamo">
+				<img src="imagen12.jpg" alt="Snyder carcamo">	
+			</section>
+
+		</section>
+
+
+		
+
+
+
+
+
+	</main>
+
+
+	<script>
+
+
+	const smallImagen = document.querySelectorAll('.content-imagenSmall > img');
+	const bigImagen = document.querySelector('.contentimagenBig');
+
+	function changes (e){
+
+		bigImagen.style.backgroundImage = `url(${e.target.src})`;
+	}
+
+	smallImagen.forEach(element => { element.addEventListener('click', changes)});
+
+	
+
+</script>
+
+</body>
+</html>
