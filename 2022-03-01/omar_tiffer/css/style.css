@@ -162,13 +162,21 @@ html {
   border-radius: 10px;
 }
 
-.thumbnail {
-  border: none;
+.thumbnail__link {
+  position: relative;
 }
 
-.thumbnail.selected {
-  backdrop-filter: grayscale(1);
-  border: 2px solid var(--primary);
+.thumbnail__link.selected:after {
+  content: "";
+  background-color: rgba(77, 9, 18, 0.4);
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--primary);
+  border-radius: 10px;
+  position: absolute;
+  inset-inline: 0;
+  inset-block: 0;
+  pointer-events: none;
 }
 
 @keyframes fade-in {
