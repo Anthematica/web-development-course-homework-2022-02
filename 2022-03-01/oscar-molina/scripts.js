@@ -10,11 +10,6 @@ imageSelectors.forEach(function(image) {
     })
 })
 
-// function removeStyle(){
-//     if(focused){
-//         focused.classList.remove('focused');
-//     }
-// }
 
 focusedImages.forEach(function(image) {
     image.addEventListener('click', function(){
