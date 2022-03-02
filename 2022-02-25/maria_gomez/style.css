@@ -266,7 +266,7 @@ body{
     border-radius: 8px;
     height:168px;
     /* width: 596px; */
-    padding-inline:24px;
+    padding-inline-start:24px;
 }
 /* para crear las dos ruedas de colores  */
 .wheel{
@@ -494,7 +494,8 @@ body{
     justify-content: space-between;
 }
 .cards{
-    width: 302px;
+    max-width: 302px;
+    width: 100%;
     height: 182px;
     border-radius: 20px;
 }
@@ -656,6 +657,10 @@ body{
     display: flex;
     margin-block-start: 8px;
 }
+.progressbar img{
+ max-width: 302px;
+ width: 100%;
+}
 .sectioncards__footer{
     margin-block-start: 24px;
     border-top: 1px solid var(--gray200);
@@ -749,7 +754,85 @@ body{
     line-height: 20px;
     color:var(--primary700);
 }
-/* modo para mobile pantalla width 375px */
+
+
+@media only screen and (max-width:1200px){
+    .section1__wheels{
+        margin-inline:80px;
+    }
+    .section2{
+        margin-inline: 80px;
+        justify-items: center;
+    }
+    .navi--left{
+        margin-inline-start: 60px;
+    }
+    .navi--right{
+        margin-inline-end:60px;
+    }
+    .content__cards{
+        flex-direction: column;
+    }
+    /* connfigurando vista para tablet  */
+@media only screen and (max-width:769px){
+    #navbar__menu{
+        display: none;
+    }
+    .navi--right{
+        display: none;
+    }
+    /* mostrando icon menu movil y tambien calcular el tamaño */
+    #mobilemenu img{
+        width: 24px;
+        height: 24px;
+    }
+    #mobilemenu{
+        display: flex;
+        padding: 8px;
+        margin-inline-end: 8px;
+        align-items: center;
+    }  
+        /* cambiando el margen de inicio de la parte derecha del nav */
+        .navi--left{
+            margin-inline-start: 16px;
+        }
+        /* para cambiar como se mira el header empezando con espacio del borde */
+        .header{
+            margin-inline: 16px;
+            padding: 0;
+        }
+        .header__pageheader{
+            flex-direction: column;
+            padding:0;
+        }
+        .btn{
+            font-size: 14px;
+            line-height: 20px;
+            padding-inline:16px;
+        }
+            /* para acomodar las wheel cards  */
+    .section1__wheels{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap:20px;
+        margin-inline: 16px;
+    }
+    .section2{
+        grid-template-columns: 1fr;
+        margin-inline: 16px;
+        row-gap:20px
+    }
+    .cards__textandprogress{
+        display: none;
+    }
+    .content__cards{
+        margin-inline: 4px;
+    }
+    .section2__recent > a{
+        margin-block: 16px 20px;
+    }
+    /* modo para mobile pantalla width 375px */
 @media only screen and (max-width:376px) {
     /* para ocultar el menu de links y el menu derecho */
     #navbar__menu{
@@ -866,63 +949,8 @@ body{
         margin-block: 16px 20px;
     }
 }
-/* connfigurando vista para tablet  */
-@media only screen and (max-width:769px){
-    #navbar__menu{
-        display: none;
-    }
-    .navi--right{
-        display: none;
-    }
-    /* mostrando icon menu movil y tambien calcular el tamaño */
-    #mobilemenu img{
-        width: 24px;
-        height: 24px;
-    }
-    #mobilemenu{
-        display: flex;
-        padding: 8px;
-        margin-inline-end: 8px;
-        align-items: center;
-    }  
-        /* cambiando el margen de inicio de la parte derecha del nav */
-        .navi--left{
-            margin-inline-start: 16px;
-        }
-        /* para cambiar como se mira el header empezando con espacio del borde */
-        .header{
-            margin-inline: 16px;
-            padding: 0;
-        }
-        .header__pageheader{
-            flex-direction: column;
-            padding:0;
-        }
-        .btn{
-            font-size: 14px;
-            line-height: 20px;
-            padding-inline:16px;
-        }
-            /* para acomodar las wheel cards  */
-    .section1__wheels{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 0px;
-        grid-row-gap:20px;
-        margin-inline: 16px;
-    }
-    .section2{
-        grid-template-columns: 1fr;
-        margin-inline: 16px;
-        row-gap:20px
-    }
-    .cards__textandprogress{
-        display: none;
-    }
-    .content__cards{
-        margin-inline: 4px;
-    }
-    .section2__recent > a{
-        margin-block: 16px 20px;
-    }
 }
+
+}
+
+
