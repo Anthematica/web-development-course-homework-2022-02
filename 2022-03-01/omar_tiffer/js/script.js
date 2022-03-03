@@ -16,15 +16,12 @@ function loadImage(e) {
   e.preventDefault();
   mainImage.src = e.target.dataset.bigImg;
 
-  let thumbnails = document.querySelectorAll(".thumbnail");
-  console.log(thumbnails);
-  for (let thumbnail of thumbnails) {
-    console.log(thumbnail);
-    if (thumbnail.classList.contains("selected")) {
-      thumbnail.classList.remove("selected");
+  for (let thumbnailLink of thumbnailLinks) {
+    if (thumbnailLink.classList.contains("selected")) {
+      thumbnailLink.classList.remove("selected");
     }
   }
-  e.target.classList.add("selected");
+  e.target.parentElement.classList.add("selected");
 }
 
 // Add pseudo element to clicked menu item
@@ -39,11 +36,11 @@ function setActive(e) {
 
   let linkItems = document.querySelectorAll(".menu__link");
 
-  linkItems.forEach(function (linkItem) {
+  for (let linkItem of linkItems) {
     if (linkItem.classList.contains("active")) {
       linkItem.classList.remove("active");
     }
-  });
+  }
 
   e.target.classList.add("active");
 
