@@ -5,48 +5,65 @@ box-sizing: border-box;
 
 html{ font-size:62.5%;}
 
-.container{width: 1440px;
-			height: 95vh;
-			min-height:400px;
+.container{
+
+			max-width: 1440px;
+			height: 88vh;
 			display: flex;
-			justify-content: space-between;
-			border-radius: 6px;
-			box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.45);
+			align-items: center;
+			justify-content: center;
+			margin: 40px auto;
+			
 			
 		}
 
 
+.container-sidebar-gallery{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 1286px;
+	border-radius: 20px;
+	box-shadow: -5px 10px 115px rgba(0, 0, 0, 0.45);
+
+}
+
+
 
 .sidebar{
+
 	display: flex;
 	flex-direction: column;
 	align-items:flex-start;
-	padding: 70px 70px 20px 70px;
-	height: 100%;
+	padding: 30px 0px 10px 50px;
+	margin-inline-end:50px;
+	max-width: 350px;
+	max-height:600px;
 	justify-content: space-between;
 	position: relative;
 }
 
 .sidebar h4{
 	font-size: 2.4rem;
+	columns: #000000;
 }
 
 .sidebar p{
 	margin-block: 20px;
 	line-height: 30px;
 	font-size: 2rem;
-	color: gray;
+	color: #c3c3c3;
 }
 
 .sidebar ul li{
 	list-style: none;
 	font-size: 2rem;
 	margin-block-end: 15px;
-	color: gray;
+	color: #c3c3c3;
 }
 
 .sidebar ul li:first-child{
-	color:#4D0976;
+	color:#5f0f82;
 	font-weight: 900;
 }
 
@@ -74,7 +91,8 @@ html{ font-size:62.5%;}
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	width: 100%;
+	max-width:800px;
+	border-bottom-right-radius: 20px;
 
 
 }
@@ -88,18 +106,23 @@ html{ font-size:62.5%;}
 	width: 100%;
 	height: 100%;
 	margin-block-end: 10px;
+	border-top-right-radius: 20px;
 }
 
-.content-imagenSmall{display: flex; max-width: 1000px; overflow-x: scroll; overflow-y: hidden;  }
+.content-imagenSmall{display: flex; 
+	max-width: 1000px; 
+	overflow-x: scroll;
+	 overflow-y: hidden; 
+	 cursor:pointer; }
 
 
-.content-imagenSmall::-webkit-scrollbar{ background-color:grey;height:5px; width:20%; }
+.content-imagenSmall::-webkit-scrollbar{ background-color:grey;height:8px; 	border-radius: 6px;  }
 
 .content-imagenSmall::-webkit-scrollbar-thumb{ 
+
 	background-color:#4D0976;
 	border-radius: 6px;
-	max-width:20px;
-	height:5px;
+	width:20px;
 	 }
 
 
@@ -112,12 +135,22 @@ html{ font-size:62.5%;}
 
 }
 
-@media(max-width: 800px){
+@media(max-width:1174px){
 
-   .container{
+	.sidebar{
+		display: flex;
+		justify-content: space-around;
+		flex-direction: row;
+		align-items: center;
+		max-width: 800px;
+
+	}
+
+   .container-sidebar-gallery{
    	display: flex;
-   	flex-direction: column;
+   	justify-content: center;
    	flex-wrap: wrap;
-   	width: 100vh;}
+   	width: 100vh;
+   	height: 100vh;}
 
 }
