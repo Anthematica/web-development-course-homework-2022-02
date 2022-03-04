@@ -1,0 +1,211 @@
+:root {
+	--lmBackgoundColor: #696967;
+	--white: #ffffff;
+	--black: #000000;
+	--PrimaryColor: #4b5efc;
+	--lmBgColor: #f1f2f3;
+	--lmBtnSecundary: #d2d3da;
+	--dmBtnSecundary: #4e505f;
+	--dmBackgroundColor: #17171c;
+	--dmBtnPrimary: #2e2f38;
+}
+
+body {
+	background: var(--lmBackgoundColor);
+	font-family: "Noto Sans Mono", monospace;
+	transition: background-color 0.3s ease-in-out;
+}
+body.dark {
+	background-color: var(--dmBtnSecundary);
+}
+.contendor {
+	min-width: 768px;
+	max-width: 768px;
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px;
+	margin: auto;
+}
+.output {
+	color: var(--lmOutputColor);
+	background-color: var(--lmBgColor);
+	height: 330px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border-radius: 10px 10px 0px 0px;
+	position: relative;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.dark .output {
+	background-color: var(--dmBackgroundColor);
+}
+.toggle {
+	position: absolute;
+	left: 47%;
+	width: 72px;
+	height: 32px;
+}
+.switch-toggle {
+	display: flex;
+	position: relative;
+	border-radius: 12px;
+	bottom: 260px;
+	margin: 0 auto;
+	background-color: var(--white);
+	border: none;
+	padding: 2px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.dark .switch-toggle {
+	background-color: var(--dmBtnPrimary);
+}
+.toggle-circle {
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	left: 1;
+	background-color: var(--lmBtnSecundary);
+	transition: background-color 0.3s ease-in-out;
+}
+.dark .toggle-circle {
+	background-color: var(--dmBtnSecundary);
+	right: 3px;
+}
+
+.input {
+	text-align: right;
+	font-size: 28pt;
+	padding: 0px;
+	color: var(--dmBtnSecundary);
+	margin: 0px;
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 47px;
+	text-align: right;
+	opacity: 0.4;
+	transition: background-color 0.3s ease-in-out;
+}
+.dark .input {
+	color: var(--lmBtnSecundary);
+}
+.moon {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+}
+.sun {
+	width: 24px;
+	height: 24px;
+}
+.preview {
+	text-align: right;
+	margin: 10px 0px 15px 0px;
+	font-weight: 300;
+	font-size: 96px;
+	line-height: 96px;
+	padding: 0px;
+	color: var(--black);
+}
+
+.dark .preview {
+	color: var(--white);
+}
+
+.buttons {
+	background-color: var(--lmBgColor);
+	padding: 10px 0px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	border-radius: 0px 0px 10px 10px;
+	transition: background-color 0.3s ease-in-out;
+}
+.dark .buttons {
+	background-color: var(--dmBackgroundColor);
+}
+.btn {
+	width: 170px;
+	height: 72px;
+	margin: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 0px 0px 6px rgba(88, 87, 87, 0.3);
+	color: var(--black);
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background-color 0.3s ease-in-out;
+}
+.btn svg {
+	fill: var(--black);
+	width: 30px;
+	height: 30px;
+}
+.dark .btn svg {
+	fill: var(--white);
+}
+.dark .btn {
+	background-color: var(--dmBtnPrimary);
+	color: var(--white);
+}
+.btn:hover {
+	box-shadow: 0px 0px 6px rgba(88, 87, 87, 0.6);
+}
+
+.btn:active {
+	background-color: var(--lmPrimaryColor);
+	color: white;
+}
+.operators {
+	background-color: var(--PrimaryColor);
+	color: white;
+	border-radius: 5px;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 40px;
+}
+
+.dark .operators {
+	background-color: var(--PrimaryColor);
+}
+.btn-secondary {
+	background-color: var(--lmBtnSecundary);
+	color: var(--black);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.dark .btn-secondary {
+	background-color: var(--dmBtnSecundary);
+	color: var(--white);
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn-secondary svg {
+	fill: var(--black);
+	width: 30px;
+	height: 30px;
+}
+/* 
+@media (prefers-color-scheme: dark) {
+	body .dark {
+		--lmBackgoundColor: #696967;
+		--white: #ffffff;
+		--black: #000000;
+		--PrimaryColor: #4b5efc;
+		--lmBgColor: #f12f4b;
+
+		 --lmBgColor: #f1f2f3; 
+		--lmBtnSecundary: #d2d3da;
+		--dmBtnSecundary: #4e505f;
+		--dmBackgroundColor: #17171c;
+		--dmBtnPrimary: #2e2f38;
+	}
+}
+*/
