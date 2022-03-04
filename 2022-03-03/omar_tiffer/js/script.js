@@ -1,4 +1,5 @@
 const toggleDarkMode = (containerEl) => {
+  togglerWrapperEl.firstElementChild.classList.toggle("toggled", toggleFlag);
   containerEl.classList.toggle("dark-theme", toggleFlag);
 
   const plusminIconBlackEl = document.querySelector(".plus-minus-black");
@@ -25,13 +26,6 @@ const togglerWrapperEl = document.querySelector(".toggler-wrapper");
 const containerEl = document.querySelector(".container");
 
 let toggleFlag = isDarkMode || localStorage.getItem("colorScheme") === "dark";
-console.log(
-  toggleFlag,
-  isDarkMode,
-  localStorage.getItem("colorScheme") === "dark"
-);
-
-togglerWrapperEl.firstElementChild.classList.toggle("toggled", toggleFlag);
 toggleDarkMode(containerEl);
 
 togglerWrapperEl.addEventListener("click", (e) => {
@@ -44,30 +38,46 @@ togglerWrapperEl.addEventListener("click", (e) => {
 
 const evaluateExpression = (expression) => {
   let result = 0;
-  let operatorIndex = expression.search(/[-+×÷]/i);
+  let operatorIndex = expression.search(/[−+×÷%]/i);
   let operator = expression.charAt(operatorIndex);
 
-  const expArr = expression.split(/[-+×÷]/i);
+  const expArr = expression.split(/[−+×÷%]/i);
 
   switch (operator) {
     case "+":
       result = parseFloat(expArr[0]) + parseFloat(expArr[1]);
-      console.log(result);
       break;
-    case "-":
+    case "−":
       result = parseFloat(expArr[0]) - parseFloat(expArr[1]);
-      console.log(result);
       break;
     case "×":
       result = parseFloat(expArr[0]) * parseFloat(expArr[1]);
-      console.log(result);
       break;
     case "÷":
       result = parseFloat(expArr[0]) / parseFloat(expArr[1]);
-      console.log(result);
+      break; 
+    case '%':
+      result = ((parseFloat(expArr[0]) / 100) * parseFloat(expArr[1]));
       break;
   }
-  return result;
+  return (result % 1 === 0) ? result.toFixed(0) : result.toFixed(4);
+};
+
+const addMinusSign = (expression) => {
+  let expArr = expression.split("");
+  let currentNumber = expArr.pop();
+
+  expArr.splice(expArr.length, 0, "(-", currentNumber, ")");
+  return expArr.join("");
+};
+
+const deleteFromExpression = (expression) => {
+  let expArr = expression.split("");
+  expArr.pop();
+
+  console.log(expArr.join(""));
+
+  return expArr.join("");
 };
 
 const processEvent = (clickedBtn, opEl, resEl) => {
@@ -77,8 +87,10 @@ const processEvent = (clickedBtn, opEl, resEl) => {
       resEl.value = "";
       break;
     case "plus-minus":
+      opEl.value = addMinusSign(opEl.value);
       break;
     case "del":
+      opEl.value = deleteFromExpression(opEl.value);
       break;
     case "eq":
       resEl.value = evaluateExpression(opEl.value);
