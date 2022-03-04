@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --darkBackground: #17171c;
+  --darkText: #ffffff;
+  --darkbtn-LowEmphasis: #2e2f38;
+  --darkbtn-MedEmphasis: #4e505f;
+  --darkbtn-HighEmphasis: #4b5efc;
+  --lightbtn-MedEmphasis: #d2d3da;
+  --lightbtn-LowEmphasis: #ffffff;
+  --lightbtn-HighEmphasis: #4b5efc;
+  --lightBackground: #f1f2f3;
+  --lightText: #000000;
+}
+.main {
+  display: flex;
+  width: 375px;
+  flex-direction: column;
+  background-color: var(--darkBackground);
+  margin: auto;
+}
+.calculator__screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.switch {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 72px;
+  height: 32px;
+  background-color: var(--darkbtn-LowEmphasis);
+  border-radius: 100px;
+}
+
+.switchy input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: var(--darkbtn-MedEmphasis);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+input {
+  display: none;
+}
+
+/* input:checked + .slider {
+    background-color: #2196F3;
+}
+   */
+/* input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+} */
+input:checked + .slider:before {
+  -webkit-transform: translateX(40px);
+  -ms-transform: translateX(40px);
+  transform: translateX(40px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.previousMath {
+  display: flex;
+  font-family: "Work Sans", sans-serif;
+  font-size: 40px;
+  text-align: right;
+  justify-self: right;
+  align-self: flex-end;
+  color: var(--darkText);
+  opacity: 0.4;
+  font-weight: 300;
+}
+.currentInput {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 300;
+  font-size: 96px;
+  align-self: flex-end;
+  color: var(--darkText);
+}
+.btnPlusMinus{
+  fill:var(--darkText);
+}
+.btnDelete{
+  fill:var(--darkText);
+}
+.calculator__keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 16px;
+  column-gap: 16px;
+  padding: 0 20px 20px 20px;
+}
+.btnCalc {
+  height: 72px;
+  border-radius: 24px;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  font-size: 32px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  color: var(--darkText);
+  background-color: var(--darkbtn-LowEmphasis);
+}
+.btnCalc--otherbg {
+  background-color: var(--darkbtn-MedEmphasis);
+}
+.btnCalc--bluebg {
+  background-color: var(--darkbtn-HighEmphasis);
+}
+
+.main.lightmode {
+  background-color: var(--lightBackground);
+}
+.switch.lightmode {
+  background-color: var(--lightbtn-LowEmphasis);
+}
+.slider.lightmode:before {
+  background-color: var(--lightbtn-MedEmphasis);
+}
+.previousMath.lightmode {
+  color: var(--lightText);
+}
+.btnCalc.lightmode {
+  background-color: var(--lightbtn-LowEmphasis);
+  color: var(--lightText);
+}
+.btnCalc--otherbg.lightmode {
+  background-color: var(--lightbtn-MedEmphasis);
+}
+.btnCalc--bluebg.lightmode {
+  background-color: var(--lightbtn-HighEmphasis);
+  color: var(--darkText);
+}
+
+button > * {
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: light) {
+  .main {
+    background-color: var(--lightBackground);
+  }
+  .switch {
+    background-color: var(--lightbtn-LowEmphasis);
+  }
+  .slider:before {
+    background-color: var(--lightbtn-MedEmphasis);
+  }
+  .previousMath {
+    color: var(--lightText);
+  }
+  .btnCalc {
+    background-color: var(--lightbtn-LowEmphasis);
+    color: var(--lightText);
+  }
+  .btnCalc--otherbg {
+    background-color: var(--lightbtn-MedEmphasis);
+  }
+  .btnCalc--bluebg {
+    background-color: var(--lightbtn-HighEmphasis);
+    color: var(--darkText);
+  }
+  .btnPlusMinus{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(277deg) brightness(113%) contrast(102%);
+  }
+  .btnDel{
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(277deg) brightness(113%) contrast(102%);
+  }
+  
+  /* para darkmode  */
+  .main.darktheme {
+    background-color: var(--darkBackground);
+ }
+  .switch.darktheme {
+    background-color: var(--darkbtn-LowEmphasis);
+  }
+  .slider.darktheme:before {
+    background-color: var(--darkbtn-MedEmphasis);
+  }
+  .previousMath.darktheme {
+    color: var(--darkText);
+  }
+  .btnCalc.darktheme {
+    background-color: var(--darkbtn-LowEmphasis);
+    color: var(--darkText);
+  }
+  .btnCalc--otherbg.darktheme {
+    background-color: var(--darkbtn-MedEmphasis);
+  }
+  .btnCalc--bluebg.darktheme {
+    background-color: var(--darkbtn-HighEmphasis);
+    color: var(--darkText);
+  }
+
+  .btnPlusMinus.darktheme{
+    filter: none;
+  }
+  .btnDel.darktheme{
+    filter: none;
+  }
+}
