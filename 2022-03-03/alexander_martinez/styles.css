@@ -1,0 +1,174 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	color-scheme: light dark;
+}
+
+body {
+	font-size: 16px;
+	background-color: var(--background);
+}
+
+.dark {
+	background-color: var(--dark-background);
+}
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-inline: auto;
+	max-width: 768px;
+	min-height: 100vh;
+}
+.cal {
+	padding: 20px;
+	max-width: 768px;
+	box-shadow: 0px 0px 16px hsl(0deg 0% 0% / 30%);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 16px;
+}
+
+.switch {
+	display: flex;
+	height: 32px;
+	width: 72px;
+	border-radius: 16px;
+	justify-content: space-around;
+	border: none;
+	background-color: var(--button-low);
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+}
+
+.switch::after {
+	content: "";
+	display: flex;
+	height: 26px;
+	width: 28px;
+	position: absolute;
+	inset-inline-start: unset;
+	inset-inline-end: 4px;
+	inset-block: 4px;
+	border-radius: 50%;
+	background-color: var(--button-medium);
+	transition: 0.4s ease all;
+}
+
+.switch--active {
+	background-color: var(--dark-button-low);
+}
+
+.switch--active::after {
+	background-color: var(--dark-button-medium);
+	inset-inline-end: unset;
+	inset-inline-start: 4px;
+	inset-block: 4px;
+	height: 26px;
+	width: 28px;
+	transition: 0.4s ease all;
+}
+
+.cal-mode {
+	display: flex;
+	justify-content: center;
+	height: 32px;
+	position: relative;
+}
+
+.display {
+	display: flex;
+	font-size: 6rem;
+	width: 100%;
+	margin-block: 10px;
+	height: 300px;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: var(--color);
+}
+
+.btn {
+	border-radius: 24px;
+	font-size: 1.5rem;
+	background-color: var(--button-low);
+	color: var(--color);
+	border: none;
+}
+
+.btn:hover {
+	filter: brightness(80%);
+}
+
+.cal-container {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 72px;
+	gap: 16px;
+	width: 100%;
+}
+
+.dark.btn {
+	background-color: var(--dark-button-low);
+	color: var(--button-low);
+}
+
+.btn-purple {
+	background-color: var(--button-hight);
+	color: white;
+}
+
+.btn-medium {
+	background-color: var(--button-medium);
+}
+
+.dark.btn-medium {
+	background-color: var(--dark-button-medium);
+	color: var(--color);
+}
+
+.dark.cal-button {
+	background-color: var(--dark-button-low);
+	color: var(--button-low);
+}
+
+.cal-svg {
+	fill: var(--color);
+}
+
+.dark.cal-svg {
+	fill: white;
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background: #17171c;
+		--button-hight: #4b5efc;
+		--button-medium: #4e505f;
+		--button-low: #2e2f38ff;
+		--color: #ffffff;
+	}
+	.switch::after {
+		inset-inline-end: unset;
+		inset-inline-start: 4px;
+		inset-block: 4px;
+		height: 26px;
+		width: 28px;
+		transition: 0.4s ease all;
+	}
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: #f1f2f3;
+		--button-hight: #4b5efc;
+		--button-medium: #d2d3da;
+		--button-low: #ffffff;
+		--color: #000000;
+	}
+}
