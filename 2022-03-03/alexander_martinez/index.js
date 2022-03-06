@@ -135,17 +135,24 @@ const updateDisplay = () => {
 	displayEl.innerText = firstOp;
 };
 
+// detect the color scheme
+const darkTheme = window.matchMedia("(prefers-color-scheme: dark)").matches; //true
+let colorTheme = darkTheme || localStorage.getItem("colorTheme") === "dark"; // true
+
+const changeTheme = () => {
+	body.classList.toggle("dark", colorTheme);
+	body.classList.toggle("light", !colorTheme);
+	btnSwitch.classList.toggle("switch--active", colorTheme);
+
+	colorTheme // falso
+		? localStorage.setItem("colorTheme", "dark")
+		: localStorage.setItem("colorTheme", "light");
+	colorTheme = !colorTheme;
+};
+
+changeTheme();
+
 // change theme
 btnSwitch.addEventListener("click", () => {
-	btnSwitch.classList.toggle("switch--active");
-
-	// btnLow.forEach((elm) => {
-	// 	if (elm.classList.contains("btn-purple")) return;
-	// 	elm.classList.toggle("dark");
-	// });
-
-	// btnMedium.forEach((medium) => {
-	// 	medium.classList.toggle("dark");
-	// });
-	// body.classList.toggle("dark");
+	changeTheme();
 });

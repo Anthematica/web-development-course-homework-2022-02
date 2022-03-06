@@ -5,17 +5,35 @@
 }
 
 :root {
-	color-scheme: light dark;
+	color-scheme: light;
+	--background: #f1f2f3;
+	--button-hight: #4b5efc;
+	--button-medium: #d2d3da;
+	--button-low: #ffffff;
+	--color: #000000;
 }
 
 body {
 	font-size: 16px;
-	background-color: var(--background);
+	background-color: var(--button-medium);
 }
 
 .dark {
-	background-color: var(--dark-background);
+	--background: #17171c;
+	--button-hight: #4b5efc;
+	--button-medium: #4e505f;
+	--button-low: #2e2f38ff;
+	--color: #ffffff;
 }
+
+.light {
+	--background: #f1f2f3;
+	--button-hight: #4b5efc;
+	--button-medium: #d2d3da;
+	--button-low: #ffffff;
+	--color: #000000;
+}
+
 .container {
 	display: flex;
 	flex-direction: column;
@@ -32,6 +50,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	border-radius: 16px;
+	background-color: var(--background);
 }
 
 .switch {
@@ -50,8 +69,7 @@ body {
 .switch::after {
 	content: "";
 	display: flex;
-	height: 26px;
-	width: 28px;
+	width: 26px;
 	position: absolute;
 	inset-inline-start: unset;
 	inset-inline-end: 4px;
@@ -62,16 +80,13 @@ body {
 }
 
 .switch--active {
-	background-color: var(--dark-button-low);
+	background-color: var(--button-low);
 }
 
 .switch--active::after {
-	background-color: var(--dark-button-medium);
+	background-color: var(--button-medium);
 	inset-inline-end: unset;
 	inset-inline-start: 4px;
-	inset-block: 4px;
-	height: 26px;
-	width: 28px;
 	transition: 0.4s ease all;
 }
 
@@ -153,12 +168,11 @@ body {
 		--button-low: #2e2f38ff;
 		--color: #ffffff;
 	}
-	.switch::after {
+	.switch--active::after {
 		inset-inline-end: unset;
 		inset-inline-start: 4px;
 		inset-block: 4px;
-		height: 26px;
-		width: 28px;
+		width: 26px;
 		transition: 0.4s ease all;
 	}
 }
