@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" color-mode="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="systemDarkPreference">
+    <main class="main changeTheme">
+        <div class="calculator__screen">
+            <label class="switch changeTheme">
+                <input type="checkbox" class="toggleTheme">
+                <span class="slider round changeTheme"></span>
+                <img class="toggle__sun" src="images/sun.svg" alt="">
+                <img class="toggle__moon" src="images/moon.svg" alt="">
+            </label>
+            <div class="previousMath changeTheme">2</div>
+            <div class="currentInput">1234</div>
+        </div>
+        <div class="calculator__keys">
+            <button class="btnCalc btnCalc--otherbg changeTheme" data-action="clear">C</button>
+            <button class="btnCalc btnCalc--otherbg changeTheme" data-action="plusminus">
+                <img class="btnPlusMinus changeTheme" src="images/plusminus.svg" alt="">
+            </button>
+            <button class="btnCalc btnCalc--otherbg changeTheme" data-action="percent">%</button>
+            <button class="btnCalc btnCalc--bluebg changeTheme" data-action="divide">÷</button>
+            <button class="btnCalc changeTheme">7</button>
+            <button class="btnCalc changeTheme">8</button>
+            <button class="btnCalc changeTheme">9</button>
+            <button class="btnCalc btnCalc--bluebg changeTheme" data-action="multiply">x</button>
+            <button class="btnCalc changeTheme">4</button>
+            <button class="btnCalc changeTheme">5</button>
+            <button class="btnCalc changeTheme">6</button>
+            <button class="btnCalc changeTheme btnCalc--bluebg" data-action="substract">-</button>
+            <button class="btnCalc changeTheme changeTheme">1</button>
+            <button class="btnCalc changeTheme">2</button>
+            <button class="btnCalc changeTheme">3</button>
+            <button class="btnCalc btnCalc--bluebg changeTheme" data-action="add">+</button>
+            <button class="btnCalc changeTheme" data-action="decimal">.</button>
+            <button class="btnCalc changeTheme">0</button>
+            <button class="btnCalc changeTheme" data-action="delete">
+                <img class="btnDel changeTheme" src="images/delete.svg" alt="">
+            </button>
+            <button class="btnCalc changeTheme btnCalc--bluebg" data-action="calculate">=</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

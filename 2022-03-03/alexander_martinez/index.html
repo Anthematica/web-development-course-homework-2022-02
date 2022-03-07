@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JS Calculator</title>
+		<link
+			rel="stylesheet"
+			href="./styles.css"
+			media="(prefers-color-scheme: light), (prefers-color-scheme: dark)"
+		/>
+	</head>
+	<body class="">
+		<div class="container">
+			<div class="cal">
+				<button class="switch">
+					<span>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g opacity="0.7">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M13 2V3V5V6H11V5V3V2H13ZM2 11H3H5H6V13H5H3H2V11ZM19 11H18V13H19H21H22V11H21H19ZM13 18V19V21V22H11V21V19V18H13ZM17.6568 19.0711L18.364 19.7782L19.7782 18.364L19.0711 17.6569L17.6568 16.2427L16.9497 15.5356L15.5355 16.9498L16.2426 17.6569L17.6568 19.0711ZM7.05023 8.46451L6.34312 7.7574L4.92891 6.34319L4.2218 5.63608L5.63602 4.22187L6.34313 4.92897L7.75734 6.34319L8.46445 7.05029L7.05023 8.46451ZM19.0711 6.34309L19.7782 5.63599L18.364 4.22177L17.6568 4.92888L16.2426 6.34309L15.5355 7.0502L16.9497 8.46441L17.6568 7.75731L19.0711 6.34309ZM8.46445 16.9497L7.75734 17.6568L6.34312 19.071L5.63602 19.7781L4.2218 18.3639L4.92891 17.6568L6.34313 16.2426L7.05023 15.5355L8.46445 16.9497ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z"
+									fill="#4B5EFC"
+								/>
+							</g>
+						</svg>
+					</span>
+					<span>
+						<svg
+							width="24"
+							height="24"
+							viewBox="0 0 24 24"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<g opacity="0.7">
+								<path
+									fill-rule="evenodd"
+									clip-rule="evenodd"
+									d="M8.03239 6.23185C6.2001 7.49474 5 9.60796 5 11.9999C5 15.8659 8.13401 18.9999 12 18.9999C14.3918 18.9999 16.5049 17.7999 17.7678 15.9678C17.5146 15.9893 17.2585 16.0002 17 16.0002C12.0294 16.0002 8 11.9707 8 7.00018C8 6.7415 8.01094 6.48523 8.03239 6.23185ZM3 11.9999C3 8.04172 5.55459 4.68278 9.10211 3.47692L10.3707 4.7456C10.1306 5.45176 10 6.20968 10 7.00018C10 10.8662 13.134 14.0002 17 14.0002C17.7904 14.0002 18.5482 13.8696 19.2542 13.6296L20.5228 14.8983C19.3168 18.4455 15.958 20.9999 12 20.9999C7.02944 20.9999 3 16.9705 3 11.9999Z"
+									fill="#4B5EFC"
+								/>
+							</g>
+						</svg>
+					</span>
+				</button>
+				<span class="total"></span>
+				<span class="display">0</span>
+				<div class="cal-container">
+					<button class="btn reset btn-medium">C</button>
+					<button class="btn plus-minus btn-medium">+/-</button>
+					<button class="btn percentage btn-medium">%</button>
+					<button class="btn operator btn-purple">&divide;</button>
+					<button class="btn button">7</button>
+					<button class="btn button">8</button>
+					<button class="btn button">9</button>
+					<button class="btn operator btn-purple">x</button>
+					<button class="btn button">4</button>
+					<button class="btn button">5</button>
+					<button class="btn button">6</button>
+					<button class="btn operator btn-purple">-</button>
+					<button class="btn button">1</button>
+					<button class="btn button">2</button>
+					<button class="btn button">3</button>
+					<button class="btn operator btn-purple">+</button>
+					<button class="btn dot">.</button>
+					<button class="btn button">0</button>
+					<button class="btn remove">
+						<svg
+							class="cal-svg"
+							width="32"
+							height="32"
+							viewBox="0 0 32 32"
+							fill="black"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								fill-rule="evenodd"
+								clip-rule="evenodd"
+								d="M10.5858 7H11H27H28V8V24V25H27H11H10.5858L10.2929 24.7071L2.29289 16.7071L1.58578 16L2.29289 15.2929L10.2929 7.29289L10.5858 7ZM11.4142 9L4.41421 16L11.4142 23H26V9H11.4142ZM15 11.5858L15.7071 12.2929L18 14.5858L20.2929 12.2929L21 11.5858L22.4142 13L21.7071 13.7071L19.4142 16L21.7071 18.2929L22.4142 19L21 20.4142L20.2929 19.7071L18 17.4142L15.7071 19.7071L15 20.4142L13.5858 19L14.2929 18.2929L16.5858 16L14.2929 13.7071L13.5858 13L15 11.5858Z"
+								fill="current-color"
+							/>
+						</svg>
+					</button>
+					<button class="btn equal btn-purple">=</button>
+				</div>
+			</div>
+		</div>
+
+		<script src="./index.js"></script>
+	</body>
+</html>

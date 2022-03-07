@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="style.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap"
+         rel="stylesheet"
+      />
+      <title>Calculator</title>
+   </head>
+   <body>
+      <div class="calculator-container">
+         <div class="theme">
+            <div class="toggle">
+               
+                  <svg
+                     data-mode="light"
+                     class="lightmode-svg mode-svg"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <g opacity="0.7">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M13 2V3V5V6H11V5V3V2H13ZM2 11H3H5H6V13H5H3H2V11ZM19 11H18V13H19H21H22V11H21H19ZM13 18V19V21V22H11V21V19V18H13ZM17.6568 19.0711L18.364 19.7782L19.7782 18.364L19.0711 17.6569L17.6568 16.2427L16.9497 15.5356L15.5355 16.9498L16.2426 17.6569L17.6568 19.0711ZM7.05023 8.46451L6.34312 7.7574L4.92891 6.34319L4.2218 5.63608L5.63602 4.22187L6.34313 4.92897L7.75734 6.34319L8.46445 7.05029L7.05023 8.46451ZM19.0711 6.34309L19.7782 5.63599L18.364 4.22177L17.6568 4.92888L16.2426 6.34309L15.5355 7.0502L16.9497 8.46441L17.6568 7.75731L19.0711 6.34309ZM8.46445 16.9497L7.75734 17.6568L6.34312 19.071L5.63602 19.7781L4.2218 18.3639L4.92891 17.6568L6.34313 16.2426L7.05023 15.5355L8.46445 16.9497ZM10 12C10 10.8954 10.8954 10 12 10C13.1046 10 14 10.8954 14 12C14 13.1046 13.1046 14 12 14C10.8954 14 10 13.1046 10 12ZM12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8Z"
+                           fill="#4B5EFC"
+                        />
+                     </g>
+                  </svg>
+
+                  <svg
+                  data-mode="dark"
+                     class="darkmode-svg mode-svg"
+                     width="24"
+                     height="24"
+                     viewBox="0 0 24 24"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <g opacity="0.7">
+                        <path
+                           fill-rule="evenodd"
+                           clip-rule="evenodd"
+                           d="M8.03239 6.23186C6.2001 7.49474 5 9.60797 5 11.9999C5 15.8659 8.13401 18.9999 12 18.9999C14.3918 18.9999 16.5049 17.8 17.7679 15.9678C17.5146 15.9893 17.2585 16.0002 17 16.0002C12.0294 16.0002 8 11.9708 8 7.00019C8 6.7415 8.01094 6.48524 8.03239 6.23186ZM3 11.9999C3 8.04173 5.55459 4.68279 9.10211 3.47693L10.3707 4.74561C10.1306 5.45177 10 6.20969 10 7.00019C10 10.8662 13.134 14.0002 17 14.0002C17.7904 14.0002 18.5482 13.8696 19.2542 13.6296L20.5228 14.8983C19.3168 18.4456 15.958 20.9999 12 20.9999C7.02944 20.9999 3 16.9705 3 11.9999Z"
+                           fill="#4B5EFC"
+                        />
+                     </g>
+                  </svg>
+            
+            </div>
+            <div class="circle-mode"></div>
+         </div>
+         <div class="calculator">
+            <div class="display">
+               <div class="display-operation"></div>
+               <div class="display-total"></div>
+            </div>
+            <div class="buttons">
+               <button class="top-operator clear" data-value="clear">C</button>
+               <button
+                  value="negative"
+                  class="top-operator operator negative"
+                  data-value="negative"
+               >
+                  *(-1)
+                  <svg
+                     class="dark-svg"
+                     width="32"
+                     height="32"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M22.8321 7.55469L23.3867 6.72264L21.7226 5.61324L21.1679 6.44529L9.16795 24.4453L8.61325 25.2773L10.2773 26.3867L10.8321 25.5547L22.8321 7.55469ZM9 5.99998V6.99998V8.99998H11H12V11H11H9V13V14H7V13V11H5H4V8.99998H5H7V6.99998V5.99998H9ZM21 21H20V23H21H27H28V21H27H21Z"
+                        fill="white"
+                     />
+                  </svg>
+
+                  <svg
+                     class="light-svg"
+                     width="25"
+                     height="22"
+                     viewBox="0 0 25 22"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M19.5821 2.55469L20.1367 1.72264L18.4726 0.613239L17.9179 1.44529L5.91795 19.4453L5.36325 20.2773L7.02735 21.3867L7.58205 20.5547L19.5821 2.55469ZM5.75 0.999989V1.99999V3.99999H7.75H8.75V5.99999H7.75H5.75V7.99999V8.99999H3.75V7.99999V5.99999H1.75H0.75V3.99999H1.75H3.75V1.99999V0.999989H5.75ZM17.75 16H16.75V18H17.75H23.75H24.75V16H23.75H17.75Z"
+                        fill="black"
+                     />
+                  </svg>
+               </button>
+               <button class="top-operator operator" data-value="%">%</button>
+               <button class="right-operator operator" data-value="/">÷</button>
+               <button class="numbers" data-value="7">7</button>
+               <button class="numbers" data-value="8">8</button>
+               <button class="numbers" data-value="9">9</button>
+               <button class="right-operator operator" data-value="*">x</button>
+               <button class="numbers" data-value="4">4</button>
+               <button class="numbers" data-value="5">5</button>
+               <button class="numbers" data-value="6">6</button>
+               <button class="right-operator operator" data-value="-">-</button>
+               <button class="numbers" data-value="1">1</button>
+               <button class="numbers" data-value="2">2</button>
+               <button class="numbers" data-value="3">3</button>
+               <button class="right-operator operator" data-value="+">+</button>
+               <button class="numbers" data-value=".">.</button>
+               <button class="numbers" data-value="0">0</button>
+               <button class="bottom-operator delete" data-value="delete">
+                  <svg
+                     class="delete-button-svg dark-svg
+                     width="32"
+                     height="32"
+                     viewBox="0 0 32 32"
+                     fill="none"
+                     xmlns="http://www.w3.org/2000/svg"
+                  >
+                     <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5858 7H11H27H28V8V24V25H27H11H10.5858L10.2929 24.7071L2.29292 16.7071L1.58582 16L2.29292 15.2929L10.2929 7.29289L10.5858 7ZM11.4142 9L4.41424 16L11.4142 23H26V9H11.4142ZM15 11.5858L15.7071 12.2929L18 14.5858L20.2929 12.2929L21 11.5858L22.4142 13L21.7071 13.7071L19.4142 16L21.7071 18.2929L22.4142 19L21 20.4142L20.2929 19.7071L18 17.4142L15.7071 19.7071L15 20.4142L13.5858 19L14.2929 18.2929L16.5858 16L14.2929 13.7071L13.5858 13L15 11.5858Z"
+                        fill="white"
+                     />
+                  </svg>
+                  <svg 
+                  class="delete-button-svg light-svg"width="27" height="18" viewBox="0 0 27 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.08582 0H9.50003H25.5H26.5V1V17V18H25.5H9.50003H9.08582L8.79292 17.7071L0.792922 9.70711L0.0858154 9L0.792922 8.29289L8.79292 0.292893L9.08582 0ZM9.91424 2L2.91424 9L9.91424 16H24.5V2H9.91424ZM13.5 4.58578L14.2071 5.29288L16.5 7.58578L18.7929 5.29289L19.5 4.58579L20.9142 6L20.2071 6.70711L17.9142 9L20.2071 11.2929L20.9142 12L19.5 13.4142L18.7929 12.7071L16.5 10.4142L14.2071 12.7071L13.5 13.4142L12.0858 12L12.7929 11.2929L15.0858 9L12.7929 6.7071L12.0858 5.99999L13.5 4.58578Z" fill="black"/>
+                     </svg>                     
+               </button>
+               <button class="right-operator equal" data-value="=">=</button>
+            </div>
+         </div>
+      </div>
+
+      <script src="scripts.js"></script>
+   </body>
+</html>

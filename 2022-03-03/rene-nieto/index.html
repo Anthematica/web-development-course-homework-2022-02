@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" href="style.css" />
+
+		<title>Calculadora</title>
+	</head>
+
+	<body>
+		<div class="contendor">
+			<div class="output">
+				<div class="toggle">
+					<button class="switch-toggle mode-dark">
+						<div class="toggle-circle"></div>
+						<img class="moon" src="/moon.svg" alt="Mode Dark" />
+						<img class="sun" src="/sun.svg" alt="Mode Light" />
+					</button>
+				</div>
+				<p id="result" class="input"></p>
+
+				<p id="preview" class="preview"></p>
+			</div>
+
+			<div id="currentNumber" class="buttons">
+				<button id="ac" class="btn btn-secondary">C</button>
+				<button id="x-1" class="btn btn-secondary">
+					<svg
+						width="32"
+						height="32"
+						viewBox="0 0 32 32"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M22.8321 7.5547L23.3867 6.72265L21.7226 5.61325L21.1679 6.4453L9.16795 24.4453L8.61325 25.2774L10.2773 26.3868L10.8321 25.5547L22.8321 7.5547ZM9 6V7V9H11H12V11H11H9V13V14H7V13V11H5H4V9H5H7V7V6H9ZM21 21H20V23H21H27H28V21H27H21Z"
+						/>
+					</svg>
+				</button>
+				<button id="radical" class="btn btn-secondary">%</button>
+				<button id="div" class="btn operators">÷</button>
+
+				<button id="7" class="btn">7</button>
+				<button id="8" class="btn">8</button>
+				<button id="9" class="btn">9</button>
+				<button id="mult" class="btn operators">x</button>
+				<button id="4" class="btn">4</button>
+				<button id="5" class="btn">5</button>
+				<button id="6" class="btn">6</button>
+				<button id="rest" class="btn operators">-</button>
+				<button id="1" class="btn">1</button>
+				<button id="2" class="btn">2</button>
+				<button id="3" class="btn">3</button>
+				<button id="suma" class="btn operators">+</button>
+				<button id="dot" class="btn">.</button>
+				<button id="0" class="btn">0</button>
+				<button id="delete" class="btn">
+					<svg
+						width="32"
+						height="32"
+						viewBox="0 0 32 32"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							fill-rule="evenodd"
+							clip-rule="evenodd"
+							d="M10.5858 7H11H27H28V8V24V25H27H11H10.5858L10.2929 24.7071L2.29289 16.7071L1.58578 16L2.29289 15.2929L10.2929 7.29289L10.5858 7ZM11.4142 9L4.41421 16L11.4142 23H26V9H11.4142ZM15 11.5858L15.7071 12.2929L18 14.5858L20.2929 12.2929L21 11.5858L22.4142 13L21.7071 13.7071L19.4142 16L21.7071 18.2929L22.4142 19L21 20.4142L20.2929 19.7071L18 17.4142L15.7071 19.7071L15 20.4142L13.5858 19L14.2929 18.2929L16.5858 16L14.2929 13.7071L13.5858 13L15 11.5858Z"
+						/>
+					</svg>
+				</button>
+				<button id="equal" class="btn operators">=</button>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
+</html>

@@ -9,7 +9,10 @@
 
 	<main class="container">
 		
-		<aside class="sidebar">
+		<section class="container-sidebar-gallery">
+
+			
+			<aside class="sidebar">
 
 			<div>
 				<h4>Art categories</h4>
@@ -51,48 +54,30 @@
 
 			<section class="content-imagenSmall">
 
-				<img src="imagen1.jpg" alt="Snyder carcamo">
+				<img data-id="1" src="imagen1.jpg" alt="Snyder carcamo">
 				<img src="imagen2.jpeg" alt="Snyder carcamo">
 				<img src="imagen11.jpg" alt="Snyder carcamo">
 				<img src="imagen4.jpeg" alt="Snyder carcamo">
 				<img src="imagen5.jpeg" alt="Snyder carcamo">
+				<img src="imagen10.jpeg" alt="Snyder carcamo">
+				<img src="imagen11.jpg" alt="Snyder carcamo">
+				<img src="imagen12.jpg" alt="Snyder carcamo">	
 				<img src="imagen6.jpeg" alt="Snyder carcamo">
 				<img src="imagen7.jpeg" alt="Snyder carcamo">
 				<img src="imagen8.jpeg" alt="Snyder carcamo">
 				<img src="imagen9.jpg" alt="Snyder carcamo">
-				<img src="imagen10.jpeg" alt="Snyder carcamo">
-				<img src="imagen11.jpg" alt="Snyder carcamo">
-				<img src="imagen12.jpg" alt="Snyder carcamo">	
+
 			</section>
 
+		</section>	
+
 		</section>
-
-
 		
-
-
-
-
-
 	</main>
 
 
-	<script>
-
-
-	const smallImagen = document.querySelectorAll('.content-imagenSmall > img');
-	const bigImagen = document.querySelector('.contentimagenBig');
-
-	function changes (e){
-
-		bigImagen.style.backgroundImage = `url(${e.target.src})`;
-	}
-
-	smallImagen.forEach(element => { element.addEventListener('click', changes)});
-
-	
-
-</script>
+	<script type="text/javascript" src="javaScript.js">
+	</script>
 
 </body>
 </html>

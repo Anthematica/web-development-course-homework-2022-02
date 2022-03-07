@@ -1,0 +1,188 @@
+*,::after,::before{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root{
+	--Dark-Background: #17171C;
+	--Light-background: #F1F2F3;
+	--button-gray: #4E505F;
+	--button-light: #D2D3DA;
+	--button-blue: #4B5EFC;
+	--button-themeDark: #2E2F38;
+}
+body{
+	font-family: "Work Sans";
+	display: flex;
+	width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	background-color: #E5E5E5;
+}
+.component{
+	width: 768px;
+	/*height: 1024px;*/
+	transition: background-color .4s ease-in;
+	background-color: var(--Light-background);
+}
+.component__theme{
+	position: relative;
+	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 72px;
+	height: 32px;
+	justify-self: start;
+	border-radius: 16px;
+	cursor: pointer;
+	box-shadow: -2px 1px 4px #ccc;
+	transition: background-color .4s ease-in,box-shadow .5s ease-in;
+	background-color: #fff;
+}
+.button__theme{
+	width: fit-content;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	border-radius: 16px;
+	background-color: transparent;
+}
+.button__toggle{
+	position: absolute;
+	inset-inline-end: 6px;
+	inset-block-start: 4px;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: transform .4s ease-in-out;
+	background-color: var(--button-light);
+}
+.result{
+	font-size: 40px;
+	font-weight: 600;
+	text-align: right;
+	color: #0a0;
+}
+.operation{
+	font-size: 96px;
+	font-weight: 300;
+	text-align: right;
+	transition: color .4s;
+	color: #000;
+}
+.component__function{
+	padding-inline: 20px;
+}
+.component__action{
+	display: grid;
+	grid-gap: 16px;
+	grid-template-columns: repeat(4, 1fr);
+}
+.sbg__module-second, .button__detele_night{
+	display: none;
+}
+.component__buttons{
+	width: 170px;
+	height: 72px;
+	font-size: 32px;
+	text-align: center;
+	font-weight: 400;
+	border-radius: 24px;
+	cursor: pointer;
+	border: none;
+	transition: background-color .5s ease-out;
+	background-color: #fff;
+}
+.component__buttons:active{
+	transform: scale(.9);
+}
+.button__gray{
+	transition: background-color .5s ease-out;
+	background-color: var(--button-light);
+}
+.button__blue{
+	color: #fff;
+	background-color: var(--button-blue);
+}
+
+.component__line{
+	display: flex;
+	align-items: end;
+	height: 64px;
+	padding-block-end: 8px;
+}
+.line{
+	width: 120px;
+	height: 4px;
+	margin-inline: auto;
+	border-radius: 8px;
+	transition: background-color .3s ease-out;
+	background-color: #000;
+}
+.content__result{
+	height: 140px;
+	/*background-color: #3458;*/
+}
+.config{
+	display: grid;
+	grid-template-columns: 330px 1fr;
+	align-items: center;
+	padding-inline: 20px;
+	margin-block: 60px 330px;
+	/*outline: 2px solid #fd4;*/
+}
+.time{
+	display: inline-block;
+	width: 220px;
+	font-size: 1.8rem;
+	font-weight: 600;
+}
+/*===========MODE THEME=============*/
+.modeTheme{
+	transition: transform .4s ease-in-out, background-color .2s ease-in;
+	transform: translateX(-34px);
+}
+
+.theme .component{
+	transition: background-color .4s ease-in;
+	background-color: var(--Dark-Background);
+}
+.theme .component__theme{
+	transition: background-color .4s ease-in,box-shadow .5s ease-in;
+	background-color: var(--button-themeDark);
+	box-shadow: 2px 0 3px #fff8;
+}
+
+.theme .operation, .theme .result{
+	transition: color .4s;
+	color: #fff;
+}
+
+.theme .button__toggle, .theme .button__gray{
+	background-color: var(--button-gray);
+}
+.theme .button__gray{
+	color: #fff;
+	transition: background-color .5s ease-out;
+}
+.theme .component__buttons:not(.button__gray, .button__blue){
+	transition: background-color .5s ease-out;
+	color: #fff;
+	background-color: var(--button-themeDark);
+}
+.theme .line{
+	transition: background-color .3s ease-out;
+	background-color: #fff;
+}
+.theme .hideButton, .buttonDelete{
+	display: none;
+}
+.theme .time{
+	transition: color .4s ease-in-out;
+	color: #fff;
+}

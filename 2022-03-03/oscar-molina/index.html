@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Work+Sans:wght@300;400&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/normalize.css" />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <main class="container">
+            <div class="mode-container">
+                <!-- <div class="sun">
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M11 0V1V3V4H9V3V1V0H11ZM0 9H1H3H4V11H3H1H0V9ZM17 9H16V11H17H19H20V9H19H17ZM11 16V17V19V20H9V19V17V16H11ZM15.6568 17.0711L16.364 17.7782L17.7782 16.364L17.0711 15.6569L15.6568 14.2427L14.9497 13.5356L13.5355 14.9498L14.2426 15.6569L15.6568 17.0711ZM5.05023 6.46451L4.34312 5.7574L2.92891 4.34319L2.2218 3.63608L3.63602 2.22187L4.34313 2.92897L5.75734 4.34319L6.46445 5.05029L5.05023 6.46451ZM17.0711 4.34309L17.7782 3.63599L16.364 2.22177L15.6568 2.92888L14.2426 4.34309L13.5355 5.0502L14.9497 6.46441L15.6568 5.75731L17.0711 4.34309ZM6.46445 14.9497L5.75734 15.6568L4.34312 17.071L3.63602 17.7781L2.2218 16.3639L2.92891 15.6568L4.34313 14.2426L5.05023 13.5355L6.46445 14.9497ZM8 10C8 8.89543 8.89543 8 10 8C11.1046 8 12 8.89543 12 10C12 11.1046 11.1046 12 10 12C8.89543 12 8 11.1046 8 10ZM10 6C7.79086 6 6 7.79086 6 10C6 12.2091 7.79086 14 10 14C12.2091 14 14 12.2091 14 10C14 7.79086 12.2091 6 10 6Z"
+                            fill="#4B5EFC"
+                        />
+                    </svg>
+                </div>
+                <div class="moon">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <g opacity="0.7">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M8.03239 6.23186C6.2001 7.49474 5 9.60797 5 11.9999C5 15.8659 8.13401 18.9999 12 18.9999C14.3918 18.9999 16.5049 17.8 17.7678 15.9678C17.5146 15.9893 17.2585 16.0002 17 16.0002C12.0294 16.0002 8 11.9708 8 7.00019C8 6.7415 8.01094 6.48524 8.03239 6.23186ZM3 11.9999C3 8.04173 5.55459 4.68279 9.10211 3.47693L10.3707 4.74561C10.1306 5.45177 10 6.20969 10 7.00019C10 10.8662 13.134 14.0002 17 14.0002C17.7904 14.0002 18.5482 13.8696 19.2542 13.6296L20.5228 14.8983C19.3168 18.4455 15.958 20.9999 12 20.9999C7.02944 20.9999 3 16.9705 3 11.9999Z"
+                                fill="#4B5EFC"
+                            />
+                        </g>
+                    </svg>
+                </div>
+                <div class="circle">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <circle cx="12" cy="12" r="12" fill="#D2D3DA" />
+                    </svg>
+                </div> -->
+                <!-- rounded switch -->
+                <label class="switch">
+                    <input type="checkbox" />
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="calculator-container">
+                <!-- <div
+                    data-type="display-previous"
+                    class="previous-operand"
+                ></div> -->
+                <div data-type="display-current" class="current-operand">0</div>
+                <!-- <div class="outputs"></div> -->
+                <div class="calculator-grid">
+                    <button
+                        data-action="clear"
+                        data-key="clear"
+                        data-type="clear"
+                        class="calculator-buttons gray operator"
+                    >
+                        C
+                    </button>
+                    <button
+                        data-action="negative"
+                        data-key="negative"
+                        data-type="operator"
+                        class="calculator-buttons gray operator negative"
+                    >
+                        <svg
+                            width="24"
+                            height="22"
+                            viewBox="0 0 24 22"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M18.8321 2.5547L19.3867 1.72265L17.7226 0.613251L17.1679 1.4453L5.16795 19.4453L4.61325 20.2774L6.27735 21.3868L6.83205 20.5547L18.8321 2.5547ZM5 1V2V4H7H8V6H7H5V8V9H3V8V6H1H0V4H1H3V2V1H5ZM17 16H16V18H17H23H24V16H23H17Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        data-action="percent"
+                        data-key="percent"
+                        data-type="operator"
+                        class="calculator-buttons gray operator"
+                    >
+                        %
+                    </button>
+                    <button
+                        data-action="divide"
+                        data-key="divide"
+                        data-type="operator"
+                        class="calculator-buttons blue operator"
+                    >
+                        ÷
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        8
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        7
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        9
+                    </button>
+                    <button
+                        data-action="multiply"
+                        data-key="multiply"
+                        data-type="operator"
+                        class="calculator-buttons blue operator"
+                    >
+                        &times;
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        4
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        6
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        5
+                    </button>
+                    <button
+                        data-action="minus"
+                        data-key="minus"
+                        data-type="operator"
+                        class="calculator-buttons blue operator"
+                    >
+                        -
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        1
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        2
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        3
+                    </button>
+                    <button
+                        data-action="plus"
+                        data-key="plus"
+                        data-type="operator"
+                        class="calculator-buttons blue operator"
+                    >
+                        +
+                    </button>
+                    <button
+                        data-action="decimal"
+                        data-type="decimal"
+                        class="calculator-buttons operator"
+                    >
+                        .
+                    </button>
+                    <button
+                        data-type="number"
+                        class="calculator-buttons number"
+                    >
+                        0
+                    </button>
+                    <button
+                        data-action="back"
+                        data-key="back"
+                        data-type="back"
+                        class="calculator-buttons operator negative"
+                    >
+                        <svg
+                            width="27"
+                            height="18"
+                            viewBox="0 0 27 18"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M9.58578 0H10H26H27V1V17V18H26H10H9.58578L9.29289 17.7071L1.29289 9.70711L0.585785 9L1.29289 8.29289L9.29289 0.292893L9.58578 0ZM10.4142 2L3.41421 9L10.4142 16H25V2H10.4142ZM14 4.58578L14.7071 5.29288L17 7.58578L19.2929 5.29289L20 4.58579L21.4142 6L20.7071 6.70711L18.4142 9L20.7071 11.2929L21.4142 12L20 13.4142L19.2929 12.7071L17 10.4142L14.7071 12.7071L14 13.4142L12.5858 12L13.2929 11.2929L15.5858 9L13.2929 6.7071L12.5858 5.99999L14 4.58578Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </button>
+                    <button
+                        data-action="equals"
+                        data-type="equals"
+                        class="calculator-buttons blue operator"
+                    >
+                        =
+                    </button>
+                </div>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
