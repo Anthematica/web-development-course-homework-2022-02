@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Calculador</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="colorchangesmode"> 
+			<div class="light"><img src="image/light.svg" alt=""></div>
+			<div class="dark"><img src="image/moon.png" alt=""></div>
+		</div>
+
+		<div class="buttons">
+
+			<div class="inputs">
+				<input class="fullOperation" type="text" placeholder="0">
+				<input class="result" type="text" placeholder="0">
+			</div>
+
+			<div class="Numbers">
+				<button class="button-reset backgray">C</button>
+				<button class="buttons-item backgray">
+					<sup>+</sup><i>/</i><sub>-</sub>
+				</button>
+				<button class="buttons-item backgray">%</button>
+
+				<button class="button-operation backblue">÷</button>
+
+				<button class="button-number">7</button>
+				<button class="button-number">8</button>
+				<button class="button-number">9</button>
+
+				<button class="button-operation backblue">*</button>
+
+				<button class="button-number">4</button>
+				<button class="button-number">5</button>
+				<button class="button-number">6</button>
+
+				<button class="button-operation backblue">-</button>
+
+				<button class="button-number">1</button>
+				<button class="button-number">2</button>
+				<button class="button-number">3</button>
+
+				<button class="button-operation backblue">+</button>
+				
+				<button class="buttons-item">.</button>
+				<button class="button-number">0</button>
+				<button class="buttons-item">Clear</button>
+				<button class="button-result backblue">=</button>
+			</div>
+
+			<div class="footercalculator">←--Resize Me!--→</div>
+	
+		</div>
+
+	</div>
+
+	<script src="scripts.js"></script>
+
+</body>
+</html>

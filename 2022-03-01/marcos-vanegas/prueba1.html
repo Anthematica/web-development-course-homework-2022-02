@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="aside">
+            <div class="cont-up-aside">
+                <h2>Art categories</h2>
+                <p>Vlad is a difgital product designer based isn Lasi , Romania , wholikes to 
+                    expeeriment with crazy ideas . he uses power of "the tools" to expres himself trhough
+                    a range of desing related items , to provide value and ispire others.
+                </p>
+            </div>
+            <div class="cont-down-aside">
+                <div class="nav-items"><a href="">Abstract</a></div>
+                <div class="nav-items"><a href="">Generic bio</a></div>
+                <div class="nav-items"><a href="">Herbs</a></div>
+                <div class="nav-items"><a href="">Minimalist</a></div>
+                <div class="nav-items"><a href="">Wood</a></div>
+                <div class="img-profile"><img src="https://picsum.photos/id/166/50/50" alt=""></div>
+            </div>
+        </section>
+        <section class="slide">
+            <div>
+                 <div class="cont-big-img"><img id="img-active" src="https://picsum.photos/id/100/800/600" alt="" data-url="https://picsum.photos/id/222/100/100" /></div>
+            </div>
+            <div class="sec-short-img ">
+                <div class="img-items active "><img data-url="https://picsum.photos/id/225/840/600" src="https://picsum.photos/id/225/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/300/840/600" src="https://picsum.photos/id/300/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/250/840/600" src="https://picsum.photos/id/250/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/251/840/600" src="https://picsum.photos/id/251/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/253/840/600" src="https://picsum.photos/id/253/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/254/840/600" src="https://picsum.photos/id/254/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/255/840/600" src="https://picsum.photos/id/255/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/256/840/600" src="https://picsum.photos/id/256/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/257/840/600" src="https://picsum.photos/id/257/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/258/840/600" src="https://picsum.photos/id/258/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/359/840/600" src="https://picsum.photos/id/359/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/400/840/600" src="https://picsum.photos/id/400/100/100"></div>  
+                <div class="img-items "><img data-url="https://picsum.photos/id/425/840/600" src="https://picsum.photos/id/425/100/100"></div>  
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script>
+
+        const bigImage = document.querySelector('#img-active');
+        const smallImage = document.querySelectorAll('.img-items img');
+        
+        smallImage.forEach(function(image) {
+            image.addEventListener("click" , function(){
+                bigImage.src = image.dataset.url;
+
+                const parentEl = document.querySelector('.img-items.active');
+
+                if (parentEl) {
+                    parentEl.classList.remove('active');
+                }
+ 
+                image.parentElement.classList.add('active');
+
+            });
+        });
+
+    </script>
+</body>
+</html>

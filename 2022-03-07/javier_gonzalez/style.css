@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+:root{
+    --width: 300px;
+    --width-big: 400px;
+}
+i{
+    padding-inline-start: 20px;
+}
+.container{
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(to bottom, #030300, #02011d);
+}
+.logo{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-block-start: 80px;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.logo span{
+    font-weight: 400;
+    font-style: normal;
+}
+.container button{
+    background-color: #df1355;
+    padding: 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 16px;
+    color: white;
+    position: absolute;
+    inset-block-start: 48%;
+    inset-inline-end: 32%;
+}
+.images{
+    --gap: 200px;
+    --current: 0;
+    display: flex;
+    position: absolute;
+    gap: var(--gap);
+    inset-inline-start: calc(50% - var(--width)/2);
+    margin-block-start: 100px;
+    transition: 500ms;
+    transform: translateX(calc(((var(--width) + var(--gap)) * var(--current)) * -1));
+}
+
+.images_container img{
+    width: var(--width);
+    height: 600px;
+    border-radius: 200px;
+    /*opacity: 0.1;*/
+    object-fit: cover;
+}
+
+.activate{
+    width: 300px;
+    height: 550px;
+    border-radius: 200px;
+    filter: drop-shadow(5px -5px 0px rgb(255, 104, 192));
+    opacity: 1;
+}
+
+.container .names{
+    color: white;
+    position: absolute;
+    inset-block-start: 46%;
+    inset-inline-start: 18%;
+    z-index: 1;
+    font-size: 64px;
+    width: 40px;
+    line-height: 60px;
+    font-weight: 500;
+}
