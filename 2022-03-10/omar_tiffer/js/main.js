@@ -123,7 +123,7 @@ const charactersContainerEl = document.querySelector(".characters__container");
 
 // Fetch all characters and populate page
 try {
-    const characterList = await fetchData({ endpoint: "character", type: "", value: "" });
+    const characterList = await fetchData({ endpoint: "character", type: "pagination", value: 1 });
     const { results } = characterList;
 
     results.forEach((character) => {
