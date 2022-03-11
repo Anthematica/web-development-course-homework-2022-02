@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="overlay2">
+    </div>
+    <nav class="navi">
+        <div class="navi__icon">
+            <img src="images/rickandmorty.png" alt="">
+        </div>
+        <div class="search">
+            <div class="search-form">
+                <input class="search-field" type="text" placeholder="Search.." name="search">
+            </div>
+            <div class="search-results">
+                <ul class="search-list">
+                </ul>
+            </div>
+        </div>
+        
+        <div class="navbar--right">
+            <ul>
+                <li><a href="#">Top Characters</a></li>
+                <li><a href="#">All Characters</a></li>
+                <li><a href="#">Random</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="overlay">
+        <div class="description">
+            <!-- <img class="big-image" src="" alt=""> -->
+            <div class="text">
+                <ul class="titleCard">
+                    <li id="nameChara"></li>
+                    <li id="placeChara">Dimension blah blah</li>
+                </ul>
+                <div class="moreCard">
+                    <ul class="descript1">
+                        <li>Species:</li>
+                        <li>Planet:</li>
+                        <li>Status:</li>
+                    </ul>
+                    <ul class="descript2">
+                        <li id="dataSpecies">Human</li>
+                        <li id="dataPlanet">Earth</li>
+                        <li id="dataStatus">Alive</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="gallery"></div>
+    </div>
+
+    <div class="search-output"></div>
+    <script src="script.js"></script>
+</body>
+</html>
