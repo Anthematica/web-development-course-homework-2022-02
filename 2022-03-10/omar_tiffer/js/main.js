@@ -177,7 +177,7 @@ searchEl.addEventListener("input", async () => {
     const searchListEl = document.querySelector(".search__list-container");
     const noResultsEl = document.querySelector(".search__list-nocontent");
 
-    searchListEl.style.opacity = "1";
+    searchListEl.style.display = "flex";
 
     try {
         const filteredCharacters = await fetchData({
@@ -202,12 +202,12 @@ searchEl.addEventListener("input", async () => {
 
     // If search input box is empty, hide search results box
     if (searchEl.value === "") {
-        searchListEl.style.opacity = "0";
+        searchListEl.style.display = "none";
     }
 });
 
 // Add blur event to search input box to hide search list on focus lost
 searchEl.addEventListener("blur", () => {
     const searchListEl = document.querySelector(".search__list-container");
-    searchListEl.style.opacity = "0";
+    searchListEl.style.display = "none";
 });
