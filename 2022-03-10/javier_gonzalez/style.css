@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Chilanka';
+}
+
+.header{
+    display: flex;
+    background-image:linear-gradient(#A6EEE6FF 50%, #69C8ECFF);
+    width: 100%;
+    padding: 20px;
+}
+
+.logo img{
+    width: 250px;
+    height: 120px;
+}
+
+.header input{
+    margin-inline-start: 150px;
+    padding: 24px 24px;
+    width: 600px;
+    font-size: 34px;
+    outline: none;
+    background-image:linear-gradient(#FAFD7CFF 50%, #FAE48BFF);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.199);
+}
+
+.header button{
+    position: absolute;
+    inset-inline-end: 20px;
+    inset-block-start: 75px;
+    display: flex;
+    color: black;
+    font-size: 24px;
+    background: none;
+    border: none;
+}
+
+.text_container{
+    width: 624px;
+    height: 450px;
+    border: 1px solid;
+    position: absolute;
+    inset-inline-end: -624px;
+    inset-block-start: 0;
+    z-index: 1;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.322);
+}
+
+.text_name{
+    background-color: black;
+    font-size: 44px;
+    color: white;
+    padding-inline-start: 24px;
+    padding-block-start: 10px;
+}
+
+.text_found{
+    font-size: 54px;
+}
+
+.text{
+    font-size: 24px;
+    padding: 24px;
+}
+
+.text{
+    display: flex;
+}
+
+.images{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hide{
+    display: none;
+}
+
+.images_container{
+    display: flex;
+    position: relative;
+    width: 20%;
+}
+
+.images_container img{
+    object-fit: cover;
+    height: 450px;
+}
+
+.search{
+    background-color: white;
+    position: absolute;
+    inset-block-start: 150px;
+    inset-inline: 0px;
+    overflow-y: scroll;
+    margin-inline-start: 420px;
+    padding: 30px 20px;
+    width: 600px;
+    display: none;
+    z-index: 9;
+    border-radius: 20px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+    max-height: 700px;
+}
+
+.search_container{
+    display: flex;
+    gap: 10px;
+    margin-block-end: 20px;
+}
+
+.text_search{
+    align-items: center;
+    display: flex;
+}
+
+.text_img{
+    width: 100px;
+    height: 100px;
+}
