@@ -4,42 +4,27 @@ const previousDisplay = document.querySelector(".previous-operand");
 const display = document.querySelector(".current-operand");
 
 // dark/light mode
-let lightMode = localStorage.getItem("lightMode");
-const lightModeToggle = document.querySelector(".light-mode");
+const btnSwitch = document.querySelector(".toogle-button");
+let toggleActive = document.querySelector(".sun-reverse");
 
-console.log(lightMode);
-//chekear si lightmode esta habilitado
-//si esta habilitado, apagarlo
-//si esta deshabilitado, encenderlo
+btnSwitch.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
+    toggleActive.classList.toggle("sun-active");
 
-const enableLightMode = function enable() {
-    //1. agregar la clase light al body
-    document.body.classList.add("light-mode");
-    //2. actualizar lightmode en localstorage
-    localStorage.setItem("lightMode", "enabled");
-};
-
-const disableLightMode = function disable() {
-    //1. remover la clase light al body
-    document.body.classList.remove("light-mode");
-    //2. actualizar lightmode en localstorage
-    localStorage.setItem("lightMode", null);
-};
-
-lightModeToggle.addEventListener("click", function changeMode() {
-    lightMode = localStorage.getItem("lightMode");
-    if (lightMode !== "enabled") {
-        enableLightMode();
-        console.log(lightMode);
+    if (document.body.classList.contains("light-mode")) {
+        localStorage.setItem("light-mode", "true");
     } else {
-        disableLightMode();
-        console.log(lightMode);
-    }
-    let toggleActive = document.querySelector(".sun-reverse");
-    if (toggleActive) {
-        toggleActive.classList.toggle("sun-active");
+        localStorage.setItem("light-mode", "false");
     }
 });
+
+if (localStorage.getItem("light-mode") == "true") {
+    document.body.classList.add("light-mode");
+    toggleActive.classList.add("sun-active");
+} else {
+    document.classList.remove("ight-mode");
+    toggleActive.classList.remove("sun-active");
+}
 
 keys.addEventListener("click", function (event) {
     if (!event.target.closest("button")) return;
@@ -49,8 +34,6 @@ keys.addEventListener("click", function (event) {
     const displayValue = display.textContent;
     const { type } = key.dataset;
     const { previousKeyType } = calculator.dataset;
-
-    // const {dataset: {type}, textContent: keyValue} = key
 
     if (type == "number") {
         if (displayValue == "0" || previousKeyType == "operator") {
