@@ -1,0 +1,134 @@
+*{margin:0;
+padding: 0;
+box-sizing: border-box;
+font-family: cursive;
+font-size: 1rem;
+color:white};
+
+html{font-size: 62.5%;}
+
+header{
+    width: 100%;
+    max-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+header > img{
+    width: 263px;
+    height: 80px;
+    padding:0;
+}
+
+.entryCode{
+    width: 486px;
+    background-color:  #484855; 
+    display: flex;
+    flex-direction: column;
+}
+.entryCode input{
+                    
+						background-image:url(../img/searchicon.svg);
+						background-repeat: no-repeat;
+						background-position: right;
+                        background-color:  #484855; 
+                        background-size: 24px;
+                        width: 450px;
+						border: none; 
+						color: #949A9C;
+						outline: none;
+                        font-family: cursive;
+						font-size: 2rem;
+                        height: 100px;
+                        padding-inline: 20px;
+                       
+}
+
+.containerGlobal{
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.container{
+    
+display: flex;
+flex-wrap: wrap;
+margin-inline: auto;
+max-width: 1440px;
+
+}
+
+.divContainer{
+    width: 16.6%;
+    position: relative;
+    
+}
+
+.imagen{
+    
+    object-fit: cover;
+    width: 100%;
+}
+
+
+.tooltip{
+    width:200%;
+    height: 100%;
+    background-color: white;
+    position: absolute;
+    display: block;
+    z-index: 9999;
+    inset: 0 224px ;
+    line-height: 30px;
+    color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    
+}
+.tooltip h1 {
+    font-size: 1.1rem;
+    padding-inline-start: 20px;
+}
+.tooltip span{
+
+    color:black;
+    padding-inline-start: 20px;
+   
+
+}
+
+.showRegister{
+    
+    width: 486px;
+    height: 300px;
+    color:black;
+    font-size: 1rem;
+    overflow-y: auto;
+    position:absolute;
+    inset-block-start:100px;
+    z-index: 555;
+    background-color: white;
+    
+}
+
+.showRegister p{
+    color: black;
+    font-weight: 200;
+    padding-inline-start: 20px;
+    
+}
+
+.showRegister img{
+    width: 100px;
+    height: 100px;
+}
+
+.itemImg{
+    display: flex;
+    align-items: center;
+
+}
