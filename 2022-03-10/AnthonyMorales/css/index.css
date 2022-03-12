@@ -1,0 +1,198 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Chilanka', cursive;
+}
+
+.search-icon svg {
+    width: 18px;
+    height: 18px;
+}
+
+.rick-and_morty_logo {
+    width: 100px;
+    height: 50px;
+    object-fit: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    height: 50px;
+    position: relative;
+}
+
+.search-input {
+    background-color: #242427;
+    height: 50px;
+    width: 400px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    position: relative;
+}
+
+.search-input input {
+    width: 100%;
+    background-color: #242427;
+    border: none;
+    color: white;
+    height: 100%;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    margin-inline-end: 10px;
+}
+
+.navigation li {
+    margin-inline-start: 10px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.images-container {
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shadow > div:after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    pointer-events: none;
+    opacity: 0.4;
+
+}
+
+.active:after {
+    display: none;
+}
+.characterImageStyles {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.tooltip {
+    width: 400px;
+    height: 100%;
+    position: absolute;
+    inset-block-start: 0;
+    transform: translateX(200px);
+    background-color: white;
+    z-index: 3;
+    
+}
+
+.containerItemImage {
+    width: 200px;
+    position: relative;
+}
+
+.nameContainer {
+    display: flex;
+    background-color:black;
+    width: 100%;
+    height: 16px;
+    color: white;
+    font-size: 1.4rem;
+    padding-inline-start: 6px;
+    margin-block-end: 10px;
+}
+.name {
+    margin-inline-end: 6px;
+}
+
+.characterInfo {
+    display: flex;
+    padding-inline-start: 6px;
+    margin-block-end: 10px;
+}
+
+.planet {
+    display: flex;
+    padding-inline-start: 6px;
+    margin-block-end: 10px;
+}
+
+.status {
+    display: flex;
+    padding-inline-start: 6px;
+    margin-block-end: 10px;
+}
+
+.overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: hsl(0 0% 0% / 0.5);
+}
+
+.containerSearch {
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    position: absolute;
+    inset-block-start: 50px;
+    inset-inline-start: 0;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+.imgCharacterInputSearch {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-inline-end: 10px;
+}
+
+.infoInputSearchContainer {
+    display: flex;
+    align-items: center;
+}
+
+.nameCharacter {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+strong {
+    font-size: 1.4rem;
+}
+
+.spicieInfo {
+    margin-inline-start: 4px;
+    font-size: 1.4rem;
+}
+.planetInfo {
+    margin-inline-start: 4px;
+    font-size: 1.4rem;
+}
+.statusInfo {
+    margin-inline-start: 4px;
+    font-size: 1.4rem;
+}
+
+
