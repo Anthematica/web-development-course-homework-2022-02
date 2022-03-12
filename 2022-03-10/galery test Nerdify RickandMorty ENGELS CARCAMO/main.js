@@ -76,7 +76,7 @@ const search = document.querySelector('input')
 
    search.addEventListener('input', (event) => {
 
-    const typing = event.target.value + 1
+    const typing = event.target.value
 
     console.log(typing)
 
