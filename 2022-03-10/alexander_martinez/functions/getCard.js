@@ -12,10 +12,7 @@ export async function createCard(img, id) {
 	image.classList.add("img");
 	image.dataset.id = id;
 
-	// const cardBody = await getInfo(id);
-
 	card.appendChild(image);
-	// card.append(imageEl, cardBody);
 
 	return card;
 }
@@ -28,15 +25,49 @@ export async function getInfo(id) {
 	const cardContainer = document.createElement("div");
 	cardContainer.classList.add("card-content");
 
-	cardContainer.innerHTML = `
-		<h2 class="card-header">${name}</h2>
-		<p class="card-text">
-			<b>Species: </b> ${species} <br>
-			<b>Gender: </b> ${gender} <br>
-			<b>Planet: </b> ${origin.name} <br>
-			<b>Status: </b> ${status} <br>
-			<b>Location: </b> ${location.name}
-		</p>`;
+	const content = createCardContent(
+		name,
+		gender,
+		origin.name,
+		location.name,
+		species,
+		status
+	);
+	cardContainer.appendChild(content);
 
 	return cardContainer;
+}
+
+function createCardContent(...card) {
+	const cardContainer = document.createElement("div");
+	cardContainer.classList.add("card-content");
+
+	const cardContent = document.createElement("pre");
+	cardContent.classList.add("card-text");
+
+	const title = document.createElement("h2");
+	title.classList.add("card-header");
+
+	const types = ["name", "Species", "Gender", "Planet", "Status", "Location"];
+
+	card.forEach((e, index) => {
+		if (index === 0) {
+			title.innerText = e;
+			cardContent.append(title);
+		} else {
+			const boldText = createBoldEl(types[index]);
+			cardContent.append(boldText, `${e} \n`);
+		}
+	});
+	console.log(cardContent);
+
+	return cardContent;
+}
+
+function createBoldEl(element) {
+	const bold = document.createElement("b");
+	bold.classList.add("card-bold");
+	bold.innerText = `${element}: `;
+
+	return bold;
 }

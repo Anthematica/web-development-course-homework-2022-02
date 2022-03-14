@@ -85,15 +85,14 @@ html {
   padding-block-end: 4px;
   background-color: var(--white);
   overflow-y: scroll;
-  display: flex;
+  display: none;
   flex-direction: column;
   row-gap: 4px;
   position: absolute;
   inset-block-start: 64px;
   inset-inline-start: 380px;
-  opacity: 0;
+  animation: fade-in 0.3s linear;
   transition: ease 0.3s;
-  pointer-events: none;
 }
 
 .search__list-nocontent {
@@ -198,4 +197,13 @@ html {
 .details__status-value {
   color: var(--gray-500);
   font-weight: 700;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

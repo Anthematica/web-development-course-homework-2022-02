@@ -1,392 +1,417 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Layout</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/modern-normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="side-menu-container" id="side-menu-container">
-    <div class="side-menu" id="side-menu">
-      <a href="#" class="close">
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M18 6L6 18"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-          <path
-            d="M6 6L18 18"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </a>
-      <ul>
-        <l1><a href="#" class="focus">sale</a></l1>
-        <l1><a href="#">new releases</a></l1>
-        <l1><a href="#">men</a></l1>
-        <l1><a href="#">women</a></l1>
-        <l1><a href="#">kids</a></l1>
-        <l1><a href="#">collections</a></l1>
-      </ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Basic Layout</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/modern-normalize.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <div class="side-menu-container" id="side-menu-container">
+            <div class="side-menu" id="side-menu">
+                <a href="#" class="close">
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                    >
+                        <path
+                            d="M18 6L6 18"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                        <path
+                            d="M6 6L18 18"
+                            stroke="black"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                        />
+                    </svg>
+                </a>
+                <ul>
+                    <l1><a href="#" class="focus">sale</a></l1>
+                    <l1><a href="#">new releases</a></l1>
+                    <l1><a href="#">men</a></l1>
+                    <l1><a href="#">women</a></l1>
+                    <l1><a href="#">kids</a></l1>
+                    <l1><a href="#">collections</a></l1>
+                </ul>
 
-      <div class="side-menu-footer">
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Contact Us</a>
-      </div>
-    </div>
-  </div>
-
-    <div class="superheader-container">
-      <div class="superheader">
-        <p>Free shipping on domestic orders over $75!</p>
-        <nav class="superheader--nav">
-          <label for="search">
-            <input
-              name="search"
-              type="text"
-              class="superheader--nav--search"
-              placeholder="Search..."
-            />
-          </label>
-          <a href="#" class="superHeader--nav--help">Help</a>
-          <a href="#" class="superHeader--nav--bag">
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
-                stroke="#C9CECF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M3 6H21"
-                stroke="#C9CECF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-              <path
-                d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
-                stroke="#C9CECF"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              />
-            </svg>
-          </a>
-
-          <!-- <img src="img/Shopping Bag Icon.svg" alt="search icon" /> -->
-        </nav>
-      </div>
-    </div>
-
-    <div class="header--separator">
-      <header class="container">
-        <nav>
-          <h1>
-            <a href="#">Sole&Ankle</a>
-          </h1>
-          <ul class="menu">
-            <l1><a class="focus" href="#">sale</a></l1>
-            <l1><a href="#">new releases</a></l1>
-            <l1><a href="#">men</a></l1>
-            <l1><a href="#">women</a></l1>
-            <l1><a href="#">kids</a></l1>
-            <l1><a href="#">collections</a></l1>
-          </ul>
-
-          <ul class="menu-icons">
-            <li>
-              <a href="#">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
-                    stroke="#C9CECF"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 6H21"
-                    stroke="#C9CECF"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
-                    stroke="#C9CECF"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <g clip-path="url(#clip0_5_29)">
-                    <path
-                      d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
-                      stroke="#C9CECF"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                    <path
-                      d="M14 16L11.1 13.1"
-                      stroke="#C9CECF"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5_29">
-                      <rect width="16" height="16" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </a>
-            </li>
-            <li class="side-menu-icon">
-              <a href="#side-menu-container" class="icon-menu">
-                <svg
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M3 12H21"
-                    stroke="#313235"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 6H21"
-                    stroke="#313235"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M3 18H21"
-                    stroke="#313235"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    </div>
-
-    <div class="container">
-      <main>
-        <aside class="main--sidebar">
-          <div class="header-aside">
-            <a href="#">Home </a><span>/ </span> <a href="#">Sale </a
-            ><span>/ </span>
-            <a href="#">Shoes</a>
-          </div>
-
-          <ul class="aside--items">
-            <li><a href="#">Lifestyle</a></li>
-            <li><a href="#">Jordan</a></li>
-            <li><a class="focus" href="#">Running</a></li>
-            <li><a href="#">Basketball</a></li>
-            <li><a href="#">Training & Gym</a></li>
-            <li><a href="#">Football</a></li>
-            <li><a href="#">Skateboarding</a></li>
-            <li><a href="#">American Footabll</a></li>
-            <li><a href="#">Baseball</a></li>
-            <li><a href="#">Golf</a></li>
-            <li><a href="#">Tennins</a></li>
-            <li><a href="#">Athletics</a></li>
-            <li><a href="#">Walking</a></li>
-          </ul>
-        </aside>
-
-        <section class="shoes--collections">
-          <div class="main-title-container">
-            <div class="main-title">
-              <h2>Running</h2>
+                <div class="side-menu-footer">
+                    <a href="#">Terms and Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact Us</a>
+                </div>
             </div>
-            <div class="main-search">
-              <span>Sort</span>
-              <div class="wrapper">
-                <select>
-                  <option>Newest Releases</option>
-                  <option>Lorem ipsum dolor sit amet</option>
-                </select>
-                <svg
-                  class="icon"
-                  width="14"
-                  height="8"
-                  viewBox="0 0 14 8"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M1 1L7 7L13 1"
-                    stroke="black"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
+        </div>
+
+        <div class="superheader-container">
+            <div class="superheader">
+                <p>Free shipping on domestic orders over $75!</p>
+                <nav class="superheader--nav">
+                    <label for="search">
+                        <input
+                            name="search"
+                            type="text"
+                            class="superheader--nav--search"
+                            placeholder="Search..."
+                        />
+                    </label>
+                    <a href="#" class="superHeader--nav--help">Help</a>
+                    <a href="#" class="superHeader--nav--bag">
+                        <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                        >
+                            <path
+                                d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                                stroke="#C9CECF"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M3 6H21"
+                                stroke="#C9CECF"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                            <path
+                                d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                                stroke="#C9CECF"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            />
+                        </svg>
+                    </a>
+                </nav>
             </div>
-          </div>
+        </div>
 
-          <ul>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 1.png" alt="beautiful shoes" />
-                  <a class="img--offer blue" href="#">Just Released!</a>
-                </div>
-                <figcaption>
-                  <div class="name">
-                    <h3>NikeCourt Tech</h3>
-                    <span>2 Colors</span>
-                  </div>
-                  <div class="prices">
-                    <span>$165</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 2.png" alt="beautiful shoes" />
-                  <a class="img--offer red" href="#">Sale</a>
-                </div>
+        <div class="header--separator">
+            <header class="container">
+                <nav>
+                    <h1>
+                        <a href="#">Sole&Ankle</a>
+                    </h1>
+                    <ul class="menu">
+                        <l1><a class="focus" href="#">sale</a></l1>
+                        <l1><a href="#">new releases</a></l1>
+                        <l1><a href="#">men</a></l1>
+                        <l1><a href="#">women</a></l1>
+                        <l1><a href="#">kids</a></l1>
+                        <l1><a href="#">collections</a></l1>
+                    </ul>
 
-                <figcaption>
-                  <div class="name">
-                    <h3>Nike Metcon 5 AMP</h3>
-                    <span>1 Color</span>
-                  </div>
-                  <div class="prices">
-                    <span class="delete">$165</span>
-                    <span>$145</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 3.png" alt="beautiful shoes" />
-                  <a class="img--offer blue" href="#">Just Released!</a>
-                </div>
-                <figcaption>
-                  <div class="name">
-                    <h3>Nike Phantom Vision</h3>
-                    <span>4 Colors</span>
-                  </div>
-                  <div class="prices">
-                    <span>$165</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 4.png" alt="beautiful shoes" />
-                </div>
-                <figcaption>
-                  <div class="name">
-                    <h3>Nike Air Zoom Pegasus 36 Trail</h3>
-                    <span>1 Color</span>
-                  </div>
-                  <div class="prices">
-                    <span>$165</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 5.png" alt="beautiful shoes" />
-                  <a class="img--offer red" href="#">Sale</a>
-                </div>
-                <figcaption>
-                  <div class="name">
-                    <h3>Nike Joyride Dual Run</h3>
-                    <span>2 Colors</span>
-                  </div>
-                  <div class="prices">
-                    <span class="delete">$170</span>
-                    <span>$165</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-            <li>
-              <figure>
-                <div class="image-container">
-                  <img src="img/image 6.png" alt="beautiful shoes" />
-                  <a class="img--offer red" href="#">Sale</a>
-                </div>
-                <figcaption>
-                  <div class="name">
-                    <h3>Nike Tiempo Legend 8 Academy TF</h3>
-                    <span>8 Colors</span>
-                  </div>
-                  <div class="prices">
-                    <span class="delete">$165</span>
-                    <span>$125</span>
-                  </div>
-                </figcaption>
-              </figure>
-            </li>
-          </ul>
-        </section>
-      </main>
-    </div>
-  </body>
+                    <ul class="menu-icons">
+                        <li>
+                            <a href="#">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                                        stroke="#C9CECF"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M3 6H21"
+                                        stroke="#C9CECF"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                                        stroke="#C9CECF"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg
+                                    width="16"
+                                    height="16"
+                                    viewBox="0 0 16 16"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <g clip-path="url(#clip0_5_29)">
+                                        <path
+                                            d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z"
+                                            stroke="#C9CECF"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                        <path
+                                            d="M14 16L11.1 13.1"
+                                            stroke="#C9CECF"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_5_29">
+                                            <rect
+                                                width="16"
+                                                height="16"
+                                                fill="white"
+                                            />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="side-menu-icon">
+                            <a href="#side-menu-container" class="icon-menu">
+                                <svg
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M3 12H21"
+                                        stroke="#313235"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M3 6H21"
+                                        stroke="#313235"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                    <path
+                                        d="M3 18H21"
+                                        stroke="#313235"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="container">
+            <main>
+                <aside class="main--sidebar">
+                    <div class="header-aside">
+                        <a href="#">Home </a><span>/ </span>
+                        <a href="#">Sale </a><span>/ </span>
+                        <a href="#">Shoes</a>
+                    </div>
+
+                    <ul class="aside--items">
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Jordan</a></li>
+                        <li><a class="focus" href="#">Running</a></li>
+                        <li><a href="#">Basketball</a></li>
+                        <li><a href="#">Training & Gym</a></li>
+                        <li><a href="#">Football</a></li>
+                        <li><a href="#">Skateboarding</a></li>
+                        <li><a href="#">American Footabll</a></li>
+                        <li><a href="#">Baseball</a></li>
+                        <li><a href="#">Golf</a></li>
+                        <li><a href="#">Tennins</a></li>
+                        <li><a href="#">Athletics</a></li>
+                        <li><a href="#">Walking</a></li>
+                    </ul>
+                </aside>
+
+                <section class="shoes--collections">
+                    <div class="main-title-container">
+                        <div class="main-title">
+                            <h2>Running</h2>
+                        </div>
+                        <div class="main-search">
+                            <span>Sort</span>
+                            <div class="wrapper">
+                                <select>
+                                    <option>Newest Releases</option>
+                                    <option>Lorem ipsum dolor sit amet</option>
+                                </select>
+                                <svg
+                                    class="icon"
+                                    width="14"
+                                    height="8"
+                                    viewBox="0 0 14 8"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <path
+                                        d="M1 1L7 7L13 1"
+                                        stroke="black"
+                                        stroke-width="2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 1.png"
+                                        alt="beautiful shoes"
+                                    />
+                                    <a class="img--offer blue" href="#"
+                                        >Just Released!</a
+                                    >
+                                </div>
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>NikeCourt Tech</h3>
+                                        <span>2 Colors</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span>$165</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 2.png"
+                                        alt="beautiful shoes"
+                                    />
+                                    <a class="img--offer red" href="#">Sale</a>
+                                </div>
+
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>Nike Metcon 5 AMP</h3>
+                                        <span>1 Color</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span class="delete">$165</span>
+                                        <span>$145</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 3.png"
+                                        alt="beautiful shoes"
+                                    />
+                                    <a class="img--offer blue" href="#"
+                                        >Just Released!</a
+                                    >
+                                </div>
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>Nike Phantom Vision</h3>
+                                        <span>4 Colors</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span>$165</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 4.png"
+                                        alt="beautiful shoes"
+                                    />
+                                </div>
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>Nike Air Zoom Pegasus 36 Trail</h3>
+                                        <span>1 Color</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span>$165</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 5.png"
+                                        alt="beautiful shoes"
+                                    />
+                                    <a class="img--offer red" href="#">Sale</a>
+                                </div>
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>Nike Joyride Dual Run</h3>
+                                        <span>2 Colors</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span class="delete">$170</span>
+                                        <span>$165</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <figure>
+                                <div class="image-container">
+                                    <img
+                                        src="img/image 6.png"
+                                        alt="beautiful shoes"
+                                    />
+                                    <a class="img--offer red" href="#">Sale</a>
+                                </div>
+                                <figcaption>
+                                    <div class="name">
+                                        <h3>Nike Tiempo Legend 8 Academy TF</h3>
+                                        <span>8 Colors</span>
+                                    </div>
+                                    <div class="prices">
+                                        <span class="delete">$165</span>
+                                        <span>$125</span>
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </li>
+                    </ul>
+                </section>
+            </main>
+        </div>
+        <script src="main.js"></script>
+    </body>
 </html>

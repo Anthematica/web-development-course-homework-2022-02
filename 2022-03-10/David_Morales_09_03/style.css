@@ -46,6 +46,7 @@ body {
     height: auto;
     display: block;
     box-shadow: 0px 0px 50px 5px black;
+    background-color: rgb(170, 166, 166);
 }
 
 .container__header {

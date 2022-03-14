@@ -78,11 +78,12 @@ const search = document.querySelector('input')
 
     const typing = event.target.value
 
+    console.log(typing)
+
   fetch(`https://rickandmortyapi.com/api/character/?name=${typing}`)
   .then(response => response.json())
   .then(data => data.results.forEach((character) =>{
 
-    console.log(data)
 
     const register = document.querySelector('.active')
     register.classList.add('showRegister')

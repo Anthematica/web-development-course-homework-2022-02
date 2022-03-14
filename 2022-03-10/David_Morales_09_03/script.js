@@ -139,6 +139,8 @@ search.addEventListener("input", function(e) {
 
         resultados.classList.add("noShow")
         containerEL.classList.remove("writing");
+
+        container.classList.remove("shadow");
     }
 })
 
@@ -212,14 +214,12 @@ containerBody.addEventListener("mouseover", function(e) {
             tooltipBody.appendChild(paragraph4);
             tooltipBody.appendChild(paragraph5);
 
-            console.log(tooltip.offsetLeft);
             tooltip.appendChild(tooltipHeader);
             tooltip.appendChild(tooltipBody);
             elementDivActive.appendChild(tooltip);
 
 
             var position = elementDivActive.offsetLeft;
-            console.log(position)
             if (position > 600) {
 
                 tooltip.classList.add("tooltipright")

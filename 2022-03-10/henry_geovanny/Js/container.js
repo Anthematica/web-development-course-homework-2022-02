@@ -12,7 +12,7 @@ function createImage(url){
 }
 
 async function loadImage(){
-	const url = await fetch("https://rickandmortyapi.com/api/character");
+	const url = await fetch("https://rickandmortyapi.com/api/character?page=4");
 
 	const result = await url.json();
 	result.results.forEach(element=>{
@@ -35,23 +35,19 @@ async function loadImage(){
 		currentInfo.append(currentTitle,currentDetails);
 		currentDetails.append(currentSpecie,currentPlanet,currentStatus);
 
+		let box = currentInfo.getBoundingClientRect();
 		div.addEventListener("mouseenter", (e)=>{
-			const box = currentInfo.getBoundingClientRect();
-			console.log(box);
 
 			const target = e;
-			// console.log(target);
 			currentTitle.textContent = `${element.name}`;
 			currentSpecie.innerHTML = `<b class="nebol">Especie: </b><span class="nebol__info">${element.species}</span>`;
 			currentPlanet.innerHTML = `<b class="nebol">Planet: </b><span class="nebol__info">${element.location.name}</span>`;
 			currentStatus.innerHTML = `<b class="nebol">Especie: </b><span class="nebol__info">${element.status}</span>`;
 
 			currentDetails.classList.add("current__details");
-			currentInfo.classList.remove("invert");
 			currentTitle.classList.add("current__name");
 			currentPlanet.classList.add("idented");
 			if(box.left < 300){
-				console.log("lo puedo cambiar");
 				currentInfo.classList.add("invert");
 				currentInfo.classList.remove("active");
 			}else{
@@ -70,60 +66,50 @@ async function loadImage(){
 			currentSpecie.innerHTML = "";
 			currentPlanet.innerHTML = "";
 			currentStatus.innerHTML = "";
-			if(box.left > 220){
-				console.log("lo puedo cambiar");
-				currentInfo.classList.remove("invert");
-				currentInfo.classList.add("active");
-			}
 			
 		});
 		
 	});
 
-	const urlName = await fetch("https://rickandmortyapi.com/api/character");
-	const filterName = await urlName.json();
 	const searchEl = document.createElement("div");
+	const component = document.createElement("div");
+	component.classList.add("currentDetails");
+	campoElement.appendChild(component);
+	
+	campoInput.addEventListener("keyup", async element => {
+	  try {
+	    const filterName = element.target.value.toLowerCase();
+	    const urlName = await fetch(`https://rickandmortyapi.com/api/character/?name=${filterName}`);
+	    const { results } = await urlName.json();
 
-	filterName.results.forEach(filter=>{
-		campoInput.addEventListener("keyup", (e)=>{
-			const elementInput = campoInput.value;
-			const image = createImage(filter);
-			const divEl = document.createElement("div");
-			const personName = document.createElement("span");
+	    removeItems();
 
+	    results.forEach( urlImage => {
+	      const contentSearch = document.createElement("div");
+	      const image = document.createElement("img");
+	      const personName = document.createElement("span");
+	      image.classList.add("image__search");
+	      contentSearch.classList.add("content__search");
+	      personName.classList.add("content__search-title")
+	      contentSearch.append(image,personName);
 
-			searchEl.classList.add("search__element");
-			image.classList.add("image__search");
-			divEl.classList.add("content__search");
-			personName.classList.add("content__search-title")
-			
-			const datos = JSON.stringify(filter.name.split(""));
-			if(datos.indexOf(elementInput)){
-				personName.textContent = `${filter.name}`;
-				divEl.append(image,personName);
-				searchEl.append(divEl);
-				campoElement.append(searchEl);
-				console.log("si tiene");
-				
-			}else{
-				personName.textContent = "";
-				searchEl.remove();
-				console.log("no la tiene");
+	      image.src = urlImage.image;
+	      personName.textContent = `${urlImage.name}`;
+	      component.appendChild(contentSearch);
+	      component.style.display = "block";
+	    });
+	    filterName === "" ? component.style.display = "none" : null;
+	  } catch (err) {component.style.display = "none";}
+	});
 
-			}
-			
+	const removeItems = () => {
+	  const deleteElement = document.querySelectorAll(".content__search");
+	  deleteElement.forEach((el) => {
+	    component.removeChild(el);
 		});
-
-		campoInput.addEventListener("keypress", ()=>{
-			const elementInput = campoInput.value;
-			console.log("esta en keypress");
-			if(elementInput == ""){
-				span.textContent = "";
-
-			} 
-		})
-	})
+	}
 
 	
 }
+
 loadImage();

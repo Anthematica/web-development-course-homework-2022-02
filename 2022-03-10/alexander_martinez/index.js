@@ -6,8 +6,8 @@ const BASE_URL = "https://rickandmortyapi.com/api/character";
 // elementos
 const containerEl = document.querySelector(".container");
 const searchEl = document.querySelector(".search-input");
-export { searchEl };
 const listEl = document.querySelector(".list");
+const body = document.querySelector("body");
 
 // inicializo las imagenes
 async function init() {
@@ -22,7 +22,7 @@ async function init() {
 		containerEl.appendChild(card);
 
 		// calculamos la mitad de lo que tiene el viewport
-		const screenLengh = containerEl.clientWidth / 2;
+		const screenLengh = body.clientWidth / 2;
 		// calculamos la pocición del elemento en base al eje x
 		const cardLengh = card.getBoundingClientRect().x;
 
@@ -69,12 +69,11 @@ searchEl.addEventListener("input", async () => {
 			listEl.appendChild(item);
 		});
 	} catch (error) {
-		listEl.innerHTML = `
-				<li class="list-item">
-					<span class="list-text"> No results </span>
-				</li>
-			`;
-		console.warn(error);
+		const li = document.createElement("li");
+		li.classList.add("list-error");
+		li.innerText = "No Results!";
+		clearItems();
+		listEl.appendChild(li);
 	}
 });
 
