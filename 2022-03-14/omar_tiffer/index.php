@@ -84,9 +84,9 @@
                         <ul class="hobbies__list-table">
                             <?php
                             if ($decodedData['hobbies']) {
-                                foreach ($decodedData['hobbies'] as $hobbie) {
+                                foreach ($decodedData['hobbies'] as $hobby) {
                             ?>
-                                    <li class="hobbies__item-table"><?php echo $hobbie; ?></li>
+                                    <li class="hobbies__item-table"><?php echo $hobby; ?></li>
                             <?php
                                 }
                             } else {
