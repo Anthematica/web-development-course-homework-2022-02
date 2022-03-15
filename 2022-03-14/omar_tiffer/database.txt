@@ -1,0 +1,4 @@
+{"first_name":"Hosmel","last_name":"Quintana","hobbies":{"php":"PHP","js":"JavaScript"}}
+{"first_name":"Erick","last_name":"Narvaez","hobbies":{"soccer":"Soccer","js":"JavaScript"}}
+{"first_name":"Javier","last_name":"Gonzalez","hobbies":{"skate":"Skate","js":"JavaScript"}}
+{"first_name":"Omar","last_name":"Tiffer","hobbies":{"soccer":"Soccer","php":"PHP","js":"JavaScript"}}
