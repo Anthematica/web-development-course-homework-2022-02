@@ -1,7 +1,3 @@
-<?php
-$db = fopen('database.txt', 'r');
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,6 +71,7 @@ $db = fopen('database.txt', 'r');
         <tbody>
             <?php
             $tableRow = 0;
+            $db = fopen('database.txt', 'r');
 
             while ($line = fgets($db)) {
                 $tableRow += 1;
